@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import RendiaVideo from '@/components/RendiaVideo';
 import SchemaMarkup from '@/components/SchemaMarkup';
-import { generateMedicalConditionSchema, generateOrganizationSchema, combineSchemas } = '@/lib/schema';
+import { generateMedicalConditionSchema, generateOrganizationSchema, combineSchemas } from '@/lib/schema';
 import { BRAND_COLORS } from '@/lib/constants';
 import pilotPages from '@/public/data/pilot-pages.json';
 

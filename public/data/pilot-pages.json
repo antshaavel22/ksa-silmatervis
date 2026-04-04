@@ -1,294 +1,649 @@
-{
-  "conditions": [
-    {
-      "slug": "dry-eye-syndrome",
-      "title": "Dry Eye Syndrome",
-      "category": "condition",
-      "priority": 1,
-      "description": "A chronic condition affecting tear production and eye surface health.",
-      "symptoms": [
-        "Eye irritation",
-        "Tearing",
-        "Burning sensation",
-        "Sensitivity to light"
-      ],
-      "causes": "Reduced tear production or increased tear evaporation",
-      "treatments": [
-        "Artificial tears",
-        "Punctal plugs",
-        "Lid warming therapy"
-      ],
-      "videoId": "PLACEHOLDER-001"
+[
+  {
+    "slug": "dry-eye-syndrome",
+    "title": "Dry Eye Syndrome",
+    "category": "conditions",
+    "priority": 1,
+    "description": "Dry eye syndrome (keratoconjunctivitis sicca) is a chronic condition characterized by insufficient tear production or poor tear quality, leading to eye surface damage and discomfort.",
+    "translations": {
+      "et": {
+        "title": "Kuiva silma sündroom",
+        "description": "Kuiva silma sündroom on kroonilised seisund, mille käigus tekib pisarate puudus või nende kvaliteet on halvenev, mille tagajärjel tekib silma pinnal kahjustus ja ebamugavus."
+      },
+      "ru": {
+        "title": "Синдром сухого глаза",
+        "description": "Синдром сухого глаза (кератоконъюнктивит сухой) - это хроническое состояние, характеризующееся недостаточным слёзоотделением или плохим качеством слёз, приводящим к повреждению поверхности глаза и дискомфорту."
+      }
     },
-    {
-      "slug": "cataracts",
-      "title": "Cataracts",
-      "category": "condition",
-      "priority": 2,
-      "description": "Clouding of the natural lens, often age-related.",
-      "symptoms": [
-        "Cloudy vision",
-        "Difficulty with night vision",
-        "Sensitivity to light and glare"
-      ],
-      "causes": "Aging, UV exposure, eye injury",
-      "treatments": [
-        "Cataract surgery",
-        "Lens implant"
-      ],
-      "videoId": "PLACEHOLDER-002"
+    "symptoms": [
+      "Ощущение жжения и раздражения в глазах",
+      "Чувствительность к свету",
+      "Парадоксальное слезотечение",
+      "Ощущение песка в глазах",
+      "Боль при движении глаз",
+      "Затрудненное чтение и работа за компьютером"
+    ],
+    "causes": [
+      "Снижение продукции слёз",
+      "Повышенное испарение слёз",
+      "Возрастные изменения",
+      "Побочные эффекты лекарств",
+      "Экологические факторы",
+      "Работа за экраном"
+    ],
+    "treatments": [
+      "Искусственные слёзы и смазывающие капли",
+      "Пункционные пробки для слёзных каналов",
+      "Тепловая терапия век",
+      "Лечение основного заболевания",
+      "Правильная гигиена век",
+      "Витаминные добавки"
+    ],
+    "videoId": "PLACEHOLDER-001"
+  },
+  {
+    "slug": "cataracts",
+    "title": "Cataracts",
+    "category": "conditions",
+    "priority": 2,
+    "description": "Cataracts are a clouding of the eye's natural lens, most commonly age-related but can occur due to injury, medication, or other factors. Early detection and treatment at KSA can prevent vision loss.",
+    "translations": {
+      "et": {
+        "title": "Kataraktid",
+        "description": "Kataraktid on silma loomuliku läätse hägustumine, mis on enamasti seotud vanusega, kuid võib tekkida vigastuse, ravimite või muude tegurite tõttu."
+      },
+      "ru": {
+        "title": "Катаракта",
+        "description": "Катаракта - это помутнение естественного хрусталика глаза, чаще всего связанное с возрастом, но может развиться из-за травмы, лекарств или других факторов."
+      }
     },
-    {
-      "slug": "glaucoma",
-      "title": "Glaucoma",
-      "category": "condition",
-      "priority": 3,
-      "description": "High intraocular pressure damaging the optic nerve.",
-      "symptoms": [
-        "Often asymptomatic in early stages",
-        "Gradual vision loss",
-        "Eye pain"
-      ],
-      "causes": "High intraocular pressure",
-      "treatments": [
-        "Eye drops",
-        "Laser treatment",
-        "Glaucoma surgery"
-      ],
-      "videoId": "PLACEHOLDER-003"
+    "symptoms": [
+      "Постепенное ухудшение зрения вдаль и вблизи",
+      "Помутнение зрения как через грязное стекло",
+      "Трудности с вождением ночью, ослепление от фар",
+      "Повышенная чувствительность к свету и бликам",
+      "Изменение восприятия цветов (пожелтение)",
+      "Двоение в глазах"
+    ],
+    "causes": [
+      "Возрастные изменения белков хрусталика",
+      "Ультрафиолетовое излучение",
+      "Травмы глаза",
+      "Некоторые заболевания (диабет)",
+      "Длительный приём кортикостероидов",
+      "Курение и алкоголь"
+    ],
+    "treatments": [
+      "Операция по удалению катаракты и имплантации интраокулярной линзы",
+      "Имплантация премиум линз для коррекции близорукости и дальнозоркости",
+      "Монофокальные линзы для стандартного зрения",
+      "Мультифокальные линзы для коррекции возрастной дальнозоркости"
+    ],
+    "videoId": "PLACEHOLDER-002"
+  },
+  {
+    "slug": "glaucoma",
+    "title": "Glaucoma",
+    "category": "conditions",
+    "priority": 3,
+    "description": "Glaucoma is an eye condition characterized by elevated intraocular pressure that damages the optic nerve and leads to progressive vision loss. Early detection through regular screening is crucial.",
+    "translations": {
+      "et": {
+        "title": "Glaukoom",
+        "description": "Glaukoom on silmasaun, mida iseloomustab tõusnud silmaesisese rõhu, mis kahjustab nägemisnervi ja viib progresseerivate nägemiskaotusele."
+      },
+      "ru": {
+        "title": "Глаукома",
+        "description": "Глаукома - это заболевание глаз, характеризующееся повышенным внутриглазным давлением, которое повреждает зрительный нерв и приводит к прогрессирующей потере зрения."
+      }
     },
-    {
-      "slug": "presbyopia",
-      "title": "Presbyopia (Age-Related)",
-      "category": "condition",
-      "priority": 4,
-      "description": "Difficulty focusing on near objects due to lens hardening with age.",
-      "symptoms": [
-        "Difficulty reading",
-        "Eye strain",
-        "Blurred near vision"
-      ],
-      "causes": "Natural aging of the lens",
-      "treatments": [
-        "Reading glasses",
-        "Bifocals",
-        "Multifocal lenses"
-      ],
-      "videoId": "PLACEHOLDER-004"
+    "symptoms": [
+      "Часто отсутствуют симптомы в ранних стадиях (коварное заболевание)",
+      "Постепенная потеря периферийного зрения",
+      "Острая глазная боль и покраснение (острая форма)",
+      "Видение радужных ореолов вокруг источников света",
+      "Размытое или нечеткое зрение",
+      "Потеря центрального зрения на поздних стадиях"
+    ],
+    "causes": [
+      "Повышенное внутриглазное давление",
+      "Генетическая предрасположенность",
+      "Возрастные изменения",
+      "Миопия (близорукость)",
+      "Этническая принадлежность (афроамериканцы более подвержены)",
+      "Некоторые системные заболевания"
+    ],
+    "treatments": [
+      "Глазные капли для снижения внутриглазного давления",
+      "Лазерная трабекулопластика",
+      "Оперативное вмешательство (трабекулэктомия)",
+      "Регулярное мониторирование давления",
+      "Проверка полей зрения",
+      "Фотографирование диска зрительного нерва"
+    ],
+    "videoId": "PLACEHOLDER-003"
+  },
+  {
+    "slug": "presbyopia",
+    "title": "Presbyopia - Age-Related Vision Loss",
+    "category": "conditions",
+    "priority": 4,
+    "description": "Presbyopia is an age-related condition where the eye's lens becomes less flexible, making it difficult to focus on near objects. It typically becomes noticeable around age 40-45.",
+    "translations": {
+      "et": {
+        "title": "Presküoopia - seotud vanusega nägemiskaotus",
+        "description": "Presküoopia on vanusega seotud seisund, mille käigus silma läätse elastsus väheneb, mistõttu on raske fokusseerida lähedalolevatele objektidele."
+      },
+      "ru": {
+        "title": "Пресбиопия - связанная с возрастом потеря зрения",
+        "description": "Пресбиопия - это возрастное состояние, при котором хрусталик глаза становится менее гибким, что затрудняет фокусировку на близких объектах."
+      }
     },
-    {
-      "slug": "myopia",
-      "title": "Myopia (Nearsightedness)",
-      "category": "condition",
-      "priority": 5,
-      "description": "Difficulty seeing distant objects clearly.",
-      "symptoms": [
-        "Blurred distance vision",
-        "Eye strain",
-        "Difficulty seeing at night"
-      ],
-      "causes": "Irregular eye shape or corneal curvature",
-      "treatments": [
-        "Glasses",
-        "Contact lenses",
-        "LASIK surgery"
-      ],
-      "videoId": "PLACEHOLDER-005"
+    "symptoms": [
+      "Трудность чтения текста нормального размера",
+      "Необходимость держать текст на расстоянии вытянутой руки",
+      "Напряжение глаз при работе с близкими предметами",
+      "Головные боли после напряжённой зрительной работы",
+      "Трудности при работе со смартфонами и планшетами",
+      "Дискомфорт при чтении при слабом освещении"
+    ],
+    "causes": [
+      "Естественное старение хрусталика глаза",
+      "Потеря эластичности хрусталика",
+      "Ослабление цилиарной мышцы",
+      "Неизбежный возрастной процесс",
+      "Происходит у всех людей после 40-45 лет",
+      "Более выраженное при миопии (близорукости)"
+    ],
+    "treatments": [
+      "Очки для близи (очки для чтения)",
+      "Бифокальные линзы (две зоны фокусировки)",
+      "Прогрессивные/мультифокальные линзы (плавный переход)",
+      "Контактные линзы для близи",
+      "Технология моновижн (контактные линзы)",
+      "Хирургические методы (ограниченная эффективность)"
+    ],
+    "videoId": "PLACEHOLDER-004"
+  },
+  {
+    "slug": "myopia",
+    "title": "Myopia - Nearsightedness",
+    "category": "conditions",
+    "priority": 5,
+    "description": "Myopia is a refractive error where the eye is too strong in power or too long, causing distant objects to appear blurred while near vision remains clear.",
+    "translations": {
+      "et": {
+        "title": "Müoopia - lähinägemisvõime",
+        "description": "Müoopia on refraktiivne defekt, kus silm on liiga tugev või liiga pikk, mistõttu kaugel olevad objektid näivad hägused."
+      },
+      "ru": {
+        "title": "Миопия - близорукость",
+        "description": "Миопия - это рефракционная ошибка, при которой глаз слишком мощный или слишком длинный, в результате чего удаленные объекты выглядят размытыми."
+      }
     },
-    {
-      "slug": "hyperopia",
-      "title": "Hyperopia (Farsightedness)",
-      "category": "condition",
-      "priority": 6,
-      "description": "Difficulty seeing near objects clearly.",
-      "symptoms": [
-        "Blurred near vision",
-        "Eye strain",
-        "Headaches"
-      ],
-      "causes": "Eye shape or corneal curvature",
-      "treatments": [
-        "Glasses",
-        "Contact lenses",
-        "Refractive surgery"
-      ],
-      "videoId": "PLACEHOLDER-006"
+    "symptoms": [
+      "Размытое зрение вдаль на доске, экране, знаках",
+      "Четкое зрение вблизи (при чтении, работе)",
+      "Прищуривание для лучшего видения вдаль",
+      "Трудности при вождении автомобиля",
+      "Проблемы при занятиях спортом на открытом воздухе",
+      "Напряжение глаз при попытке сфокусироваться на расстояние"
+    ],
+    "causes": [
+      "Генетическая предрасположенность (наследственность)",
+      "Удлинённая форма глазного яблока",
+      "Повышенная кривизна роговицы",
+      "Активное использование близких расстояний (чтение, экраны)",
+      "Недостаточное время на открытом воздухе",
+      "Может развиваться и изменяться в молодом возрасте"
+    ],
+    "treatments": [
+      "Очки для коррекции зрения вдаль",
+      "Контактные линзы для коррекции",
+      "LASIK лазерная операция для постоянной коррекции",
+      "PRK (фоторефрактивная кератэктомия)",
+      "Ортокератология (специальные ночные линзы)",
+      "Регулярные проверки для мониторинга прогрессии"
+    ],
+    "videoId": "PLACEHOLDER-005"
+  },
+  {
+    "slug": "hyperopia",
+    "title": "Hyperopia - Farsightedness",
+    "category": "conditions",
+    "priority": 6,
+    "description": "Hyperopia is a refractive error where the eye has insufficient focusing power or is too short, making near vision blurry while distance vision may be clear.",
+    "translations": {
+      "et": {
+        "title": "Hüperooopia - kaugnägemisvõime",
+        "description": "Hüperooopia on refraktiivne defekt, kus silma fokuseerimissuutlikkus on ebapiisav või silm on liiga lühike, mistõttu lähinägemine on hägus."
+      },
+      "ru": {
+        "title": "Гиперопия - дальнозоркость",
+        "description": "Гиперопия - это рефракционная ошибка, при которой фокусирующая сила глаза недостаточна или глаз слишком короткий, что делает ближнее зрение размытым."
+      }
     },
-    {
-      "slug": "astigmatism",
-      "title": "Astigmatism",
-      "category": "condition",
-      "priority": 7,
-      "description": "Blurred vision at all distances due to irregular corneal shape.",
-      "symptoms": [
-        "Blurred or distorted vision",
-        "Eye strain",
-        "Difficulty with night vision"
-      ],
-      "causes": "Irregular corneal or lens shape",
-      "treatments": [
-        "Glasses",
-        "Contact lenses",
-        "Refractive surgery"
-      ],
-      "videoId": "PLACEHOLDER-007"
+    "symptoms": [
+      "Размытое зрение вблизи (при чтении, работе за компьютером)",
+      "Возможно четкое видение вдаль",
+      "Усталость глаз и головные боли после зрительной работы",
+      "Трудности при концентрации на близких объектах",
+      "Ощущение напряжения в глазах",
+      "Может быть малозаметна у молодых людей благодаря компенсации"
+    ],
+    "causes": [
+      "Укороченное глазное яблоко",
+      "Недостаточная кривизна роговицы",
+      "Слабая сила хрусталика",
+      "Генетическая предрасположенность (часто врожденная)",
+      "Может быть врожденной или приобретенной",
+      "Может комбинироваться с другими рефракционными ошибками"
+    ],
+    "treatments": [
+      "Очки для коррекции (особенно для близи)",
+      "Бифокальные или прогрессивные очки для лучшей коррекции",
+      "Контактные линзы для коррекции",
+      "LASIK или PRK лазерная хирургия",
+      "Рефракционная замена линзы (RLE) при значительной гиперопии",
+      "Коррекция может быть необходима только для близи, в молодом возрасте"
+    ],
+    "videoId": "PLACEHOLDER-006"
+  },
+  {
+    "slug": "astigmatism",
+    "title": "Astigmatism",
+    "category": "conditions",
+    "priority": 7,
+    "description": "Astigmatism is a refractive error caused by an irregular shape of the cornea or lens, resulting in blurred vision at all distances.",
+    "translations": {
+      "et": {
+        "title": "Astigmatism",
+        "description": "Astigmatism on refraktiivne defekt, mis on põhjustatud sarvekalvo või läätse ebakorrapärase kujuga, mille tulemusena on nägemine hägus kõigil kaugustel."
+      },
+      "ru": {
+        "title": "Астигматизм",
+        "description": "Астигматизм - это рефракционная ошибка, вызванная неправильной формой роговицы или хрусталика, в результате чего зрение размыто на всех расстояниях."
+      }
     },
-    {
-      "slug": "age-related-macular-degeneration",
-      "title": "Age-Related Macular Degeneration",
-      "category": "condition",
-      "priority": 8,
-      "description": "Deterioration of the central vision in older adults.",
-      "symptoms": [
-        "Blurred central vision",
-        "Difficulty reading",
-        "Distorted vision"
-      ],
-      "causes": "Aging, genetics, smoking",
-      "treatments": [
-        "Vitamin supplements",
-        "Laser therapy",
-        "Anti-VEGF injections"
-      ],
-      "videoId": "PLACEHOLDER-008"
+    "symptoms": [
+      "Размытое или искаженное зрение на всех расстояниях",
+      "Прищуривание для попытки улучшить зрение",
+      "Усталость глаз и дискомфорт при фокусировании",
+      "Головные боли особенно после зрительной нагрузки",
+      "Трудности с восприятием мелких деталей",
+      "Проблемы ночного видения (блики, гало вокруг источников света)"
+    ],
+    "causes": [
+      "Неправильная кривизна роговицы (чаще всего)",
+      "Неправильная форма хрусталика",
+      "Часто врожденное состояние",
+      "Может быть унаследовано от родителей",
+      "Может развиться после глазной травмы или операции",
+      "Часто комбинируется с миопией или гиперопией"
+    ],
+    "treatments": [
+      "Специальные цилиндрические очки для коррекции астигматизма",
+      "Торические контактные линзы",
+      "LASIK или асферическая PRK операция",
+      "Имплантация торических интраокулярных линз при катаракте",
+      "Кератотомия (операция по изменению кривизны роговицы)",
+      "Комбинированная коррекция с очками или линзами"
+    ],
+    "videoId": "PLACEHOLDER-007"
+  },
+  {
+    "slug": "age-related-macular-degeneration",
+    "title": "Age-Related Macular Degeneration (AMD)",
+    "category": "conditions",
+    "priority": 8,
+    "description": "AMD is a progressive eye disease affecting the macula (central area of the retina), leading to loss of central vision in older adults. Early detection is critical.",
+    "translations": {
+      "et": {
+        "title": "Seotud vanusega maakula degeneratsioon (AMD)",
+        "description": "AMD on progresseeruv silmasaun, mis mõjutab makulat, mille tulemuseks on keskse nägemise kaotus vanemaealiste inimeste puhul."
+      },
+      "ru": {
+        "title": "Возрастная макулярная дегенерация (AMD)",
+        "description": "AMD - это прогрессирующее заболевание глаз, поражающее макулу, в результате чего у пожилых людей теряется центральное зрение."
+      }
     },
-    {
-      "slug": "diabetic-retinopathy",
-      "title": "Diabetic Retinopathy",
-      "category": "condition",
-      "priority": 9,
-      "description": "Eye complications from diabetes affecting retinal blood vessels.",
-      "symptoms": [
-        "Blurred vision",
-        "Floaters",
-        "Vision loss"
-      ],
-      "causes": "High blood sugar levels",
-      "treatments": [
-        "Blood sugar control",
-        "Laser treatment",
-        "Vitrectomy"
-      ],
-      "videoId": "PLACEHOLDER-009"
+    "symptoms": [
+      "Размытое или размытое центральное зрение",
+      "Трудности при чтении и работе за компьютером",
+      "Искаженное зрение (линии выглядят волнистыми)",
+      "Темное пятно в центре поля зрения",
+      "Потеря способности различать лица",
+      "Сложность с цветовым восприятием"
+    ],
+    "causes": [
+      "Возраст (чаще всего после 50 лет)",
+      "Генетическая предрасположенность",
+      "Курение (главный изменяемый фактор риска)",
+      "Высокое кровяное давление",
+      "Высокий уровень холестерина",
+      "Недостаточное потребление антиоксидантов"
+    ],
+    "treatments": [
+      "Витаминные добавки (AREDS формула с лютеином и зеаксантином)",
+      "Лазерная фотокоагуляция для сухой формы",
+      "Анти-VEGF инъекции (Луцентис, Айлея, Авастин) для влажной формы",
+      "Фотодинамическая терапия",
+      "Низковизионные вспомогательные средства",
+      "Прекращение курения и контроль артериального давления"
+    ],
+    "videoId": "PLACEHOLDER-008"
+  },
+  {
+    "slug": "diabetic-retinopathy",
+    "title": "Diabetic Retinopathy",
+    "category": "conditions",
+    "priority": 9,
+    "description": "Diabetic retinopathy is a serious eye complication of diabetes that develops when high blood sugar damages blood vessels in the retina. Regular eye exams are essential.",
+    "translations": {
+      "et": {
+        "title": "Diabeetilisahaiguse ret inopaatia",
+        "description": "Diabeetilise retinopaatia on tõsine silmakonkreetne diabeedi komplikatsioon, mis tekib siis, kui kõrge verešahru tase kahjustab retina veresoontes."
+      },
+      "ru": {
+        "title": "Диабетическая ретинопатия",
+        "description": "Диабетическая ретинопатия - это серьезное глазное осложнение диабета, которое развивается, когда высокий уровень сахара в крови повреждает кровеносные сосуды сетчатки."
+      }
     },
-    {
-      "slug": "floaters-and-flashes",
-      "title": "Floaters and Flashes",
-      "category": "condition",
-      "priority": 10,
-      "description": "Spots and light flashes in vision field.",
-      "symptoms": [
-        "Spots or specks in vision",
-        "Light flashes",
-        "Shadow in peripheral vision"
-      ],
-      "causes": "Vitreous changes, retinal issues",
-      "treatments": [
-        "Monitoring",
-        "Vitrectomy (if severe)"
-      ],
-      "videoId": "PLACEHOLDER-010"
-    }
-  ],
-  "procedures": [
-    {
-      "slug": "lasik-surgery",
-      "title": "LASIK Eye Surgery",
-      "category": "procedure",
-      "priority": 1,
-      "description": "Laser-assisted in situ keratomileusis for vision correction.",
-      "outcome": "Improved vision without glasses or contacts",
-      "preparation": "Comprehensive eye examination and corneal mapping",
-      "followUp": "Use prescribed eye drops for 1-2 weeks, avoid eye strain",
-      "videoId": "PLACEHOLDER-011"
+    "symptoms": [
+      "Часто нет симптомов на ранних стадиях",
+      "Размытое зрение",
+      "Плавающие точки (мушки) в поле зрения",
+      "Потеря зрения постепенно или внезапно",
+      "Красные пятна в белке глаза",
+      "Темные полосы в поле зрения"
+    ],
+    "causes": [
+      "Высокий уровень сахара в крови (главная причина)",
+      "Длительное течение диабета",
+      "Неконтролируемое высокое кровяное давление",
+      "Высокий уровень холестерина",
+      "Беременность при диабете",
+      "Курение"
+    ],
+    "treatments": [
+      "Контроль уровня сахара в крови (главное)",
+      "Контроль артериального давления",
+      "Лазерная фотокоагуляция при пролиферативной форме",
+      "Анти-VEGF инъекции при отеке макулы",
+      "Вмешательство стекловидного тела (витрэктомия) при кровотечении",
+      "Регулярные консультации офтальмолога и эндокринолога"
+    ],
+    "videoId": "PLACEHOLDER-009"
+  },
+  {
+    "slug": "floaters-and-flashes",
+    "title": "Floaters and Flashes",
+    "category": "conditions",
+    "priority": 10,
+    "description": "Floaters are spots and specks that drift through your vision, while flashes are brief streaks of light. Most are harmless but sudden appearance may indicate serious conditions.",
+    "translations": {
+      "et": {
+        "title": "Silmades ujuvad pildid ja välkud",
+        "description": "Ujuvad pildid on täpsed ja täpid, mis liiguvad läbi teie nägemise, samas kui välgud on lühikesed valguskiired."
+      },
+      "ru": {
+        "title": "Мушки и вспышки в глазах",
+        "description": "Мушки - это пятна и точки, которые дрейфуют в вашем зрении, в то время как вспышки - это короткие полосы света."
+      }
     },
-    {
-      "slug": "cataract-surgery",
-      "title": "Cataract Surgery",
-      "category": "procedure",
-      "priority": 2,
-      "description": "Removal of clouded lens and implantation of intraocular lens.",
-      "outcome": "Clear vision restoration",
-      "preparation": "Pre-operative eye tests and measurements",
-      "followUp": "Eye drops, activity restrictions for 4 weeks",
-      "videoId": "PLACEHOLDER-012"
+    "symptoms": [
+      "Малые пятна или точки в поле зрения (мушки)",
+      "Паутинообразные линии, плавающие перед глазами",
+      "Вспышки света в периферийном зрении",
+      "Обычно видны на светлом фоне (голубое небо)",
+      "Могут быть одиночные или многочисленные",
+      "Часто более заметны утром или при яркой освещенности"
+    ],
+    "causes": [
+      "Возрастные изменения стекловидного тела",
+      "Отслойка задней пограничной мембраны",
+      "Близорукость (чаще видны мушки)",
+      "Глазные травмы или операции",
+      "Воспаление в глазу",
+      "Кровотечение в стекловидное тело (при серьезных заболеваниях)"
+    ],
+    "treatments": [
+      "Наблюдение (большинство мушек безвредны)",
+      "Избегание резких движений головой",
+      "Профилактическое посещение офтальмолога",
+      "Витрэктомия (удаление стекловидного тела) при сильных помутнениях",
+      "Лазерная процедура при некоторых типах мушек",
+      "Неотложная помощь при внезапном появлении множественных мушек или вспышек"
+    ],
+    "videoId": "PLACEHOLDER-010"
+  },
+  {
+    "slug": "lasik-surgery",
+    "title": "LASIK Eye Surgery",
+    "category": "procedures",
+    "priority": 1,
+    "description": "LASIK (Laser-Assisted In Situ Keratomileusis) is a refractive surgery that uses a laser to reshape the cornea, correcting myopia, hyperopia, and astigmatism.",
+    "translations": {
+      "et": {
+        "title": "LASIK silmaoperatsioon",
+        "description": "LASIK on refraktiivne operatsioon, mis kasutab laserit sarvekalvo kuju muutmiseks, korrigeerides müoopiat, hüpermetrioopiat ja astigmatismi."
+      },
+      "ru": {
+        "title": "Операция LASIK",
+        "description": "LASIK - это рефракционная операция, которая использует лазер для изменения формы роговицы, исправляя миопию, гиперопию и астигматизм."
+      }
     },
-    {
-      "slug": "retinal-repair",
-      "title": "Retinal Repair",
-      "category": "procedure",
-      "priority": 3,
-      "description": "Surgical treatment for retinal detachment or tears.",
-      "outcome": "Vision preservation and restoration",
-      "preparation": "Detailed retinal imaging and analysis",
-      "followUp": "Head positioning restrictions, activity modification",
-      "videoId": "PLACEHOLDER-013"
+    "symptoms": [],
+    "causes": [],
+    "treatments": [
+      "Создание роговичного лоскута с помощью микрокератома или фемтосекундного лазера",
+      "Удаление лоскута для доступа к ткани роговицы",
+      "Воздействие эксимерного лазера для переформирования роговицы",
+      "Возврат лоскута в исходное положение без наложения швов",
+      "Эпителиализация происходит в течение 24 часов"
+    ],
+    "videoId": "PLACEHOLDER-011"
+  },
+  {
+    "slug": "cataract-surgery",
+    "title": "Cataract Surgery",
+    "category": "procedures",
+    "priority": 2,
+    "description": "Cataract surgery involves removing the clouded natural lens and replacing it with an artificial intraocular lens (IOL). It's one of the most successful surgeries performed.",
+    "translations": {
+      "et": {
+        "title": "Katarakti operatsioon",
+        "description": "Katarakti operatsioon hõlmab loetelu loomuliku läätse eemaldamist ja selle asendamist kunstliku intraokkulaarse läätsega."
+      },
+      "ru": {
+        "title": "Операция по удалению катаракты",
+        "description": "Операция по удалению катаракты включает удаление помутневшего естественного хрусталика и его замену на искусственную интраокулярную линзу (ИОЛ)."
+      }
     },
-    {
-      "slug": "corneal-cross-linking",
-      "title": "Corneal Cross-Linking",
-      "category": "procedure",
-      "priority": 4,
-      "description": "Treatment to strengthen corneal tissue in keratoconus.",
-      "outcome": "Halting or slowing corneal progression",
-      "preparation": "Corneal topography and thickness measurement",
-      "followUp": "Protective eyewear, eye drops for 3-6 months",
-      "videoId": "PLACEHOLDER-014"
+    "symptoms": [],
+    "causes": [],
+    "treatments": [
+      "Факоэмульсификация (удаление через малый разрез)",
+      "Лазерная хирургия катаракты (femtosecond laser-assisted)",
+      "Имплантация монофокальной ИОЛ для хорошего дневного видения",
+      "Имплантация мультифокальной ИОЛ для видения на всех расстояниях",
+      "Имплантация торической ИОЛ при наличии астигматизма",
+      "Восстановление без швов благодаря малому разрезу"
+    ],
+    "videoId": "PLACEHOLDER-012"
+  },
+  {
+    "slug": "retinal-repair",
+    "title": "Retinal Detachment Surgery",
+    "category": "procedures",
+    "priority": 3,
+    "description": "Retinal repair surgery treats retinal detachment or tears. Emergency treatment is often necessary to preserve vision and prevent permanent blindness.",
+    "translations": {
+      "et": {
+        "title": "Võrkkesta eraldamise operatsioon",
+        "description": "Võrkkesta eraldamise operatsioon käsitleb võrkkesta eraldamist või rebimist. Kiire abi on sageli vajalik nägemise säilitamiseks."
+      },
+      "ru": {
+        "title": "Операция по отслойке сетчатки",
+        "description": "Операция по восстановлению сетчатки лечит отслойку сетчатки или разрывы. Срочное лечение часто необходимо для сохранения зрения."
+      }
     },
-    {
-      "slug": "intraocular-lens-implant",
-      "title": "Intraocular Lens Implant",
-      "category": "procedure",
-      "priority": 5,
-      "description": "Artificial lens implantation to replace natural lens.",
-      "outcome": "Vision correction and lens replacement",
-      "preparation": "Lens power calculations and measurements",
-      "followUp": "Eye drops, regular monitoring appointments",
-      "videoId": "PLACEHOLDER-015"
-    }
-  ],
-  "anatomy": [
-    {
-      "slug": "parts-of-the-eye",
-      "title": "Parts of the Eye",
-      "category": "anatomy",
-      "priority": 1,
-      "description": "Detailed overview of eye structures and their functions.",
-      "videoId": "PLACEHOLDER-016"
+    "symptoms": [],
+    "causes": [],
+    "treatments": [
+      "Лазерная фотокоагуляция при небольших разрывах сетчатки",
+      "Криопексия (замораживание) при разрывах близко к сетчатке",
+      "Склеральное пломбирование для поддержки отслоенной сетчатки",
+      "Витрэктомия (удаление стекловидного тела) при сложных отслойках",
+      "Газотамонада (введение газового пузыря) для прижатия сетчатки",
+      "Силиконовое масло при множественных или повторных отслойках"
+    ],
+    "videoId": "PLACEHOLDER-013"
+  },
+  {
+    "slug": "corneal-cross-linking",
+    "title": "Corneal Cross-Linking (CXL)",
+    "category": "procedures",
+    "priority": 4,
+    "description": "Corneal cross-linking is a minimally invasive procedure that strengthens the cornea by creating new collagen cross-links, used primarily to treat keratoconus.",
+    "translations": {
+      "et": {
+        "title": "Sarvekalvo ristside-sidumise operatsioon (CXL)",
+        "description": "Sarvekalvo ristside-sidumise operatsioon on minimaalselt invasiivne protseduur, mis tugevdab sarvekalvot, luues uusi kollageenikrossideid."
+      },
+      "ru": {
+        "title": "Кросслинкинг роговицы (CXL)",
+        "description": "Кросслинкинг роговицы - это малоинвазивная процедура, которая укрепляет роговицу, создавая новые коллагеновые поперечные связи."
+      }
     },
-    {
-      "slug": "how-vision-works",
-      "title": "How Vision Works",
-      "category": "anatomy",
-      "priority": 2,
-      "description": "The process of light detection and image formation.",
-      "videoId": "PLACEHOLDER-017"
+    "symptoms": [],
+    "causes": [],
+    "treatments": [
+      "Удаление эпителия роговицы (частичное или полное в зависимости от техники)",
+      "Нанесение рибофлавина (витамина B2) на роговицу",
+      "Облучение роговицы ультрафиолетовым светом UVA",
+      "Нанесение защитной контактной линзы на период заживления",
+      "Процедура занимает примерно 30-45 минут",
+      "Восстановление зрения происходит в течение недель и месяцев"
+    ],
+    "videoId": "PLACEHOLDER-014"
+  },
+  {
+    "slug": "intraocular-lens-implant",
+    "title": "Intraocular Lens (IOL) Implant",
+    "category": "procedures",
+    "priority": 5,
+    "description": "Intraocular lens implantation replaces the eye's natural lens with an artificial lens. Most commonly performed during cataract surgery or refractive lens exchange.",
+    "translations": {
+      "et": {
+        "title": "Intraokulaarse läätse (IOL) implantaat",
+        "description": "Intraokkulaarse läätse implantaat asendab silma loomuliku läätse kunstliku läätsega. Kõige sagedamini sooritatakse katarrakti operatsioonil."
+      },
+      "ru": {
+        "title": "Имплантация интраокулярной линзы (ИОЛ)",
+        "description": "Имплантация интраокулярной линзы заменяет естественный хрусталик глаза на искусственный. Чаще всего выполняется при операции катаракты."
+      }
     },
-    {
-      "slug": "tear-system",
-      "title": "The Tear System",
-      "category": "anatomy",
-      "priority": 3,
-      "description": "Tear production and drainage functions.",
-      "videoId": "PLACEHOLDER-018"
-    }
-  ],
-  "treatments": [
-    {
-      "slug": "eye-drops",
-      "title": "Eye Drops & Medications",
-      "category": "treatment",
-      "priority": 1,
-      "description": "Types and uses of therapeutic eye drops.",
-      "videoId": "PLACEHOLDER-019"
+    "symptoms": [],
+    "causes": [],
+    "treatments": [
+      "Монофокальные ИОЛ обеспечивают хорошее видение на одном расстоянии",
+      "Мультифокальные ИОЛ обеспечивают видение на нескольких расстояниях",
+      "Аккомодирующие ИОЛ допускают изменение фокуса",
+      "Торические ИОЛ корректируют астигматизм",
+      "Имплантация требует малого разреза и быстрого восстановления",
+      "Замена линзы может быть выполнена при необходимости"
+    ],
+    "videoId": "PLACEHOLDER-015"
+  },
+  {
+    "slug": "parts-of-the-eye",
+    "title": "Parts of the Eye",
+    "category": "anatomy",
+    "priority": 1,
+    "description": "A comprehensive guide to the structures of the human eye, including the cornea, lens, retina, and optic nerve.",
+    "translations": {
+      "et": {
+        "title": "Silma osad",
+        "description": "Põhjalik juhend inimese silma struktuuridest, sealhulgas sarvekalvost, läätsest, võrkkestast ja nägemisneervist."
+      },
+      "ru": {
+        "title": "Части глаза",
+        "description": "Полное руководство по структурам человеческого глаза, включая роговицу, хрусталик, сетчатку и зрительный нерв."
+      }
     },
-    {
-      "slug": "contact-lenses",
-      "title": "Contact Lenses",
-      "category": "treatment",
-      "priority": 2,
-      "description": "Contact lens types, care, and insertion techniques.",
-      "videoId": "PLACEHOLDER-020"
-    }
-  ]
-}
+    "videoId": "PLACEHOLDER-016"
+  },
+  {
+    "slug": "how-vision-works",
+    "title": "How Vision Works",
+    "category": "anatomy",
+    "priority": 2,
+    "description": "Understanding the process of sight: from light entering the eye through the cornea to the brain processing visual images.",
+    "translations": {
+      "et": {
+        "title": "Kuidas nägemine toimib",
+        "description": "Arusaamise nägemise protsessist: valguse sisenedest silma sarvekalvo kaudu ajus visuaalsete kujutiste töötlemiseni."
+      },
+      "ru": {
+        "title": "Как работает зрение",
+        "description": "Понимание процесса зрения: от попадания света в глаз через роговицу до обработки мозгом визуальных образов."
+      }
+    },
+    "videoId": "PLACEHOLDER-017"
+  },
+  {
+    "slug": "tear-system",
+    "title": "The Tear System",
+    "category": "anatomy",
+    "priority": 3,
+    "description": "An overview of tear production and drainage, and how tears protect and nourish the eye surface.",
+    "translations": {
+      "et": {
+        "title": "Pisarasüsteem",
+        "description": "Ülevaade pisarate tootmisest ja dreneerimisest ning sellest, kuidas pisarad kaitstavad ja toitavad silma pinda."
+      },
+      "ru": {
+        "title": "Система слёз",
+        "description": "Обзор слёзной жидкости, её производства и дренирования, а также того, как слёзы защищают и питают поверхность глаза."
+      }
+    },
+    "videoId": "PLACEHOLDER-018"
+  },
+  {
+    "slug": "eye-drops",
+    "title": "Eye Drops and Medications",
+    "category": "treatments",
+    "priority": 1,
+    "description": "A guide to different types of eye drops, their uses, and proper administration techniques for maximum effectiveness.",
+    "translations": {
+      "et": {
+        "title": "Silmapiisad ja ravimid",
+        "description": "Juhend erinevate silmapiisade tüüpide, nende kasutamise ja õige manustamistehnika kohta maksimaalse tõhususe saavutamiseks."
+      },
+      "ru": {
+        "title": "Глазные капли и лекарства",
+        "description": "Руководство по различным видам глазных капель, их использованию и правильным методам введения для максимальной эффективности."
+      }
+    },
+    "videoId": "PLACEHOLDER-019"
+  },
+  {
+    "slug": "contact-lenses",
+    "title": "Contact Lenses",
+    "category": "treatments",
+    "priority": 2,
+    "description": "Comprehensive information about contact lens types, proper care, insertion, and removal techniques for safe and comfortable wear.",
+    "translations": {
+      "et": {
+        "title": "Kontaktläätsed",
+        "description": "Põhjalik teave kontaktläätsete tüüpide, õige hoolduse, sisestamise ja eemaldamise tehnikate kohta turvaliseks ja mugavaks kandmiseks."
+      },
+      "ru": {
+        "title": "Контактные линзы",
+        "description": "Подробная информация о типах контактных линз, правильном уходе, методах введения и удаления для безопасного и удобного ношения."
+      }
+    },
+    "videoId": "PLACEHOLDER-020"
+  }
+]

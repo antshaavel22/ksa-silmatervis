@@ -1,0 +1,294 @@
+{
+  "conditions": [
+    {
+      "slug": "dry-eye-syndrome",
+      "title": "Dry Eye Syndrome",
+      "category": "condition",
+      "priority": 1,
+      "description": "A chronic condition affecting tear production and eye surface health.",
+      "symptoms": [
+        "Eye irritation",
+        "Tearing",
+        "Burning sensation",
+        "Sensitivity to light"
+      ],
+      "causes": "Reduced tear production or increased tear evaporation",
+      "treatments": [
+        "Artificial tears",
+        "Punctal plugs",
+        "Lid warming therapy"
+      ],
+      "videoId": "PLACEHOLDER-001"
+    },
+    {
+      "slug": "cataracts",
+      "title": "Cataracts",
+      "category": "condition",
+      "priority": 2,
+      "description": "Clouding of the natural lens, often age-related.",
+      "symptoms": [
+        "Cloudy vision",
+        "Difficulty with night vision",
+        "Sensitivity to light and glare"
+      ],
+      "causes": "Aging, UV exposure, eye injury",
+      "treatments": [
+        "Cataract surgery",
+        "Lens implant"
+      ],
+      "videoId": "PLACEHOLDER-002"
+    },
+    {
+      "slug": "glaucoma",
+      "title": "Glaucoma",
+      "category": "condition",
+      "priority": 3,
+      "description": "High intraocular pressure damaging the optic nerve.",
+      "symptoms": [
+        "Often asymptomatic in early stages",
+        "Gradual vision loss",
+        "Eye pain"
+      ],
+      "causes": "High intraocular pressure",
+      "treatments": [
+        "Eye drops",
+        "Laser treatment",
+        "Glaucoma surgery"
+      ],
+      "videoId": "PLACEHOLDER-003"
+    },
+    {
+      "slug": "presbyopia",
+      "title": "Presbyopia (Age-Related)",
+      "category": "condition",
+      "priority": 4,
+      "description": "Difficulty focusing on near objects due to lens hardening with age.",
+      "symptoms": [
+        "Difficulty reading",
+        "Eye strain",
+        "Blurred near vision"
+      ],
+      "causes": "Natural aging of the lens",
+      "treatments": [
+        "Reading glasses",
+        "Bifocals",
+        "Multifocal lenses"
+      ],
+      "videoId": "PLACEHOLDER-004"
+    },
+    {
+      "slug": "myopia",
+      "title": "Myopia (Nearsightedness)",
+      "category": "condition",
+      "priority": 5,
+      "description": "Difficulty seeing distant objects clearly.",
+      "symptoms": [
+        "Blurred distance vision",
+        "Eye strain",
+        "Difficulty seeing at night"
+      ],
+      "causes": "Irregular eye shape or corneal curvature",
+      "treatments": [
+        "Glasses",
+        "Contact lenses",
+        "LASIK surgery"
+      ],
+      "videoId": "PLACEHOLDER-005"
+    },
+    {
+      "slug": "hyperopia",
+      "title": "Hyperopia (Farsightedness)",
+      "category": "condition",
+      "priority": 6,
+      "description": "Difficulty seeing near objects clearly.",
+      "symptoms": [
+        "Blurred near vision",
+        "Eye strain",
+        "Headaches"
+      ],
+      "causes": "Eye shape or corneal curvature",
+      "treatments": [
+        "Glasses",
+        "Contact lenses",
+        "Refractive surgery"
+      ],
+      "videoId": "PLACEHOLDER-006"
+    },
+    {
+      "slug": "astigmatism",
+      "title": "Astigmatism",
+      "category": "condition",
+      "priority": 7,
+      "description": "Blurred vision at all distances due to irregular corneal shape.",
+      "symptoms": [
+        "Blurred or distorted vision",
+        "Eye strain",
+        "Difficulty with night vision"
+      ],
+      "causes": "Irregular corneal or lens shape",
+      "treatments": [
+        "Glasses",
+        "Contact lenses",
+        "Refractive surgery"
+      ],
+      "videoId": "PLACEHOLDER-007"
+    },
+    {
+      "slug": "age-related-macular-degeneration",
+      "title": "Age-Related Macular Degeneration",
+      "category": "condition",
+      "priority": 8,
+      "description": "Deterioration of the central vision in older adults.",
+      "symptoms": [
+        "Blurred central vision",
+        "Difficulty reading",
+        "Distorted vision"
+      ],
+      "causes": "Aging, genetics, smoking",
+      "treatments": [
+        "Vitamin supplements",
+        "Laser therapy",
+        "Anti-VEGF injections"
+      ],
+      "videoId": "PLACEHOLDER-008"
+    },
+    {
+      "slug": "diabetic-retinopathy",
+      "title": "Diabetic Retinopathy",
+      "category": "condition",
+      "priority": 9,
+      "description": "Eye complications from diabetes affecting retinal blood vessels.",
+      "symptoms": [
+        "Blurred vision",
+        "Floaters",
+        "Vision loss"
+      ],
+      "causes": "High blood sugar levels",
+      "treatments": [
+        "Blood sugar control",
+        "Laser treatment",
+        "Vitrectomy"
+      ],
+      "videoId": "PLACEHOLDER-009"
+    },
+    {
+      "slug": "floaters-and-flashes",
+      "title": "Floaters and Flashes",
+      "category": "condition",
+      "priority": 10,
+      "description": "Spots and light flashes in vision field.",
+      "symptoms": [
+        "Spots or specks in vision",
+        "Light flashes",
+        "Shadow in peripheral vision"
+      ],
+      "causes": "Vitreous changes, retinal issues",
+      "treatments": [
+        "Monitoring",
+        "Vitrectomy (if severe)"
+      ],
+      "videoId": "PLACEHOLDER-010"
+    }
+  ],
+  "procedures": [
+    {
+      "slug": "lasik-surgery",
+      "title": "LASIK Eye Surgery",
+      "category": "procedure",
+      "priority": 1,
+      "description": "Laser-assisted in situ keratomileusis for vision correction.",
+      "outcome": "Improved vision without glasses or contacts",
+      "preparation": "Comprehensive eye examination and corneal mapping",
+      "followUp": "Use prescribed eye drops for 1-2 weeks, avoid eye strain",
+      "videoId": "PLACEHOLDER-011"
+    },
+    {
+      "slug": "cataract-surgery",
+      "title": "Cataract Surgery",
+      "category": "procedure",
+      "priority": 2,
+      "description": "Removal of clouded lens and implantation of intraocular lens.",
+      "outcome": "Clear vision restoration",
+      "preparation": "Pre-operative eye tests and measurements",
+      "followUp": "Eye drops, activity restrictions for 4 weeks",
+      "videoId": "PLACEHOLDER-012"
+    },
+    {
+      "slug": "retinal-repair",
+      "title": "Retinal Repair",
+      "category": "procedure",
+      "priority": 3,
+      "description": "Surgical treatment for retinal detachment or tears.",
+      "outcome": "Vision preservation and restoration",
+      "preparation": "Detailed retinal imaging and analysis",
+      "followUp": "Head positioning restrictions, activity modification",
+      "videoId": "PLACEHOLDER-013"
+    },
+    {
+      "slug": "corneal-cross-linking",
+      "title": "Corneal Cross-Linking",
+      "category": "procedure",
+      "priority": 4,
+      "description": "Treatment to strengthen corneal tissue in keratoconus.",
+      "outcome": "Halting or slowing corneal progression",
+      "preparation": "Corneal topography and thickness measurement",
+      "followUp": "Protective eyewear, eye drops for 3-6 months",
+      "videoId": "PLACEHOLDER-014"
+    },
+    {
+      "slug": "intraocular-lens-implant",
+      "title": "Intraocular Lens Implant",
+      "category": "procedure",
+      "priority": 5,
+      "description": "Artificial lens implantation to replace natural lens.",
+      "outcome": "Vision correction and lens replacement",
+      "preparation": "Lens power calculations and measurements",
+      "followUp": "Eye drops, regular monitoring appointments",
+      "videoId": "PLACEHOLDER-015"
+    }
+  ],
+  "anatomy": [
+    {
+      "slug": "parts-of-the-eye",
+      "title": "Parts of the Eye",
+      "category": "anatomy",
+      "priority": 1,
+      "description": "Detailed overview of eye structures and their functions.",
+      "videoId": "PLACEHOLDER-016"
+    },
+    {
+      "slug": "how-vision-works",
+      "title": "How Vision Works",
+      "category": "anatomy",
+      "priority": 2,
+      "description": "The process of light detection and image formation.",
+      "videoId": "PLACEHOLDER-017"
+    },
+    {
+      "slug": "tear-system",
+      "title": "The Tear System",
+      "category": "anatomy",
+      "priority": 3,
+      "description": "Tear production and drainage functions.",
+      "videoId": "PLACEHOLDER-018"
+    }
+  ],
+  "treatments": [
+    {
+      "slug": "eye-drops",
+      "title": "Eye Drops & Medications",
+      "category": "treatment",
+      "priority": 1,
+      "description": "Types and uses of therapeutic eye drops.",
+      "videoId": "PLACEHOLDER-019"
+    },
+    {
+      "slug": "contact-lenses",
+      "title": "Contact Lenses",
+      "category": "treatment",
+      "priority": 2,
+      "description": "Contact lens types, care, and insertion techniques.",
+      "videoId": "PLACEHOLDER-020"
+    }
+  ]
+}

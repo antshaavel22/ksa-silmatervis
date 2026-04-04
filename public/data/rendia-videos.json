@@ -1,0 +1,204 @@
+{
+  "videos": [
+    {
+      "id": "PLACEHOLDER-001",
+      "title": "Understanding Dry Eye Syndrome",
+      "description": "Comprehensive overview of dry eye causes, symptoms, and treatment options.",
+      "category": "condition",
+      "relatedCondition": "dry-eye-syndrome",
+      "duration": 450,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-002",
+      "title": "Cataracts: Causes and Cures",
+      "description": "Age-related cataracts development and surgical treatment.",
+      "category": "condition",
+      "relatedCondition": "cataracts",
+      "duration": 480,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-003",
+      "title": "Glaucoma: Silent Threat to Vision",
+      "description": "Early detection and management of glaucoma.",
+      "category": "condition",
+      "relatedCondition": "glaucoma",
+      "duration": 520,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-004",
+      "title": "Age-Related Vision Changes",
+      "description": "Understanding presbyopia and natural aging of the eye.",
+      "category": "condition",
+      "relatedCondition": "presbyopia",
+      "duration": 400,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-005",
+      "title": "Myopia Explained",
+      "description": "Causes, correction methods, and lifestyle management.",
+      "category": "condition",
+      "relatedCondition": "myopia",
+      "duration": 420,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-006",
+      "title": "Living with Hyperopia",
+      "description": "Farsightedness correction and daily vision management.",
+      "category": "condition",
+      "relatedCondition": "hyperopia",
+      "duration": 410,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-007",
+      "title": "Astigmatism: Uneven Focus",
+      "description": "Understanding irregular corneal shape and treatment.",
+      "category": "condition",
+      "relatedCondition": "astigmatism",
+      "duration": 430,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-008",
+      "title": "Age-Related Macular Degeneration",
+      "description": "Central vision loss prevention and management strategies.",
+      "category": "condition",
+      "relatedCondition": "age-related-macular-degeneration",
+      "duration": 500,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-009",
+      "title": "Diabetic Retinopathy: Prevention",
+      "description": "Blood sugar control and regular eye screening importance.",
+      "category": "condition",
+      "relatedCondition": "diabetic-retinopathy",
+      "duration": 490,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-010",
+      "title": "Floaters and Flashes Explained",
+      "description": "When to worry about floaters and flash symptoms.",
+      "category": "condition",
+      "relatedCondition": "floaters-and-flashes",
+      "duration": 380,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-011",
+      "title": "LASIK Surgery: Step by Step",
+      "description": "Complete walkthrough of LASIK procedure and recovery.",
+      "category": "procedure",
+      "relatedProcedure": "lasik-surgery",
+      "duration": 540,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-012",
+      "title": "Cataract Surgery Explained",
+      "description": "Pre-op preparation, procedure overview, and post-op care.",
+      "category": "procedure",
+      "relatedProcedure": "cataract-surgery",
+      "duration": 560,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-013",
+      "title": "Retinal Repair Techniques",
+      "description": "Surgical approaches to retinal detachment treatment.",
+      "category": "procedure",
+      "relatedProcedure": "retinal-repair",
+      "duration": 480,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-014",
+      "title": "Corneal Cross-Linking for Keratoconus",
+      "description": "Strengthening the cornea through modern treatment.",
+      "category": "procedure",
+      "relatedProcedure": "corneal-cross-linking",
+      "duration": 420,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-015",
+      "title": "Intraocular Lens Selection",
+      "description": "Choosing the right lens implant for optimal vision.",
+      "category": "procedure",
+      "relatedProcedure": "intraocular-lens-implant",
+      "duration": 440,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-016",
+      "title": "Eye Anatomy 101",
+      "description": "Detailed tour of the eye's structures and their functions.",
+      "category": "anatomy",
+      "relatedAnatomy": "parts-of-the-eye",
+      "duration": 520,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-017",
+      "title": "The Vision Process",
+      "description": "From light to brain: how we see the world.",
+      "category": "anatomy",
+      "relatedAnatomy": "how-vision-works",
+      "duration": 450,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-018",
+      "title": "Tears and Eye Health",
+      "description": "The critical role of tears in maintaining eye health.",
+      "category": "anatomy",
+      "relatedAnatomy": "tear-system",
+      "duration": 380,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-019",
+      "title": "Eye Drops: Types and Uses",
+      "description": "How to properly administer and choose eye medications.",
+      "category": "treatment",
+      "relatedTreatment": "eye-drops",
+      "duration": 320,
+      "approved": true,
+      "transcriptStatus": "pending"
+    },
+    {
+      "id": "PLACEHOLDER-020",
+      "title": "Contact Lens Care Essentials",
+      "description": "Proper insertion, removal, and maintenance techniques.",
+      "category": "treatment",
+      "relatedTreatment": "contact-lenses",
+      "duration": 360,
+      "approved": true,
+      "transcriptStatus": "pending"
+    }
+  ]
+}

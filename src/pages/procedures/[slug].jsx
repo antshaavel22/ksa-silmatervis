@@ -187,6 +187,34 @@ export default function ProcedurePage({ page, relatedPages }) {
         </div>
       </section>
 
+      {/* KAISA 2.0 AI Assistant CTA */}
+      <section className="py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div
+            className="p-8 rounded-lg"
+            style={{ backgroundColor: `${BRAND_COLORS.primary}15`, borderLeft: `4px solid ${BRAND_COLORS.primary}` }}
+          >
+            <h3
+              className="text-2xl font-bold mb-4"
+              style={{ color: BRAND_COLORS.dark }}
+            >
+              Still Have Questions?
+            </h3>
+            <p className="text-gray-700 mb-6">
+              Chat with <strong>KAISA 2.0</strong>, KSA's AI-powered assistant, for instant answers about eye health.
+              Powered by ElevenLabs and backed by KSA's clinical knowledge base, KAISA is available 24/7 for consultations and guidance.
+            </p>
+            <a
+              href="https://ksa.ee/kaisa"
+              className="inline-block px-6 py-3 rounded text-white font-semibold transition hover:opacity-90"
+              style={{ backgroundColor: BRAND_COLORS.primary }}
+            >
+              Chat with KAISA 2.0
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Related Topics */}
       {relatedPages && relatedPages.length > 0 && (
         <section className="py-12 px-4">
@@ -233,7 +261,7 @@ export async function getStaticProps({ params }) {
   // Get related pages (same category + conditions)
   const relatedPages = pilotPages
     .filter((p) => (p.category === 'procedures' || p.category === 'conditions') && p.slug !== page.slug)
-    .slice(0, 4);
+    .slice(0, 3);
 
   return {
     props: { page, relatedPages },

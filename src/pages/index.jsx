@@ -6,7 +6,7 @@ import { useLanguage } from '@/components/LanguageContext';
 import { t } from '@/lib/i18n';
 import { generateOrganizationSchema } from '@/lib/schema';
 import { BRAND_COLORS, KSA_ORG } from '@/lib/constants';
-import pilotPages from '@/public/data/pilot-pages.json';
+import pilotPages from '../../public/data/pilot-pages.json';
 
 export default function Home() {
   const { language } = useLanguage();

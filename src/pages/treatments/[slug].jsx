@@ -5,7 +5,7 @@ import RendiaVideo from '@/components/RendiaVideo';
 import SchemaMarkup from '@/components/SchemaMarkup';
 import { generateMedicalConditionSchema, generateOrganizationSchema, combineSchemas } from '@/lib/schema';
 import { BRAND_COLORS } from '@/lib/constants';
-import pilotPages from '@/public/data/pilot-pages.json';
+import pilotPages from '../../../public/data/pilot-pages.json';
 
 export default function TreatmentPage({ page, relatedPages }) {
   const router = useRouter();

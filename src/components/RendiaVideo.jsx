@@ -49,13 +49,19 @@ const RendiaVideo = ({
     return () => observer.disconnect();
   }, [lazy]);
 
-  // Generate Rendia embed code
-  // Replace with actual Rendia embed URL once whitelist approved
+  // Generate Rendia whitelabel embed URL
+  // Format: share.rendia.com/whitelabel/load/{base64(pageUrl)}/{videoId}
   const getEmbedUrl = () => {
-    if (!FEATURES.enableRendiaEmbeds && id === RENDIA.placeholderVideoId) {
-      return null; // Return fallback instead
+    const isPlaceholder = id.startsWith("PLACEHOLDER-");
+    if (!FEATURES.enableRendiaEmbeds || isPlaceholder) {
+      return null; // Show fallback UI
     }
-    return `https://rendia.com/embed/${id}?domain=${RENDIA.domain}`;
+    // Build current page URL for whitelabel referrer encoding
+    const pageUrl = typeof window !== "undefined"
+      ? window.location.href
+      : `https://${RENDIA.domain}`;
+    const encoded = btoa(pageUrl).replace(/=+$/, "");
+    return `https://share.rendia.com/whitelabel/load/${encoded}/${id}`;
   };
 
   const embedUrl = getEmbedUrl();

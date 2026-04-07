@@ -115,7 +115,7 @@ export const CACHE = {
 
 // Feature Flags
 export const FEATURES = {
-  enableRendiaEmbeds: false, // Disabled until whitelist approved
+  enableRendiaEmbeds: true, // ✅ Enabled - silmatervis.ksa.ee whitelisted by Rendia (2026-04-07)
   enableDubbedAudio: false, // Disabled until ElevenLabs integration complete
   enableSchemaMarkup: true, // Always enabled
   enableAnalytics: true, // Google Tag Manager

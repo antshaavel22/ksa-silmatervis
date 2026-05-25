@@ -250,29 +250,25 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <h3>Diagnostika kui nähtamatu turvalisuse arhitektuur</h3>
 
-        <p>Põhjalik silmauuring peab kestma umbes tund aega ja kasutama vähemalt 7–10 erinevat kõrgtehnoloogilist mõõteseadet. Iga masin vastab ühele kindlale küsimusele sinu silmade tervise ja biomehaanika kohta.</p>
+        <p>Põhjalik silmauuring peab kestma umbes tund aega ja kasutama mitut erinevat kõrgtehnoloogilist mõõteseadet. Iga masin vastab ühele kindlale küsimusele sinu silmade tervise ja biomehaanika kohta.</p>
 
-        <p><strong>1. Ocular Response Analyzer (ORA) ja sarvkesta hüsterees (CH)</strong></p>
-
-        <p>See on üks kõige kriitilisemaid seadmeid kliinikus, mis mõõdab sarvkesta biomehaanilist tugevust. Masin puhub silmale õrna õhujoa ja mõõdab, kui hästi suudab sarvkest tekkinud energiat neelata ning oma algsesse vormi taastuda. Normaalne ja terve sarvkesta tugevuse näit (CH) on 9,0 ja 12,0 mmHg vahel. Kui see näit on alla 9,0, viitab see sarvkesta varjatud biomehaanilisele nõrkusele – see on range "dealbreaker" (välistav tegur) ja KSA sellist silma ei opereeri. Kui näit on aga alla 7,5 mmHg, on laseroperatsioon absoluutselt vastunäidustatud.</p>
-
-        <p><strong>2. Pentacam (Topograafia ja tomograafia)</strong></p>
+        <p><strong>1. Pentacam (Topograafia ja tomograafia)</strong></p>
 
         <p>Kujuta ette, et topograafia loob sinu sarvkestast ülimalt detailse 3D-reljeefkaardi. Kui sellel kaardil ilmneb vähimgi asümmeetria – näiteks on sarvkesta alumine osa liiga kumer või esineb äärte ebaloomulikku õhenemist –, on see väga tõsine ohumärk. Need on märgid varjatud keratokoonusest (sarvkesta kuju moondumisest), mis tähendab, et sarvkest on oma loomu poolest järele andmas. Nende varjatud nõrkuste leidmiseks kasutatakse tarkvara, mis märkab riske ammu enne sümptomite teket.</p>
 
-        <p><strong>3. Pakhümeetria (Sarvkesta paksus)</strong></p>
+        <p><strong>2. Pakhümeetria (Sarvkesta paksus)</strong></p>
 
         <p>Sarvkest peab olema piisavalt paks, et pärast uue kuju lihvimist säiliks silma tugevus. Pinnameetodi (nagu Flow3) puhul peab sarvkesta paksus enne operatsiooni olema absoluutse miinimumina 450 mikromeetrit. Ohutuse kuldstandard, ehk "kuldne RSB reegel" (Residual Stromal Bed), näeb ette, et pärast laserdamist peab puutumatut kude alles jääma vähemalt 250–300 mikromeetrit. Kuna pinnameetod ei raiska kude klapi lõikamisele, jääb elutähtis RSB kiht oluliselt paksemaks ja turvalisemaks.</p>
 
-        <p><strong>4. OCT (Optiline koherentstomograafia)</strong></p>
+        <p><strong>3. OCT (Optiline koherentstomograafia)</strong></p>
 
         <p>See seade võimaldab vaadata sügavale silmapõhja, pakkudes mikroskoopilise täpsusega läbilõiget võrkkestast ja nägemisnärvist. See aitab välistada silmapõhja haigusi, algavat glaukoomi või võrkkesta nõrgenenud piirkondi, mille puhul operatsioon võiks kätkeda endas lisariske.</p>
 
-        <p><strong>5. Pupillomeeter (Pupilli dünaamika)</strong></p>
+        <p><strong>4. Pupillomeeter (Pupilli dünaamika)</strong></p>
 
         <p>Seade mõõdab pupilli (silmatera) läbimõõtu nii eredas, vahepealses kui ka hämaras valguses. See on äärmiselt oluline: kui sinu pupill laieneb hämaras üle 7 millimeetri ning sul on suurem miinus, on oluliselt suurem risk öiste peegelduste (halode ja "tähekiirte") tekkeks pärast operatsiooni. Seda tuleb patsiendiga enne operatsiooni ausalt arutada.</p>
 
-        <p><strong>6. Pisarakile ja kuiva silma diagnostika</strong></p>
+        <p><strong>5. Pisarakile ja kuiva silma diagnostika</strong></p>
 
         <p>Uuringul hinnatakse pisarate produktsiooni ja kvaliteeti (Schirmeri test ja TBUT). Tugeva ja ravimata kuiva silma sündroomi korral lükatakse operatsioon edasi, kuni silmapind on terveks ravitud.</p>
 

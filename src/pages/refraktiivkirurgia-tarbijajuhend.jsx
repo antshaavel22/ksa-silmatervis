@@ -215,7 +215,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p>Kujuta ette, et Sinu silm saab äkilise ja meeletu mehaanilise surve osaliseks. See tohutu surve annab tugeva tõuke silma tagaosale. Eriti ohtlik on see <strong>kõrgmüoopidele (kelle lühinägelikkus on üle -6 dioptri)</strong>. Suure miinusega inimeste silmamuna on anatoomiliselt pikem ja nende võrkkest on sageli õhem ning venitatud. Tugev vaakumišokk võib sellisel juhul vallandada klaaskeha tagumise irdumise või halvimal juhul tekitada võrkkesta rebenemise.</p>
 
         <p><strong>Kuidas on lood Flow3 pinnameetodiga?</strong><br />
-        Flow3 puhul on pilt täiesti erinev. <strong>Operatsiooni ajal ei kasutata mitte mingisugust imurit ega vaakumit</strong>. Silmasisene rõhk püsib täiesti normaalsena ja S<strong>inu võrkkest ei saa grammigi mehaanilist stressi</strong>.</p>
+        Flow3 puhul on pilt täiesti erinev. <strong>Operatsiooni ajal ei kasutata mitte mingisugust imurit ega vaakumit</strong>. Silmasisene rõhk püsib täiesti normaalsena ja <strong>Sinu võrkkest ei saa grammigi mehaanilist stressi</strong>.</p>
 
         <p>Kuidas silm siis paigal püsib, kui vaakumit pole? Vastus on see, et kuna lõikeid ei tehta siis silm saab olla vabalt ja laser, kasutab jälgimistehnoloogiat. Laserit juhib  ülikiire 7-mõõtmeline silma jälgimissüsteem (<em>eye-tracker</em>), mis analüüsib silma igat mikroskoopilist liikumist enam kui 1000 korda sekundis. Kui Sinu silm liigub, liigub laseri kiir täpselt kaasa, tagades maksimaalse täpsuse ilma füüsilise surveta.</p>
 
@@ -264,7 +264,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <h4>Kuud 1–6: Miks silmatilgad on nii olulised?</h4>
 
-        <p>Pärast pinnameetodit on Sinu kõige olulisemaks ülesandeks täpse raviskeemi järgimine. Silmaarst kirjutab Sulle välja põletikuvastased steroidtilgad, mida tuleb kasutada kahanevas annuses mitme nädala vältel. Nende tilkade eesmärk ei ole valu vaigistamine, vaid taastumisprotsesi aeglustamine ja <strong>sarvkesta hägu (haze) ennetamine</strong>. Nii, et paljud kõrvalseisvad isikud kehitavad õlgu, miks peaks silmakeskus ise soodustama aeglasemat taastumist, aga aastakümnete pikkune kogemus näitab, et just kindlalt juhitud taastumisprotsess tagab hilisema väga hea nägemiskvaliteedi.</p>
+        <p>Pärast pinnameetodit on Sinu kõige olulisemaks ülesandeks täpse raviskeemi järgimine. Silmaarst kirjutab Sulle välja põletikuvastased steroidtilgad, mida tuleb kasutada kahanevas annuses mitme nädala vältel. Nende tilkade eesmärk ei ole valu vaigistamine, vaid taastumisprotsessi aeglustamine ja <strong>sarvkesta hägu (haze) ennetamine</strong>. Nii, et paljud kõrvalseisvad isikud kehitavad õlgu, miks peaks silmakeskus ise soodustama aeglasemat taastumist, aga aastakümnete pikkune kogemus näitab, et just kindlalt juhitud taastumisprotsess tagab hilisema väga hea nägemiskvaliteedi.</p>
 
         <p>Hägu ( haze ) on seisund, kus sarvkesta rakud (keratotsüüdid) toodavad paranemise käigus ebakorrapärast kollageeni, muutes sarvkesta kergelt läbipaistmatuks. Modernse tehnoloogia (nagu SmartPulse), operatsiooniaegse jahutatud lahuste ja spetsiaalsete ravimite kasutamisega on hägu tekkimise risk viidud miinimumini ja seetõttu on tilkade korralik kasutamine, hea lõpptulemuse nimel, kriitilise tähtsusega. Samuti tuleb kasutada säilitusainetevabu kunstpisaraid, et toetada silma niiskustasakaalu ja vältida ajutist kuivustunnet.</p>
 
@@ -284,7 +284,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kuna Flow3 ja teised lasermeetodid korrigeerivad ainult <strong>sarvkesta kuju</strong>, ei saa need peatada Sinu silma <strong>läätse vananemist</strong>. Seega, kui Sa oled 30-aastane ja teed täna laseroperatsiooni, näed Sa ideaalselt kaugele. Kuid 45- või 50-aastaseks saades vajad Sa suure tõenäosusega lugemisprille, et näha peenikest kirja lähedalt. See on silma loomulik bioloogia. Tulevikus, kui presbüoopia ja võimalik algav hallkae (katarakt) hakkavad elukvaliteeti segama, on sageli parimaks lahenduseks silmasisese läätsevahetuse (RLE) protseduur.</p>
 
-        <p><strong>Hea uudis</strong> viimastel aastakümnetel presbüoopidele on moderne digitaaltehnoloogia, puutetundlikud ekraanid ja uued lugemisharjumused. Tänu nendele eelpool nimetud leiutistele, meie elus on paljude inimeste jaoks presbüoopia algus lükatud 10-15 aastat hilisemaks, kuna nüüd saame fontide suurust näpuliigutusega reguleerida ja meie lugemisvara asub ca 30 sentimeetrit kaugemal ( digiekraan ) kui kunagi 20 sajandil, kui lugesime koltunud lehtedega raamatutest või ajalehtedest halva kvaliteediga kirja.</p>
+        <p><strong>Hea uudis</strong> viimastel aastakümnetel presbüoopidele on modernne digitaaltehnoloogia, puutetundlikud ekraanid ja uued lugemisharjumused. Tänu nendele eelpool nimetud leiutistele, meie elus on paljude inimeste jaoks presbüoopia algus lükatud 10-15 aastat hilisemaks, kuna nüüd saame fontide suurust näpuliigutusega reguleerida ja meie lugemisvara asub ca 30 sentimeetrit kaugemal ( digiekraan ) kui kunagi 20 sajandil, kui lugesime koltunud lehtedega raamatutest või ajalehtedest halva kvaliteediga kirja.</p>
 
         <h3>Suur finaal: Kuidas valida kliinikut ja 20 elutähtsat küsimust</h3>
 
@@ -305,8 +305,8 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <ol start="5">
           <li><strong>Mitmele protsendile uuringule tulnud kandidaatidest ütlete Te "ei"?</strong> (Turvalise kliiniku eitavate vastuste osakaal peaks olema 20–30%. Kui opereeritakse peaaegu kõiki, on ohutusstandardid liiga liberaalsed).</li>
-          <li><strong>Milliseid diagnostilisi masinaid Te täna kasutate?</strong> (Nimekirjas peavad olema Scheimpflug kaamera, topograafia süsteem, pakhümeetria, OCT, keratomeetria, refraktomeetria, põhjalik kuivasilma diaagnostika, perimeetrid, silmapõhja fotograafia).</li>
-          <li><strong>Mis on minu täpne pakhümeetria väärtus  ja kui palju see muutub operatsioonikäigus?</strong> ( Kliinik oskab õelda vastust, milline see on täna ja nad saavad küllaltkti täpselt arvutada protseduuri järgse väärtuse 10 mikromeetri täpsusega ).</li>
+          <li><strong>Milliseid diagnostilisi masinaid Te täna kasutate?</strong> (Nimekirjas peavad olema Scheimpflug kaamera, topograafia süsteem, pakhümeetria, OCT, keratomeetria, refraktomeetria, põhjalik kuivasilma diagnostika, perimeetrid, silmapõhja fotograafia).</li>
+          <li><strong>Mis on minu täpne pakhümeetria väärtus  ja kui palju see muutub operatsioonikäigus?</strong> ( Kliinik oskab öelda vastust, milline see on täna ja nad saavad küllaltki täpselt arvutada protseduuri järgse väärtuse 10 mikromeetri täpsusega ).</li>
           <li><strong>Mis on minu algne sarvkesta paksus ja kui palju puutumatut stroomakude (RSB) jääb pärast laserdamist alles?</strong> (Ohutu miinimum on 250–300 mikromeetrit).</li>
           <li><strong>Kas Te vaatate minu võrkkesta perifeeriat laiendatud pupillidega?</strong> (See on absoluutne ohutusstandard, kui kasutatakse protseduuri jooksul vaakumit ).</li>
         </ol>
@@ -329,7 +329,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li><strong>Milline on Teie garantii, kui mu nägemine peaks lähiaastatel uuesti halvenema?</strong> (Kas kordusprotseduur on tasuta ja mis tingimustel?).</li>
           <li><strong>Kes tegeleb minu silmadega siis, kui mul tekib aastate pärast ootamatu tüsistus või mure?</strong></li>
           <li><strong>Kuidas Teie kliinik hoiustab minu meditsiinilisi andmeid aastakümnete perspektiivis?</strong> ( KSA Silmakeskuses talletatakse kõik andmed digitaalselt vastavalt kehtivate regulatsioonidega tähtajatult )</li>
-          <li><strong>Kas ma kohtun opereeriva kirurgiga ka enne laserprotseduuri, et vajadusel saaksime minu uuringutulemusi koos analüüsida?</strong> ( KSA Silmakeskus pakub soovi korral ka online konsultatsiooni silmakirurgiga ja kirurg protseduuri päeval kontrollib ja mõõdab isiklikult kõik kriitilised anded üle, vestleb patsiendiga enne protseduuri. )</li>
+          <li><strong>Kas ma kohtun opereeriva kirurgiga ka enne laserprotseduuri, et vajadusel saaksime minu uuringutulemusi koos analüüsida?</strong> ( KSA Silmakeskus pakub soovi korral ka online konsultatsiooni silmakirurgiga ja kirurg protseduuri päeval kontrollib ja mõõdab isiklikult kõik kriitilised andmed üle, vestleb patsiendiga enne protseduuri. )</li>
         </ol>
 
         <hr />
@@ -383,7 +383,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li>Kui kiirtest on positiivne, broneeri <strong>Flow3 silmauuring</strong>. See poolteist tundi pühendatud diagnostikat ja vestlust spetsialistiga annab sulle selguse, kas Sinu silmad on laseroperatsiooniks sobivad ja valmis.</li>
         </ol>
 
-        <p>Silmad ja hea  nägemine on meile kõigile hindamatu väärtus. Täname Sind, et võtsid aja süveneda ja õppida. Kui oled valmis, ootame Sind KSA Silmakeskusesse, et saaksime koos avastada, milline näeb välja maailm ilma prillideta – turvaliselt, teadlikult ja kogu eluks.</p>
+        <p>Silmad ja hea nägemine on meile kõigile hindamatu väärtus. Täname Sind, et võtsid aja süveneda ja õppida. Kui oled valmis, ootame Sind KSA Silmakeskusesse, et saaksime koos avastada, milline näeb välja maailm ilma prillideta – turvaliselt, teadlikult ja kogu eluks.</p>
 
       </article>
 
@@ -407,7 +407,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li><strong>Alió JL, Soria FA, Abbouda A, et al. (2016).</strong> <em>"Fifteen years follow-up of photorefractive keratectomy up to 10 D of myopia: outcomes and analysis of the refractive regression."</em> British Journal of Ophthalmology. (15-aastane PRK järeluuring, mis kinnitab pikaajalist visuaalset stabiilsust ja efektiivsust).</li>
           <li><strong>Krueger RR, Trokel SL, Schubert HD.</strong> <em>"Interaction of ultraviolet laser light with the cornea."</em> Investigative Ophthalmology &amp; Visual Science. (Alusuuringud excimer-laseri mõjust kudedele).</li>
           <li><strong>Mitry D, Singh J, Yorston D, et al. (2011).</strong> <em>"The predisposing pathology and clinical characteristics in the Scottish retinal detachment study."</em> Ophthalmology. (Uuring võrkkesta irdumise riskifaktoritest ja seostest kõrge lühinägelikkuse ning mehaanilise stressiga).</li>
-          <li><strong>All About Vision (2026).</strong> <em>"The Oculomics Revolution &amp; Its Impact on Health Care."</em> (Ülevaade silma diagnostikaseadmete, nagu OCT ja adaptiivopt</li>
+          <li><strong>All About Vision (2026).</strong> <em>"The Oculomics Revolution &amp; Its Impact on Health Care."</em> (Ülevaade silma diagnostikaseadmete, nagu OCT ja adaptiivoptika, rollist süsteemsete haiguste varajases avastamises.)</li>
         </ol>
 
       </article>

@@ -20,9 +20,11 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p className="text-xs uppercase tracking-[0.25em] text-[#6f7f80] mb-6">
           Patsiendijuhend
         </p>
-        <h1 className="font-serif text-4xl md:text-6xl font-medium text-[#1a1a1a] leading-[1.05] tracking-tight mb-8">
-          Refraktiivkirurgia
-          <br />
+        <h1
+          aria-label="Refraktiivkirurgia tarbijajuhend"
+          className="font-serif text-4xl md:text-6xl font-medium text-[#1a1a1a] leading-[1.05] tracking-tight mb-8"
+        >
+          Refraktiivkirurgia<br />
           tarbijajuhend
         </h1>
         <p className="font-serif italic text-xl text-[#1a1a1a] mb-8 max-w-md mx-auto leading-relaxed">
@@ -352,7 +354,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kuna Flow3 ja teised lasermeetodid korrigeerivad ainult <strong>sarvkesta kuju</strong>, ei saa need peatada Sinu silma <strong>läätse vananemist</strong>. Seega, kui Sa oled 30-aastane ja teed täna laseroperatsiooni, näed Sa ideaalselt kaugele. Kuid 45- või 50-aastaseks saades vajad Sa suure tõenäosusega lugemisprille, et näha peenikest kirja lähedalt. See on silma loomulik bioloogia. Tulevikus, kui presbüoopia ja võimalik algav hallkae (katarakt) hakkavad elukvaliteeti segama, on sageli parimaks lahenduseks silmasisese läätsevahetuse (RLE) protseduur.</p>
 
-        <p><strong>Hea uudis</strong> viimastel aastakümnetel presbüoopidele on kaasaegne digitehnoloogia, puutetundlikud ekraanid ja uued lugemisharjumused. Tänu nendele eelpool nimetatud leiutistele, meie elus on paljude inimeste jaoks presbüoopia algus lükatud 10-15 aastat hilisemaks, kuna nüüd saame fontide suurust näpuliigutusega reguleerida ja meie lugemisvara asub ca 30 sentimeetrit kaugemal ( digiekraan ) kui kunagi 20 sajandil, kui lugesime koltunud lehtedega raamatutest või ajalehtedest halva kvaliteediga kirja.</p>
+        <p><strong>Hea uudis</strong> presbüoopidele viimastel aastakümnetel on kaasaegne digitehnoloogia, puutetundlikud ekraanid ja uued lugemisharjumused. Silmaläätse loomulik vananemine algab küll endiselt sama vanusega, kuid praktilised sümptomid — vajadus lugemisprillide järele — saabuvad paljude inimeste jaoks 10–15 aastat hiljem. Põhjus on lihtne: tänapäeval saame fontide suurust näpuliigutusega reguleerida ja meie lugemisvara asub digiekraanil ca 30 sentimeetri kaugusel, samas kui 20. sajandil lugesime koltunud lehtedega raamatutest või ajalehtedest tihti halva kvaliteediga peent kirja.</p>
 
         <h3>Suur finaal: Kuidas valida kliinikut ja 20 elutähtsat küsimust</h3>
 
@@ -446,7 +448,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p>Ära tee oma silmade osas kiirustavaid otsuseid. Kui oled valmis astuma sammu selgema elu suunas:</p>
 
         <ol>
-          <li>Prindi välja 14. peatükis toodud <strong>20 küsimust</strong> ja lae need oma telefoni alla. Hangi kasvõi enda jaoks kõigile neist vastused.</li>
+          <li>Prindi välja <strong>ülaltoodud 20 küsimust</strong> ja lae need oma telefoni alla. Hangi kasvõi enda jaoks kõigile neist vastused.</li>
           <li>Alusta lihtsalt: tee kodus <strong>KSA 90-sekundiline tasuta kiirtest (kiirtest.ksa.ee)</strong>, et näha esmast hinnangut oma sobivusele.</li>
           <li>Kui kiirtest on positiivne, broneeri <strong>Flow3 silmauuring</strong>. See poolteist tundi pühendatud diagnostikat ja vestlust spetsialistiga annab sulle selguse, kas Sinu silmad on laseroperatsiooniks sobivad ja valmis.</li>
         </ol>

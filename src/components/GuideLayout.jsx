@@ -9,7 +9,7 @@ import Head from 'next/head';
  */
 export default function GuideLayout({ children, publicationDate = '2026-05-26' }) {
   return (
-    <div className="min-h-screen bg-white text-[#1a1a1a] flex flex-col">
+    <div lang="et" className="min-h-screen bg-white text-[#1a1a1a] flex flex-col">
       <Head>
         <meta name="theme-color" content="#ffffff" />
       </Head>

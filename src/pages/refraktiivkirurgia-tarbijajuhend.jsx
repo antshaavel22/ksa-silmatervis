@@ -348,7 +348,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <h3>Miks lühiajaline mugavus ei tohi kaaluda üles eluaegset tervist</h3>
 
-        <p>Meie 15 000-sõnalise teekonna kõige olulisem õppetund peitus sarvkesta biomehaanikas. Tänapäeva kiires maailmas, kus kõike soovitakse "kohe ja praegu", on ahvatlev valida meetod, mis pakub teravat nägemist juba järgmisel hommikul, isegi kui selleks tuleb silma sisse lõigata sügav klapp (LASIK) või eemaldada kude sügavamatest kihtidest (SMILE).</p>
+        <p>Meie põhjaliku teekonna kõige olulisem õppetund peitus sarvkesta biomehaanikas. Tänapäeva kiires maailmas, kus kõike soovitakse "kohe ja praegu", on ahvatlev valida meetod, mis pakub teravat nägemist juba järgmisel hommikul, isegi kui selleks tuleb silma sisse lõigata sügav klapp (LASIK) või eemaldada kude sügavamatest kihtidest (SMILE).</p>
 
         <p>Kuid teaduslikud uuringud ja sarvkesta tugevuse mõõtmised (nagu <em>Corneal Hysteresis</em> ja <em>Stress-Strain Index</em>) tõestavad üheselt: iga sisselõige nõrgendab silma struktuuri püsivalt. KSA Silmakeskus on teinud teadliku valiku seda teed mitte minna. Meie Flow3 (transepiteliaalne PRK) on 100% puute- ja lõikevaba, säästes Sinu sarvkesta sügavamaid ja tugevamaid kihte ning Sinu võrkkesta ohtlikust vaakumist. Jah, pinnameetod nõuab Sinult esimestel päevadel pisut kannatlikkust ja 3–7 päeva rahulikku taastumisaega, mil nägemine võib olla udune. Aga see on imeväike hind, mida maksta selle eest, et su silm jääb eluks ajaks tugevaks ja tüsistuste, nagu sarvkesta väljakummumine (ektaasia), risk on viidud praktiliselt nulli.</p>
 

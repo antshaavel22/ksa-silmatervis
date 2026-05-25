@@ -266,7 +266,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Pärast pinnameetodit on Sinu kõige olulisemaks ülesandeks täpse raviskeemi järgimine. Silmaarst kirjutab Sulle välja põletikuvastased steroidtilgad, mida tuleb kasutada kahanevas annuses mitme nädala vältel. Nende tilkade eesmärk ei ole valu vaigistamine, vaid taastumisprotsessi aeglustamine ja <strong>sarvkesta hägu (haze) ennetamine</strong>. Nii, et paljud kõrvalseisvad isikud kehitavad õlgu, miks peaks silmakeskus ise soodustama aeglasemat taastumist, aga aastakümnete pikkune kogemus näitab, et just kindlalt juhitud taastumisprotsess tagab hilisema väga hea nägemiskvaliteedi.</p>
 
-        <p>Hägu ( haze ) on seisund, kus sarvkesta rakud (keratotsüüdid) toodavad paranemise käigus ebakorrapärast kollageeni, muutes sarvkesta kergelt läbipaistmatuks. Modernse tehnoloogia (nagu SmartPulse), operatsiooniaegse jahutatud lahuste ja spetsiaalsete ravimite kasutamisega on hägu tekkimise risk viidud miinimumini ja seetõttu on tilkade korralik kasutamine, hea lõpptulemuse nimel, kriitilise tähtsusega. Samuti tuleb kasutada säilitusainetevabu kunstpisaraid, et toetada silma niiskustasakaalu ja vältida ajutist kuivustunnet.</p>
+        <p>Hägu ehk haze on seisund, kus sarvkesta rakud (keratotsüüdid) toodavad paranemise käigus ebakorrapärast kollageeni, muutes sarvkesta kergelt läbipaistmatuks. Modernse tehnoloogia (nagu SmartPulse), operatsiooniaegse jahutatud lahuste ja spetsiaalsete ravimite kasutamisega on hägu tekkimise risk viidud miinimumini ja seetõttu on tilkade korralik kasutamine, hea lõpptulemuse nimel, kriitilise tähtsusega. Samuti tuleb kasutada säilitusainetevabu kunstpisaraid, et toetada silma niiskustasakaalu ja vältida ajutist kuivustunnet.</p>
 
         <h3>Presbüoopia ehk miks 45-aastaselt käed lühikeseks jäävad + head uudised.</h3>
 
@@ -284,7 +284,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kuna Flow3 ja teised lasermeetodid korrigeerivad ainult <strong>sarvkesta kuju</strong>, ei saa need peatada Sinu silma <strong>läätse vananemist</strong>. Seega, kui Sa oled 30-aastane ja teed täna laseroperatsiooni, näed Sa ideaalselt kaugele. Kuid 45- või 50-aastaseks saades vajad Sa suure tõenäosusega lugemisprille, et näha peenikest kirja lähedalt. See on silma loomulik bioloogia. Tulevikus, kui presbüoopia ja võimalik algav hallkae (katarakt) hakkavad elukvaliteeti segama, on sageli parimaks lahenduseks silmasisese läätsevahetuse (RLE) protseduur.</p>
 
-        <p><strong>Hea uudis</strong> viimastel aastakümnetel presbüoopidele on modernne digitaaltehnoloogia, puutetundlikud ekraanid ja uued lugemisharjumused. Tänu nendele eelpool nimetud leiutistele, meie elus on paljude inimeste jaoks presbüoopia algus lükatud 10-15 aastat hilisemaks, kuna nüüd saame fontide suurust näpuliigutusega reguleerida ja meie lugemisvara asub ca 30 sentimeetrit kaugemal ( digiekraan ) kui kunagi 20 sajandil, kui lugesime koltunud lehtedega raamatutest või ajalehtedest halva kvaliteediga kirja.</p>
+        <p><strong>Hea uudis</strong> viimastel aastakümnetel presbüoopidele on kaasaegne digitehnoloogia, puutetundlikud ekraanid ja uued lugemisharjumused. Tänu nendele eelpool nimetatud leiutistele, meie elus on paljude inimeste jaoks presbüoopia algus lükatud 10-15 aastat hilisemaks, kuna nüüd saame fontide suurust näpuliigutusega reguleerida ja meie lugemisvara asub ca 30 sentimeetrit kaugemal ( digiekraan ) kui kunagi 20 sajandil, kui lugesime koltunud lehtedega raamatutest või ajalehtedest halva kvaliteediga kirja.</p>
 
         <h3>Suur finaal: Kuidas valida kliinikut ja 20 elutähtsat küsimust</h3>
 
@@ -338,7 +338,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Oled jõudnud selle põhjaliku teekonna lõppu. Tõenäoliselt tead sa praegu silma anatoomiast, sarvkesta biomehaanikast, ektaasiast ja erinevatest laseroperatsioonidest rohkem kui 95% inimestest, kes kliiniku uksest sisse astuvad. See teadmine on Sinu suurim turvavaru.</p>
 
-        <p>Miks me võtsin aega, et see kõik nii detailselt ja võimalikult lihtsalt lahti kirjutada?</p>
+        <p>Miks me võtsime aega, et see kõik nii detailselt ja võimalikult lihtsalt lahti kirjutada?</p>
 
         <p>Sest prillidest ja kontaktläätsedest vabanemine ei ole pelgalt kosmeetiline mugavusteenus. See on elukvaliteeti ja tervist sügavalt muutev meditsiiniline otsus, mis saadab Sind igal ärkveloleku sekundil järgmised 30, 40 või 50 aastat.</p>
 
@@ -352,7 +352,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kuid teaduslikud uuringud ja sarvkesta tugevuse mõõtmised (nagu <em>Corneal Hysteresis</em> ja <em>Stress-Strain Index</em>) tõestavad üheselt: iga sisselõige nõrgendab silma struktuuri püsivalt. KSA Silmakeskus on teinud teadliku valiku seda teed mitte minna. Meie Flow3 (transepiteliaalne PRK) on 100% puute- ja lõikevaba, säästes Sinu sarvkesta sügavamaid ja tugevamaid kihte ning Sinu võrkkesta ohtlikust vaakumist. Jah, pinnameetod nõuab Sinult esimestel päevadel pisut kannatlikkust ja 3–7 päeva rahulikku taastumisaega, mil nägemine võib olla udune. Aga see on imeväike hind, mida maksta selle eest, et su silm jääb eluks ajaks tugevaks ja tüsistuste, nagu sarvkesta väljakummumine (ektaasia), risk on viidud praktiliselt nulli.</p>
 
-        <h3>Professionaalide käekiri- pidev sõelumine</h3>
+        <h3>Professionaalide käekiri: pidev sõelumine</h3>
 
         <p>KSA 21 aasta ja üle 55 000 operatsiooni pikkune kogemus on andnud meile ohutusstandardi – täpselt 0 ektaasia juhtumit. See ei ole juhus. See rekord püsib kahel sambal: biomehaaniliselt säästev Flow3 meetod ja meie kompromissitud sõeluuringud.</p>
 
@@ -520,7 +520,7 @@ function EndOfGuideCTAs() {
             <p className="font-serif text-[19px] text-[#1a1a1a] leading-snug flex-1">
               Olen 18–45 aastane miinusprillikandja ja soovin kasutada
               sooduskoodi <span className="font-semibold">G39</span> ja
-              registreerin end ise online&apos;s Flow3 silmauuringule.
+              registreerin end ise veebis Flow3 silmauuringule.
             </p>
           </div>
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -240,11 +240,12 @@ select:focus {
   max-width: 680px;
   margin-left: auto;
   margin-right: auto;
-  font-family: var(--font-sans);
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
   font-size: 19px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: #1a1a1a;
   letter-spacing: -0.003em;
+  font-feature-settings: "kern", "liga", "onum";
 }
 
 /* Consistent paragraph spacing — fixes "running together" issue */
@@ -284,7 +285,8 @@ select:focus {
 }
 
 .prose-v2 h3 {
-  font-size: 21px;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 22px;
   line-height: 1.3;
   font-weight: 600;
   color: #1a1a1a;
@@ -294,14 +296,15 @@ select:focus {
 }
 
 .prose-v2 h4 {
-  font-size: 17px;
+  font-family: var(--font-sans);
+  font-size: 13px;
   line-height: 1.4;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #6f7f80;
   margin-top: 1.8em;
   margin-bottom: 0.4em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.12em;
 }
 
 .prose-v2 p {

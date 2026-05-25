@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '@/components/Layout';
+import GuideLayout from '@/components/GuideLayout';
 
 export default function RefraktiivkirurgiaTarbijajuhend() {
   return (
-    <Layout>
+    <GuideLayout publicationDate="2026-05-26">
       <Head>
         <title>Refraktiivkirurgia tarbijajuhend — Dr. Ants Haavel | KSA Silmakeskus</title>
         <meta
@@ -15,30 +15,46 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend" />
       </Head>
 
-      {/* HERO IMAGE */}
-      <section className="relative w-full h-[40vh] md:h-[55vh] min-h-[320px] max-h-[600px]">
-        <Image
-          src="/images/guide/flow3-oproom.jpg"
-          alt="KSA Silmakeskus — Schwind laser operatsioonitoas"
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: 'cover' }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-white/80 text-sm uppercase tracking-widest mb-2">
-              Dr. Ants Haavel • KSA Silmakeskus
-            </p>
-            <h1 className="text-white font-semibold text-3xl md:text-5xl leading-tight tracking-tight">
-              Refraktiivkirurgia tarbijajuhend
-            </h1>
-          </div>
+      {/* TITLE PAGE — editorial style, not a marketing hero */}
+      <section className="max-w-[720px] mx-auto px-6 pt-16 md:pt-24 pb-12 md:pb-16 text-center">
+        <p className="text-xs uppercase tracking-[0.25em] text-[#6f7f80] mb-6">
+          Patsiendijuhend
+        </p>
+        <h1 className="font-serif text-4xl md:text-6xl font-medium text-[#1a1a1a] leading-[1.05] tracking-tight mb-8">
+          Refraktiivkirurgia
+          <br />
+          tarbijajuhend
+        </h1>
+        <p className="font-serif italic text-xl text-[#1a1a1a] mb-8 max-w-md mx-auto leading-relaxed">
+          Mida pead teadma enne, kui valid kliiniku ja meetodi oma silmadele.
+        </p>
+        <div className="flex items-center justify-center gap-3 text-sm text-[#6f7f80]">
+          <span>Dr. Ants Haavel</span>
+          <span className="text-[#bbbbbb]">·</span>
+          <span>25 min lugemist</span>
+          <span className="text-[#bbbbbb]">·</span>
+          <span>26. mai 2026</span>
         </div>
       </section>
 
-      <article className="prose-v2 px-6 md:px-0 py-12 md:py-20">
+      {/* Cover photo as a separate, full-bleed band — like a journal article opener */}
+      <section className="relative w-full h-[36vh] md:h-[48vh] min-h-[280px] max-h-[520px] bg-[#1a1a1a]">
+        <Image
+          src="/images/guide/flow3-oproom.jpg"
+          alt="KSA Silmakeskuse Schwind laser operatsioonitoas — patsient ja operatsioonimeeskond"
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: 'cover', opacity: 0.92 }}
+        />
+        <div className="absolute bottom-0 left-0 right-0 px-6 py-4 bg-gradient-to-t from-black/70 to-transparent">
+          <p className="max-w-[720px] mx-auto text-xs text-white/80 italic">
+            KSA Silmakeskuse operatsioonituba — Schwind laser ja töömeeskond.
+          </p>
+        </div>
+      </section>
+
+      <article className="prose-v2 px-6 md:px-0 py-16 md:py-24">
 
         <h2>Eessõna: Miks ma selle juhendi kirjutasin</h2>
 
@@ -723,7 +739,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
       {/* DUAL CTA — fixed-grid two-card section */}
       <EndOfGuideCTAs />
-    </Layout>
+    </GuideLayout>
   );
 }
 
@@ -758,33 +774,32 @@ function EndOfGuideCTAs() {
   };
 
   return (
-    <section className="bg-beige-light py-16 md:py-20 px-4">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-ink text-center mb-3">
+    <section className="py-16 md:py-20 px-6 border-t border-[#e8e4dc]">
+      <div className="max-w-[720px] mx-auto">
+        <p className="text-xs uppercase tracking-[0.25em] text-[#6f7f80] text-center mb-3">
+          Järgmine samm
+        </p>
+        <h2 className="font-serif text-3xl md:text-4xl font-medium text-[#1a1a1a] text-center mb-12 leading-tight">
           Mida soovid edasi teha?
         </h2>
-        <p className="text-center text-ink-60 mb-12 max-w-xl mx-auto">
-          Vali Sulle sobiv järgmine samm. Mõlemad on tasuta ja Sinu kontroll
-          kogu protsessis.
-        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#e8e4dc] border border-[#e8e4dc]">
 
           {/* CARD 1 — CALLBACK */}
-          <div className="bg-white rounded-lg shadow-card p-8 flex flex-col">
-            <p className="text-ink text-lg leading-relaxed mb-6">
+          <div className="bg-white p-8 flex flex-col">
+            <p className="text-[#1a1a1a] text-base leading-relaxed mb-6">
               Mul on veel küsimusi ja soovin, et KSA Silmakeskus võtab minuga
               ühendust telefoni teel.
             </p>
 
             {status === 'success' ? (
-              <div className="bg-lime-wash border-l-4 border-lime p-4 rounded text-ink-80 text-sm mt-auto">
+              <div className="border-l-2 border-[#1a1a1a] bg-[#faf7f0] p-4 text-[#1a1a1a] text-sm mt-auto">
                 Aitäh! Võtame Sinuga ühendust hiljemalt järgmise tööpäeva jooksul.
               </div>
             ) : (
               <form onSubmit={handleCallbackSubmit} className="space-y-3 mt-auto">
                 <div>
-                  <label htmlFor="cb-name" className="block text-sm font-medium text-ink mb-1">
+                  <label htmlFor="cb-name" className="block text-xs uppercase tracking-wider font-semibold text-[#6f7f80] mb-1">
                     Nimi
                   </label>
                   <input
@@ -793,11 +808,11 @@ function EndOfGuideCTAs() {
                     required
                     value={callback.name}
                     onChange={(e) => setCallback({ ...callback, name: e.target.value })}
-                    className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none"
+                    className="w-full px-3 py-2 border border-[#e8e4dc] focus:border-[#1a1a1a] focus:ring-0 outline-none transition"
                   />
                 </div>
                 <div>
-                  <label htmlFor="cb-phone" className="block text-sm font-medium text-ink mb-1">
+                  <label htmlFor="cb-phone" className="block text-xs uppercase tracking-wider font-semibold text-[#6f7f80] mb-1">
                     Telefon
                   </label>
                   <input
@@ -806,7 +821,7 @@ function EndOfGuideCTAs() {
                     required
                     value={callback.phone}
                     onChange={(e) => setCallback({ ...callback, phone: e.target.value })}
-                    className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none"
+                    className="w-full px-3 py-2 border border-[#e8e4dc] focus:border-[#1a1a1a] focus:ring-0 outline-none transition"
                     placeholder="+372 ..."
                   />
                 </div>
@@ -820,7 +835,7 @@ function EndOfGuideCTAs() {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full bg-ink hover:bg-ink-80 disabled:opacity-50 text-white font-semibold py-3 rounded transition"
+                  className="w-full bg-[#1a1a1a] hover:bg-[#3a3a3a] disabled:opacity-50 text-white font-medium py-3 transition"
                 >
                   {status === 'submitting' ? 'Saadame…' : 'Saada'}
                 </button>
@@ -829,8 +844,8 @@ function EndOfGuideCTAs() {
           </div>
 
           {/* CARD 2 — BOOKING */}
-          <div className="bg-white rounded-lg shadow-card p-8 flex flex-col">
-            <p className="text-ink text-lg leading-relaxed mb-6">
+          <div className="bg-white p-8 flex flex-col">
+            <p className="text-[#1a1a1a] text-base leading-relaxed mb-6">
               Olen 18–45 aastane miinusprillikandja ja soovin kasutada
               sooduskoodi <strong>G39</strong> ja registreerin end ise online's
               Flow3 silmauuringule.
@@ -840,11 +855,11 @@ function EndOfGuideCTAs() {
                 href="https://booking.ksa.ee/?code=G39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-lime hover:bg-lime-dark text-white font-semibold py-3 rounded transition text-center"
+                className="block w-full bg-lime hover:bg-lime-dark text-white font-medium py-3 transition text-center"
               >
                 Broneerin
               </a>
-              <p className="text-xs text-ink-40 text-center mt-3">
+              <p className="text-xs text-[#6f7f80] text-center mt-3 tracking-wide">
                 Sooduskood G39 = Flow3 silmauuring 39&nbsp;€
               </p>
             </div>

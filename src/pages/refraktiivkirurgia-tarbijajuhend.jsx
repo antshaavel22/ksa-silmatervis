@@ -176,6 +176,26 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <hr />
 
+        <h2>Millal Flow3 ei pruugi olla parim valik</h2>
+
+        <p>Kuigi KSA Silmakeskus eelistab Flow3 pinnameetodit selle anatoomilise säästvuse ja pikaajalise ohutusloogika tõttu, ei tähenda see, et Flow3 sobiks igale inimesele või igale silmale. Hea refraktiivkirurgia algab alati mitte küsimusest "millist protseduuri teha?", vaid küsimusest "kas üldse on mõistlik sekkuda?".</p>
+
+        <p>Just seetõttu on põhjalik silmauuring enne otsust nii oluline. Laserprotseduuri eesmärk ei ole lihtsalt prillinumbrit eemaldada. Eesmärk on parandada elukvaliteeti viisil, mis ei sea ohtu silma pikaajalist tervist.</p>
+
+        <p>Flow3 ei pruugi olla sobiv valik näiteks siis, kui sarvkest on liiga õhuke, selle kuju on ebakorrapärane või mõõtmised viitavad varjatud biomehaanilisele nõrkusele. Sellisel juhul võib ka kõige säästvam pinnameetod olla ebamõistlik risk. Sama kehtib olukorras, kus nägemisnumber ei ole veel piisavalt stabiilne. Kui miinus või astigmatism muutub aasta-aastalt, tasub enne protseduuri oodata ja jälgida, mitte kiirustada.</p>
+
+        <p>Oluline vastunäidustus võib olla ka ravimata või tugev kuivasilma sündroom. Kuiv silm ei ole lihtsalt ebamugavus. See mõjutab sarvkesta pinda, mõõtmiste täpsust, paranemist ja hilisemat nägemiskvaliteeti. Mõnikord tuleb esmalt ravida silmapinda ja alles seejärel otsustada, kas laserprotseduur on üldse mõistlik.</p>
+
+        <p>Flow3 ei ole õige lahendus ka siis, kui inimese peamine probleem ei ole enam sarvkesta kujust tingitud lühinägelikkus, vaid silmaläätse vananemine. Umbes 40.–50. eluaasta vahel hakkab paljudel inimestel tekkima presbüoopia ehk lähedale nägemise raskus. Kui lisandub algav hallkae, võib mõnel juhul olla tulevikku vaadates mõistlikum arutada silmasisese läätsevahetuse võimalust, mitte sarvkesta laserprotseduuri.</p>
+
+        <p>On ka inimesi, kelle puhul parim soovitus on mitte opereerida. Kui ootus on absoluutne täiuslikkus igas valguses, igas vanuses ja ilma ühegi kompromissita, tuleb kõigepealt ootused väga ausalt läbi rääkida. Refraktiivkirurgia võib anda suure elukvaliteedi võidu, kuid see ei tee silma bioloogiat olematuks.</p>
+
+        <p>Mõnel juhul võib parem tee olla ICL ehk silmasisene kontaktlääts, mõnel juhul läätsevahetus, mõnel juhul prillide või kontaktläätsede kandmise jätkamine. See ei ole ebaõnnestumine. Vastupidi: kui uuring näitab, et laserprotseduur ei ole Sinu silmadele parim lahendus, on selle teadmine väga väärtuslik tulemus.</p>
+
+        <p>KSA Silmakeskuses ütleme ligikaudu igale neljandale kandidaadile "ei". Me ei tee seda selleks, et olla liiga ettevaatlikud. Me teeme seda selleks, et laserprotseduur jääks nendele silmadele, kus kasu ja ohutus on selgelt samal poolel. Hea tulemus algab õigest valikust, mitte operatsioonipäevast.</p>
+
+        <hr />
+
         <h2>III OSA: Nähtamatu turvalisus (Biomehaanika, ektaasia ja võrkkest)</h2>
 
         <p>Kui sa seisad laserkliiniku uksel, räägitakse sulle tõenäoliselt kõige rohkem sellest, mis juhtub esimesel päeval. Kuid silmade tõeline, nähtamatu turvalisus ei selgu operatsioonilaual ega järgmisel hommikul. See selgub <strong>5, 10 ja 20 aastat hiljem</strong>.</p>

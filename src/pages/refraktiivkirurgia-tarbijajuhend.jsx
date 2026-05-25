@@ -221,7 +221,17 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>See teeb Flow3 meetodist <strong>ainukese 100% võrkkesta-säästliku ja stressivaba lahenduse</strong>, olles hea valik suurema miinusega patsientidele, kes hoolivad oma silmade eluaegsest ohutusest.</p>
 
-        {/* INLINE PHOTO — laser room ambient shot to break up the long technical chapter */}
+        <hr />
+
+        <h2>IV OSA: Kliiniline tõde – kes sobib ja kes mitte (Diagnostika ja sõelumine)</h2>
+
+        <p>Kui patsiendid astuvad laserkliiniku uksest sisse, on nende suurim küsimus sageli: „Kas see operatsioon on minu jaoks ohutu?" Kuid meditsiiniline reaalsus on see, et tõsised tüsistused ei ole pelgalt halva õnne või operatsiooni tehnilise ebaõnnestumise tagajärg. Tõsised tüsistused on peaaegu alati puuduliku diagnostika ja liiga leebete sobivuskriteeriumide tagajärg. Ohutu laserkirurgia ei alga operatsioonisaalis, vaid diagnostikakabinetis.</p>
+
+        <p>See on põhjus, miks KSA Silmakeskus lükkab tagasi ligikaudu 25–30% kõikidest kandidaatidest. Igale neljandale inimesele "ei" ütlemine ei ole märk sellest, et meetod oleks ohtlik, vaid see on kõrgeima võimaliku ohutusstandardi rakendamine. Kliiniku vaates on patsiendile "ei" ütlemine elutähtis teene, sest nii kaitstakse teda eluaegsete riskide eest, millest ta ise teadlikki polnud.</p>
+
+        <p>Selles peatükis selgitame lahti, mis täpselt toimub põhjaliku silmauuringu (KSA Auditi) käigus, milliseid nähtamatuid ohumärke arstid otsivad ja miks 15-minutiline kiirkontroll ei ole kunagi piisav, et tagada sinu silmade eluaegne tervis.</p>
+
+        {/* DIAGNOSTIC PHOTO — moved here from end of III OSA; fits the diagnostics chapter narratively */}
         <figure>
           <Image
             src="/images/guide/diagnostic-oct.jpg"
@@ -235,6 +245,64 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
             Sarvkesta paksuse ja kuju täppisdiagnostika enne iga otsust.
           </figcaption>
         </figure>
+
+        <h3>Diagnostika kui nähtamatu turvalisuse arhitektuur</h3>
+
+        <p>Põhjalik silmauuring peab kestma umbes tund aega ja kasutama vähemalt 7–10 erinevat kõrgtehnoloogilist mõõteseadet. Iga masin vastab ühele kindlale küsimusele sinu silmade tervise ja biomehaanika kohta.</p>
+
+        <p><strong>1. Ocular Response Analyzer (ORA) ja sarvkesta hüsterees (CH)</strong></p>
+
+        <p>See on üks kõige kriitilisemaid seadmeid kliinikus, mis mõõdab sarvkesta biomehaanilist tugevust. Masin puhub silmale õrna õhujoa ja mõõdab, kui hästi suudab sarvkest tekkinud energiat neelata ning oma algsesse vormi taastuda. Normaalne ja terve sarvkesta tugevuse näit (CH) on 9,0 ja 12,0 mmHg vahel. Kui see näit on alla 9,0, viitab see sarvkesta varjatud biomehaanilisele nõrkusele – see on range "dealbreaker" (välistav tegur) ja KSA sellist silma ei opereeri. Kui näit on aga alla 7,5 mmHg, on laseroperatsioon absoluutselt vastunäidustatud.</p>
+
+        <p><strong>2. Pentacam (Topograafia ja tomograafia)</strong></p>
+
+        <p>Kujuta ette, et topograafia loob sinu sarvkestast ülimalt detailse 3D-reljeefkaardi. Kui sellel kaardil ilmneb vähimgi asümmeetria – näiteks on sarvkesta alumine osa liiga kumer või esineb äärte ebaloomulikku õhenemist –, on see väga tõsine ohumärk. Need on märgid varjatud keratokoonusest (sarvkesta kuju moondumisest), mis tähendab, et sarvkest on oma loomu poolest järele andmas. Nende varjatud nõrkuste leidmiseks kasutatakse tarkvara, mis märkab riske ammu enne sümptomite teket.</p>
+
+        <p><strong>3. Pakhümeetria (Sarvkesta paksus)</strong></p>
+
+        <p>Sarvkest peab olema piisavalt paks, et pärast uue kuju lihvimist säiliks silma tugevus. Pinnameetodi (nagu Flow3) puhul peab sarvkesta paksus enne operatsiooni olema absoluutse miinimumina 450 mikromeetrit. Ohutuse kuldstandard, ehk "kuldne RSB reegel" (Residual Stromal Bed), näeb ette, et pärast laserdamist peab puutumatut kude alles jääma vähemalt 250–300 mikromeetrit. Kuna pinnameetod ei raiska kude klapi lõikamisele, jääb elutähtis RSB kiht oluliselt paksemaks ja turvalisemaks.</p>
+
+        <p><strong>4. OCT (Optiline koherentstomograafia)</strong></p>
+
+        <p>See seade võimaldab vaadata sügavale silmapõhja, pakkudes mikroskoopilise täpsusega läbilõiget võrkkestast ja nägemisnärvist. See aitab välistada silmapõhja haigusi, algavat glaukoomi või võrkkesta nõrgenenud piirkondi, mille puhul operatsioon võiks kätkeda endas lisariske.</p>
+
+        <p><strong>5. Pupillomeeter (Pupilli dünaamika)</strong></p>
+
+        <p>Seade mõõdab pupilli (silmatera) läbimõõtu nii eredas, vahepealses kui ka hämaras valguses. See on äärmiselt oluline: kui sinu pupill laieneb hämaras üle 7 millimeetri ning sul on suurem miinus, on oluliselt suurem risk öiste peegelduste (halode ja "tähekiirte") tekkeks pärast operatsiooni. Seda tuleb patsiendiga enne operatsiooni ausalt arutada.</p>
+
+        <p><strong>6. Pisarakile ja kuiva silma diagnostika</strong></p>
+
+        <p>Uuringul hinnatakse pisarate produktsiooni ja kvaliteeti (Schirmeri test ja TBUT). Tugeva ja ravimata kuiva silma sündroomi korral lükatakse operatsioon edasi, kuni silmapind on terveks ravitud.</p>
+
+        <h3>Kes sobib ja kes mitte? Kandidaadi profiil</h3>
+
+        <p>Olles läbi viinud ülaltoodud objektiivsed mõõtmised, hindab arst sinu sobivust mitmete rangete kriteeriumide alusel. Optimaalne kandidaat Flow3 protseduuriks vastab järgmistele nõuetele:</p>
+
+        <ul>
+          <li><strong>Vanus 18–45 aastat:</strong> Alla 18-aastaste silm ja refraktsioon veel kasvavad ning arenevad. Üle 45-aastastel patsientidel algab aga silmaläätse loomulik vananemine ehk presbüoopia, mis tähendab, et isegi eduka laseroperatsiooni järel läheb lähitulevikus tarvis lugemisprille.</li>
+          <li><strong>Stabiilne dioptria:</strong> Sinu prilliretsept ei tohi olla muutunud rohkem kui 0,5 dioptrit viimase kahe aasta jooksul.</li>
+          <li><strong>Sobiv vahemik:</strong> Protseduur on parim lühinägelikkuse (müoopia) korrigeerimiseks vahemikus -1,0 kuni -8,0 dioptrit ning astigmatismi puhul kuni -4,0 dioptrit.</li>
+          <li><strong>Rasedus ja imetamine (absoluutne ajutine vastunäidustus):</strong> Hormonaalsed kõikumised muudavad ajutiselt sarvkesta kuju, paksust ja pisarakile stabiilsust. Laseroperatsioon tuleks edasi lükata ning seda tohib teha alles 6–12 kuud pärast imetamise lõpetamist.</li>
+          <li><strong>Süsteemsed haigused:</strong> Aktiivsed autoimmuunhaigused (nagu reumatoidartriit), tugev atoopia või kontrollimatu diabeet on sageli vastunäidustuseks, kuna need mõjutavad otseselt keha haavaparanemise võimet ja immuunvastust.</li>
+        </ul>
+
+        <h3>Alternatiivid: Mida teha, kui Flow3 ei sobi?</h3>
+
+        <p>Kui põhjalik silmauuring näitab, et sarvkesta laserkirurgia ei ole sinu anatoomia või terviseseisundi tõttu turvaline, on vastutustundliku kliiniku kohus sulle see otse välja öelda ning pakkuda lahendusi. Refraktiivkirurgia tegelik eetiline standard seisnebki aususes.</p>
+
+        <p><strong>1. Silmasisesed kontaktläätsed (ICL)</strong></p>
+
+        <p>Kui su lühinägelikkus on väga suur (näiteks üle -8,0 dioptri) või su sarvkest on laseri jaoks liiga õhuke, on suurepäraseks alternatiiviks ICL (Implantable Collamer Lens). Selle protseduuri käigus paigaldatakse silma, sinu enda loomuliku läätse ette, spetsiaalne pehme lääts. See on tagasipööratav protseduur, mis ei muuda sarvkesta paksust ega biomehaanikat.</p>
+
+        <p><strong>2. Läätsevahetus (RLE – Refractive Lens Exchange) ja multifokaalsed läätsed</strong></p>
+
+        <p>Kui oled üle 50-aastane ning silmalääts on kaotanud oma elastsuse (sa vajad lugemisprille) või esineb juba algav hallkae, on läätsevahetus sageli loogilisem valik kui laserkirurgia. Sinu loomulik lääts asendatakse kunstläätsega, mis suudab fokuseerida valgust nii kaugele, vahemaale kui ka lähedale.</p>
+
+        <p><strong>3. Ortokeratoloogia, kontaktläätsed ja kvaliteetsed prillid</strong></p>
+
+        <p>Lastele ja noortele, kelle miinus alles kasvab, on parimaks lahenduseks ortokeratoloogia (spetsiaalsed öösel kantavad läätsed, mis aeglustavad miinuse kasvu). Ning alati tuleb meeles pidada, et hästi sobitatud tänapäevased kontaktläätsed või kvaliteetsed prillid on 0-riskiga eluaegne alternatiiv, mis mõnele patsiendile ongi kõige õigem ja stressivabam lahendus.</p>
+
+        <p>Lõppkokkuvõttes on Flow3 uuringu eesmärk leida just sinule, sinu eluetapile ja silmade anatoomiale sobivaim lahendus. Hea kliinik suunab sind vajadusel teise spetsialisti juurde või soovitab operatsiooniga oodata, sest silmade pikaajaline tervis on hindamatu väärtusega.</p>
 
         <hr />
 

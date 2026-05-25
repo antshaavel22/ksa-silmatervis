@@ -49,7 +49,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         />
         <div className="absolute bottom-0 left-0 right-0 px-6 py-4 bg-gradient-to-t from-black/70 to-transparent">
           <p className="max-w-[720px] mx-auto text-xs text-white/80 italic">
-            KSA Silmakeskuse operatsioonituba — Schwind laser ja töömeeskond.
+            KSA Silmakeskuse operatsioonituba — Schwind Amaris 1050RS laser.
           </p>
         </div>
       </section>
@@ -774,32 +774,32 @@ function EndOfGuideCTAs() {
   };
 
   return (
-    <section className="py-16 md:py-20 px-6 border-t border-[#e8e4dc]">
-      <div className="max-w-[720px] mx-auto">
-        <p className="text-xs uppercase tracking-[0.25em] text-[#6f7f80] text-center mb-3">
-          Järgmine samm
+    <section className="px-6 py-16 md:py-20 border-t border-[#1a1a1a]">
+      <div className="max-w-[680px] mx-auto">
+
+        <p className="text-[11px] uppercase tracking-[0.3em] text-[#1a1a1a] mb-10 font-medium">
+          Järgmised toimingud
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl font-medium text-[#1a1a1a] text-center mb-12 leading-tight">
-          Mida soovid edasi teha?
-        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#e8e4dc] border border-[#e8e4dc]">
-
-          {/* CARD 1 — CALLBACK */}
-          <div className="bg-white p-8 flex flex-col">
-            <p className="text-[#1a1a1a] text-base leading-relaxed mb-6">
+        {/* OPTION I — CALLBACK */}
+        <div className="mb-14 pb-14 border-b border-[#1a1a1a]">
+          <div className="flex items-baseline gap-4 mb-5">
+            <span className="font-serif text-2xl text-[#1a1a1a] leading-none">I.</span>
+            <p className="font-serif text-[19px] text-[#1a1a1a] leading-snug flex-1">
               Mul on veel küsimusi ja soovin, et KSA Silmakeskus võtab minuga
               ühendust telefoni teel.
             </p>
+          </div>
 
-            {status === 'success' ? (
-              <div className="border-l-2 border-[#1a1a1a] bg-[#faf7f0] p-4 text-[#1a1a1a] text-sm mt-auto">
-                Aitäh! Võtame Sinuga ühendust hiljemalt järgmise tööpäeva jooksul.
-              </div>
-            ) : (
-              <form onSubmit={handleCallbackSubmit} className="space-y-3 mt-auto">
+          {status === 'success' ? (
+            <p className="ml-9 text-sm text-[#1a1a1a] border-l-2 border-[#1a1a1a] pl-4 py-1">
+              Aitäh. Võtame Sinuga ühendust hiljemalt järgmise tööpäeva jooksul.
+            </p>
+          ) : (
+            <form onSubmit={handleCallbackSubmit} className="ml-9">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <label htmlFor="cb-name" className="block text-xs uppercase tracking-wider font-semibold text-[#6f7f80] mb-1">
+                  <label htmlFor="cb-name" className="block text-[10px] uppercase tracking-[0.2em] font-semibold text-[#1a1a1a] mb-1.5">
                     Nimi
                   </label>
                   <input
@@ -808,11 +808,11 @@ function EndOfGuideCTAs() {
                     required
                     value={callback.name}
                     onChange={(e) => setCallback({ ...callback, name: e.target.value })}
-                    className="w-full px-3 py-2 border border-[#e8e4dc] focus:border-[#1a1a1a] focus:ring-0 outline-none transition"
+                    className="w-full px-0 py-1.5 bg-transparent border-0 border-b border-[#1a1a1a] focus:border-[#1a1a1a] focus:ring-0 focus:outline-none text-[#1a1a1a]"
                   />
                 </div>
                 <div>
-                  <label htmlFor="cb-phone" className="block text-xs uppercase tracking-wider font-semibold text-[#6f7f80] mb-1">
+                  <label htmlFor="cb-phone" className="block text-[10px] uppercase tracking-[0.2em] font-semibold text-[#1a1a1a] mb-1.5">
                     Telefon
                   </label>
                   <input
@@ -821,50 +821,52 @@ function EndOfGuideCTAs() {
                     required
                     value={callback.phone}
                     onChange={(e) => setCallback({ ...callback, phone: e.target.value })}
-                    className="w-full px-3 py-2 border border-[#e8e4dc] focus:border-[#1a1a1a] focus:ring-0 outline-none transition"
-                    placeholder="+372 ..."
+                    className="w-full px-0 py-1.5 bg-transparent border-0 border-b border-[#1a1a1a] focus:border-[#1a1a1a] focus:ring-0 focus:outline-none text-[#1a1a1a]"
                   />
                 </div>
+              </div>
 
-                {status === 'error' && (
-                  <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded p-2">
-                    {errorMsg}
-                  </div>
-                )}
+              {status === 'error' && (
+                <p className="text-xs text-red-700 mb-3">{errorMsg}</p>
+              )}
 
-                <button
-                  type="submit"
-                  disabled={status === 'submitting'}
-                  className="w-full bg-[#1a1a1a] hover:bg-[#3a3a3a] disabled:opacity-50 text-white font-medium py-3 transition"
-                >
-                  {status === 'submitting' ? 'Saadame…' : 'Saada'}
-                </button>
-              </form>
-            )}
+              <button
+                type="submit"
+                disabled={status === 'submitting'}
+                className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 disabled:opacity-30 transition"
+              >
+                {status === 'submitting' ? 'Saadame…' : 'Esita soov →'}
+              </button>
+            </form>
+          )}
+        </div>
+
+        {/* OPTION II — BOOKING */}
+        <div>
+          <div className="flex items-baseline gap-4 mb-5">
+            <span className="font-serif text-2xl text-[#1a1a1a] leading-none">II.</span>
+            <p className="font-serif text-[19px] text-[#1a1a1a] leading-snug flex-1">
+              Olen 18–45 aastane miinusprillikandja ja soovin kasutada
+              sooduskoodi <span className="font-semibold">G39</span> ja
+              registreerin end ise online&apos;s Flow3 silmauuringule.
+            </p>
           </div>
 
-          {/* CARD 2 — BOOKING */}
-          <div className="bg-white p-8 flex flex-col">
-            <p className="text-[#1a1a1a] text-base leading-relaxed mb-6">
-              Olen 18–45 aastane miinusprillikandja ja soovin kasutada
-              sooduskoodi <strong>G39</strong> ja registreerin end ise online's
-              Flow3 silmauuringule.
+          <div className="ml-9">
+            <a
+              href="https://booking.ksa.ee/?code=G39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 transition"
+            >
+              Broneeri Flow3 silmauuring →
+            </a>
+            <p className="text-[11px] uppercase tracking-[0.15em] text-[#6f7f80] mt-3">
+              Sooduskood G39 — Flow3 silmauuring 39&nbsp;€
             </p>
-            <div className="mt-auto">
-              <a
-                href="https://booking.ksa.ee/?code=G39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full bg-lime hover:bg-lime-dark text-white font-medium py-3 transition text-center"
-              >
-                Broneerin
-              </a>
-              <p className="text-xs text-[#6f7f80] text-center mt-3 tracking-wide">
-                Sooduskood G39 = Flow3 silmauuring 39&nbsp;€
-              </p>
-            </div>
           </div>
         </div>
+
       </div>
     </section>
   );

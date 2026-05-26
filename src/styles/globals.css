@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -205,4 +205,781 @@ select:focus {
 /* Dark Mode Support (future) */
 @media (prefers-color-scheme: dark) {
   /* Add dark mode styles here when ready */
+}
+
+/* ======================================================
+   BLOG-ALIGNED PROSE STYLES (.prose-v2)
+   Ported from blog.ksa.ee globals.css to keep visual continuity
+   with the canonical KSA editorial voice.
+   ====================================================== */
+
+:root {
+  --lime: #86bc25;
+  --lime-dark: #6fa01e;
+  --lime-darker: #5a8518;
+  --lime-wash: #f4f9e8;
+  --ink: #5a6b6c;
+  --ink-80: #4a5a5b;
+  --ink-60: #6f7f80;
+  --ink-40: #92a0a1;
+  --ink-20: #bbbbbb;
+  --beige: #f5f0e6;
+  --beige-light: #faf7f0;
+  --line: #e8e4dc;
+  --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.06);
+  --shadow-pop: 0 16px 48px rgba(0, 0, 0, 0.18);
+}
+
+/* ============================================================
+   .prose-v2 — Editorial document treatment
+   Near-monochrome. Lime reserved for links + key accents only.
+   Inspired by NYT / Atlantic / medical journal article layouts.
+   ============================================================ */
+
+.prose-v2 {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.65;
+  color: #1a1a1a;
+  letter-spacing: -0.003em;
+  font-feature-settings: "kern", "liga", "onum";
+}
+
+/* Consistent paragraph spacing — fixes "running together" issue */
+.prose-v2 > p + p,
+.prose-v2 > ul + p,
+.prose-v2 > ol + p,
+.prose-v2 > p + ul,
+.prose-v2 > p + ol {
+  margin-top: 1.5em;
+}
+
+.prose-v2 > * + * {
+  margin-top: 1.4em;
+}
+
+/* H1 only used in hero; in-article uses H2 */
+.prose-v2 h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.02em;
+}
+
+.prose-v2 h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-top: 2.5em;
+  margin-bottom: 0.6em;
+  letter-spacing: -0.015em;
+}
+
+.prose-v2 h3 {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.005em;
+}
+
+.prose-v2 h4 {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #6f7f80;
+  margin-top: 1.8em;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.prose-v2 p {
+  margin: 0;
+  color: #1a1a1a;
+}
+
+/* Links — lime only here */
+.prose-v2 a {
+  color: #1a1a1a;
+  border-bottom: 1px solid var(--lime);
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.prose-v2 a:hover {
+  color: var(--lime-darker);
+  border-bottom-color: var(--lime-darker);
+}
+
+.prose-v2 strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.prose-v2 em {
+  font-style: italic;
+}
+
+.prose-v2 ul,
+.prose-v2 ol {
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+
+.prose-v2 li {
+  margin-bottom: 0.6em;
+  color: #1a1a1a;
+}
+
+/* Monochrome bullets — no more lime */
+.prose-v2 li::marker {
+  color: #6f7f80;
+}
+
+/* Blockquotes — editorial pull quote style */
+.prose-v2 blockquote {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.4;
+  color: #1a1a1a;
+  border-left: 2px solid #1a1a1a;
+  padding-left: 28px;
+  margin: 2.5em 0;
+  font-weight: 400;
+}
+
+/* Section dividers — thin centered ornament */
+.prose-v2 hr {
+  border: 0;
+  height: 1px;
+  background: transparent;
+  margin: 3.5em auto;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.prose-v2 hr::after {
+  content: "* * *";
+  color: #92a0a1;
+  letter-spacing: 0.5em;
+  font-size: 14px;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 12px;
+}
+
+.prose-v2 figure {
+  margin: 3em -60px;
+}
+
+.prose-v2 figure img {
+  width: 100%;
+  border-radius: 0;
+}
+
+.prose-v2 figcaption {
+  font-size: 13px;
+  color: #6f7f80;
+  margin-top: 0.8em;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dropcap on the first paragraph after the first H2 (Eessõna intro) */
+.prose-v2 > h2:first-of-type + p::first-letter {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 88px;
+  line-height: 0.85;
+  font-weight: 500;
+  color: #1a1a1a;
+  float: left;
+  margin: 8px 14px -4px 0;
+}
+
+/* Callout box — bordered, near-monochrome */
+.prose-v2 .callout {
+  background: #faf7f0;
+  border-left: 3px solid #1a1a1a;
+  padding: 24px 28px;
+  margin: 2.5em 0;
+  border-radius: 0;
+}
+
+.prose-v2 .callout p:first-child {
+  margin-top: 0;
+}
+
+.prose-v2 .callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .prose-v2 {
+    font-size: 18px;
+    line-height: 1.65;
+  }
+
+  .prose-v2 h1 {
+    font-size: 32px;
+  }
+
+  .prose-v2 h2 {
+    font-size: 26px;
+    margin-top: 2em;
+  }
+
+  .prose-v2 h3 {
+    font-size: 19px;
+  }
+
+  .prose-v2 h4 {
+    font-size: 15px;
+  }
+
+  .prose-v2 blockquote {
+    font-size: 21px;
+    padding-left: 20px;
+  }
+
+  .prose-v2 > h2:first-of-type + p::first-letter {
+    font-size: 68px;
+  }
+
+  .prose-v2 figure {
+    margin: 2.5em -20px;
+  }
+}
+
+/* ============================================================
+   RU language overrides — Cormorant Garamond for display
+   headings (full Cyrillic, JAMA/Atlantic-grade editorial serif).
+   Source Serif 4 keeps body + h3. Cormorant lifts the magazine
+   feel that PT Serif couldn't quite match.
+
+   Also tuned for Cyrillic: slightly looser line-height because
+   Russian compound words are longer; tighter optical letter
+   spacing on display sizes.
+   ============================================================ */
+
+/* ESCRS / Journal of Cataract & Refractive Surgery aesthetic for RU:
+   denser body, justified alignment with hyphenation, numbered figures.
+   Body sized 19px (matches ET default) — more comfortable reading; column
+   widened slightly to keep ~10-12 words per line for justified balance. */
+[lang="ru"] .prose-v2 {
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+/* Structured chapter headings — eyebrow + title (JCRS / NEJM style) */
+[lang="ru"] .prose-v2 h2 .chapter-eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #6f7f80;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+[lang="ru"] .prose-v2 h2 .chapter-title {
+  display: block;
+}
+
+/* Pull-quote — single key statement treatment between sections */
+[lang="ru"] .prose-v2 .pull-quote {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1.32;
+  color: #1a1a1a;
+  text-align: left;
+  margin: 2.5em 0;
+  padding: 14px 0;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  letter-spacing: -0.005em;
+  hyphens: manual;
+}
+
+[lang="ru"] .prose-v2 .pull-quote::before,
+[lang="ru"] .prose-v2 .pull-quote::after {
+  content: none;
+}
+
+@media (max-width: 768px) {
+  [lang="ru"] .prose-v2 .pull-quote {
+    font-size: 22px;
+  }
+}
+
+[lang="ru"] .prose-v2 p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+}
+
+/* List items and callouts stay left-aligned (justified short lines look bad) */
+[lang="ru"] .prose-v2 li,
+[lang="ru"] .prose-v2 .callout-abstract p,
+[lang="ru"] .prose-v2 .callout-disclosure p,
+[lang="ru"] .prose-v2 .guide-toc a,
+[lang="ru"] .prose-v2 .protocol-list .protocol-text,
+[lang="ru"] .prose-v2-table td {
+  text-align: left;
+  hyphens: manual;
+}
+
+/* Tighter consistent rhythm between blocks (journal-paced) */
+[lang="ru"] .prose-v2 > p + p,
+[lang="ru"] .prose-v2 > ul + p,
+[lang="ru"] .prose-v2 > ol + p,
+[lang="ru"] .prose-v2 > p + ul,
+[lang="ru"] .prose-v2 > p + ol {
+  margin-top: 1.25em;
+}
+
+[lang="ru"] .prose-v2 > * + * {
+  margin-top: 1.2em;
+}
+
+/* Figure captions: "Рисунок N." formal numbering */
+[lang="ru"] .prose-v2 figure {
+  counter-increment: figure-counter;
+}
+
+[lang="ru"] .prose-v2 figcaption::before {
+  content: "Рисунок " counter(figure-counter) ". ";
+  font-weight: 600;
+  font-style: normal;
+  color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2 figcaption {
+  text-align: left;
+  font-size: 14.5px;
+  font-style: normal;
+  color: #4a5a5b;
+  border-top: 1px solid #e8e4dc;
+  padding-top: 8px;
+  margin-top: 12px;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+/* Reset counters at top of article */
+[lang="ru"] .prose-v2 {
+  counter-reset: figure-counter chapter-counter;
+}
+
+[lang="ru"] .prose-v2 h1 {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-size: 50px;
+  line-height: 1.05;
+}
+
+[lang="ru"] .prose-v2 h2 {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -0.008em;
+  margin-top: 2.8em;
+  margin-bottom: 0.55em;
+}
+
+[lang="ru"] .prose-v2 h3 {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.003em;
+  margin-top: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+[lang="ru"] .prose-v2 h4 {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  letter-spacing: 0.13em;
+  color: #6f7f80;
+  margin-top: 2em;
+}
+
+[lang="ru"] h1.font-serif,
+[lang="ru"] .font-serif {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+}
+
+/* Title page H1 on RU — premium display weight + tracking */
+[lang="ru"] section h1.font-serif {
+  font-weight: 500;
+  letter-spacing: -0.018em;
+}
+
+/* Dropcap on first paragraph after first h2 in RU */
+[lang="ru"] .prose-v2 > h2:first-of-type + p::first-letter {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 0.82;
+  color: #1a1a1a;
+  float: left;
+  margin: 6px 16px -6px 0;
+}
+
+@media (max-width: 768px) {
+  [lang="ru"] .prose-v2 { font-size: 18px; }
+  [lang="ru"] .prose-v2 h1 { font-size: 36px; }
+  [lang="ru"] .prose-v2 h2 { font-size: 28px; margin-top: 2.2em; }
+  [lang="ru"] .prose-v2 h3 { font-size: 19px; }
+  [lang="ru"] .prose-v2 > h2:first-of-type + p::first-letter { font-size: 72px; }
+}
+
+/* ============================================================
+   Comparison table — JAMA / NEJM-style minimal medical journal.
+   Heavy top/bottom rules, no inner borders, breathable rows.
+   ============================================================ */
+
+.prose-v2-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3em 0;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #1a1a1a;
+  counter-increment: table-counter;
+}
+
+.prose-v2-table caption {
+  caption-side: top;
+  text-align: left;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a5a5b;
+  padding-bottom: 12px;
+  border-bottom: none;
+}
+
+.prose-v2-table caption::before {
+  content: "Таблица " counter(table-counter) ". ";
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+[lang="en"] .prose-v2-table caption::before {
+  content: "Table " counter(table-counter) ". ";
+}
+
+[lang="et"] .prose-v2-table caption::before {
+  content: "Tabel " counter(table-counter) ". ";
+}
+
+[lang="ru"] .prose-v2-table caption {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2-table caption::before {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #6f7f80;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.prose-v2-table thead {
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.prose-v2-table th {
+  padding: 14px 14px;
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #1a1a1a;
+  vertical-align: bottom;
+}
+
+.prose-v2-table tbody tr {
+  border-bottom: 1px solid #e8e4dc;
+}
+
+.prose-v2-table tbody tr:last-child {
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.prose-v2-table td {
+  padding: 20px 14px;
+  vertical-align: top;
+  color: #1a1a1a;
+}
+
+.prose-v2-table td:first-child {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.005em;
+}
+
+[lang="ru"] .prose-v2-table td:first-child {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .prose-v2-table {
+    font-size: 13px;
+    margin: 2.5em -8px;
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+  .prose-v2-table th,
+  .prose-v2-table td {
+    padding: 12px 10px;
+  }
+}
+
+/* ============================================================
+   Callouts — abstract (filled) vs disclosure (rule-only) vs TOC
+   (clean journal-style list). Each visually distinct.
+   ============================================================ */
+
+.prose-v2 .callout-abstract {
+  background: transparent;
+  border: none;
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 24px 0;
+  margin: 2.5em 0;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+}
+
+.prose-v2 .callout-abstract p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2 .callout-abstract p {
+  font-size: 18.5px;
+}
+
+.prose-v2 .callout-disclosure {
+  background: transparent;
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 22px 0;
+  margin: 2.5em 0;
+}
+
+.prose-v2 .callout-disclosure p {
+  margin: 0;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #1a1a1a;
+}
+
+.prose-v2 .callout-label {
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #6f7f80;
+  margin-bottom: 0.8em;
+  display: block;
+}
+
+/* TOC — academic journal style, no box, clean column */
+.prose-v2 .guide-toc {
+  margin: 3em 0;
+  padding: 0;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.prose-v2 .guide-toc .callout-label {
+  padding: 18px 0 6px 0;
+  margin: 0;
+  border-bottom: 1px solid #e8e4dc;
+}
+
+.prose-v2 .guide-toc ol,
+.prose-v2 .guide-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: toc-counter;
+}
+
+.prose-v2 .guide-toc li {
+  counter-increment: toc-counter;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0ece2;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.prose-v2 .guide-toc li:last-child {
+  border-bottom: none;
+}
+
+.prose-v2 .guide-toc li::before {
+  content: counter(toc-counter, upper-roman) ".";
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  color: #92a0a1;
+  min-width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+[lang="ru"] .prose-v2 .guide-toc li::before {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+}
+
+.prose-v2 .guide-toc a {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 16.5px;
+  line-height: 1.4;
+  color: #1a1a1a;
+  border: none;
+  flex: 1;
+}
+
+[lang="ru"] .prose-v2 .guide-toc a {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.003em;
+}
+
+.prose-v2 .guide-toc a:hover {
+  color: var(--lime-darker);
+}
+
+/* ============================================================
+   Diagnostic protocol — JAMA-style numbered procedure list
+   ============================================================ */
+
+.prose-v2 .protocol-list {
+  margin: 2.5em 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid #1a1a1a;
+}
+
+.prose-v2 .protocol-list > li {
+  display: flex;
+  gap: 22px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e8e4dc;
+  margin-bottom: 0;
+  align-items: baseline;
+}
+
+.prose-v2 .protocol-list > li:last-child {
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.prose-v2 .protocol-list .protocol-num {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 22px;
+  line-height: 1;
+  color: #1a1a1a;
+  font-weight: 700;
+  min-width: 32px;
+  text-align: right;
+  font-feature-settings: "lnum", "tnum";
+}
+
+[lang="ru"] .prose-v2 .protocol-list .protocol-num {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.prose-v2 .protocol-list .protocol-body {
+  flex: 1;
+}
+
+.prose-v2 .protocol-list .protocol-title {
+  display: block;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+  letter-spacing: -0.003em;
+}
+
+[lang="ru"] .prose-v2 .protocol-list .protocol-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.prose-v2 .protocol-list .protocol-text {
+  margin: 0;
+  font-size: 17.5px;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2 .protocol-list .protocol-text {
+  font-size: 18px;
 }

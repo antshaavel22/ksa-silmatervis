@@ -683,12 +683,6 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
           <li><strong>Mitry D, Singh J, Yorston D, et al. (2011).</strong> <em>"The predisposing pathology and clinical characteristics in the Scottish retinal detachment study."</em> Ophthalmology. (Исследование факторов риска отслойки сетчатки и связи с высокой миопией и механической нагрузкой.) <a href="https://pubmed.ncbi.nlm.nih.gov/21561662/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
         </ol>
 
-        <h3>Дополнительная литература</h3>
-
-        <ul>
-          <li><strong>All About Vision (2026).</strong> <em>"The Oculomics Revolution &amp; Its Impact on Health Care."</em> (Научно-популярный обзор роли диагностических устройств — OCT, адаптивной оптики — в ранней диагностике системных заболеваний.) <a href="https://www.allaboutvision.com/" target="_blank" rel="noopener noreferrer">allaboutvision.com →</a></li>
-        </ul>
-
       </article>
     </GuideLayout>
   );

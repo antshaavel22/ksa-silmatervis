@@ -493,12 +493,6 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li><strong>Mitry D, Singh J, Yorston D, et al. (2011).</strong> <em>"The predisposing pathology and clinical characteristics in the Scottish retinal detachment study."</em> Ophthalmology. (Uuring võrkkesta irdumise riskifaktoritest ja seostest kõrge lühinägelikkuse ning mehaanilise stressiga). <a href="https://pubmed.ncbi.nlm.nih.gov/21561662/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
         </ol>
 
-        <h3>Täiendav lugemine</h3>
-
-        <ul>
-          <li><strong>All About Vision (2026).</strong> <em>"The Oculomics Revolution &amp; Its Impact on Health Care."</em> (Populaarteaduslik ülevaade silma diagnostikaseadmete, nagu OCT ja adaptiivoptika, rollist süsteemsete haiguste varajases avastamises.) <a href="https://www.allaboutvision.com/" target="_blank" rel="noopener noreferrer">allaboutvision.com →</a></li>
-        </ul>
-
       </article>
     </GuideLayout>
   );

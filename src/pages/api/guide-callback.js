@@ -19,7 +19,10 @@
  *   2. Slack → #kiirtesti-täitmised (so Lilia + team see it instantly)
  */
 
-const CRM_ENDPOINT = 'https://crm.ksa.ee/api/v1/leads/intake/refraktiivkirurgia-juhend';
+// Defaults to Mai's PROD endpoint; override via CRM_ENDPOINT env var to point at staging
+// during her test phase (PHASE-44).
+const CRM_ENDPOINT =
+  process.env.CRM_ENDPOINT || 'https://crm.ksa.ee/api/v1/leads/intake/refraktiivkirurgia-juhend';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

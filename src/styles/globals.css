@@ -486,11 +486,13 @@ select:focus {
    ============================================================ */
 
 /* ESCRS / Journal of Cataract & Refractive Surgery aesthetic for RU:
-   denser body, justified alignment with hyphenation, numbered figures. */
+   denser body, justified alignment with hyphenation, numbered figures.
+   Body sized 19px (matches ET default) — more comfortable reading; column
+   widened slightly to keep ~10-12 words per line for justified balance. */
 [lang="ru"] .prose-v2 {
-  font-size: 17.5px;
-  line-height: 1.62;
-  max-width: 600px;  /* narrower journal column */
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 640px;
 }
 
 /* Structured chapter headings — eyebrow + title (JCRS / NEJM style) */
@@ -584,13 +586,14 @@ select:focus {
 
 [lang="ru"] .prose-v2 figcaption {
   text-align: left;
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-style: normal;
   color: #4a5a5b;
   border-top: 1px solid #e8e4dc;
   padding-top: 8px;
   margin-top: 12px;
   max-width: 100%;
+  line-height: 1.5;
 }
 
 /* Reset counters at top of article */
@@ -657,6 +660,7 @@ select:focus {
 }
 
 @media (max-width: 768px) {
+  [lang="ru"] .prose-v2 { font-size: 18px; }
   [lang="ru"] .prose-v2 h1 { font-size: 36px; }
   [lang="ru"] .prose-v2 h2 { font-size: 28px; margin-top: 2.2em; }
   [lang="ru"] .prose-v2 h3 { font-size: 19px; }
@@ -673,7 +677,7 @@ select:focus {
   border-collapse: collapse;
   margin: 3em 0;
   font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.55;
   color: #1a1a1a;
   counter-increment: table-counter;
@@ -796,9 +800,13 @@ select:focus {
 
 .prose-v2 .callout-abstract p {
   margin: 0;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.55;
   color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2 .callout-abstract p {
+  font-size: 18.5px;
 }
 
 .prose-v2 .callout-disclosure {
@@ -895,7 +903,7 @@ select:focus {
 [lang="ru"] .prose-v2 .guide-toc a {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 20px;
   letter-spacing: -0.003em;
 }
 
@@ -967,7 +975,11 @@ select:focus {
 
 .prose-v2 .protocol-list .protocol-text {
   margin: 0;
-  font-size: 16.5px;
+  font-size: 17.5px;
   line-height: 1.6;
   color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2 .protocol-list .protocol-text {
+  font-size: 18px;
 }

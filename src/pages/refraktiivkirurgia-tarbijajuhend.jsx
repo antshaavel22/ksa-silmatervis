@@ -274,7 +274,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kujuta ette, et topograafia loob sinu sarvkestast ülimalt detailse 3D-reljeefkaardi. Kui sellel kaardil ilmneb vähimgi asümmeetria – näiteks on sarvkesta alumine osa liiga kumer või esineb äärte ebaloomulikku õhenemist –, on see väga tõsine ohumärk. Need on märgid varjatud keratokoonusest (sarvkesta kuju moondumisest), mis tähendab, et sarvkest on oma loomu poolest järele andmas. Nende varjatud nõrkuste leidmiseks kasutatakse tarkvara, mis märkab riske ammu enne sümptomite teket.</p>
 
-        <p><strong>2. Pakhümeetria (Sarvkesta paksus)</strong></p>
+        <p><strong>2. Pahhümeetria (Sarvkesta paksus)</strong></p>
 
         <p>Sarvkest peab olema piisavalt paks, et pärast uue kuju lihvimist säiliks silma tugevus. Pinnameetodi (nagu Flow3) puhul peab sarvkesta paksus enne operatsiooni olema absoluutse miinimumina 450 mikromeetrit. Ohutuse kuldstandard, ehk "kuldne RSB reegel" (Residual Stromal Bed), näeb ette, et pärast laserdamist peab puutumatut kude alles jääma vähemalt 250–300 mikromeetrit. Kuna pinnameetod ei raiska kude klapi lõikamisele, jääb elutähtis RSB kiht oluliselt paksemaks ja turvalisemaks.</p>
 
@@ -389,8 +389,8 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <ol start="5">
           <li><strong>Mitmele protsendile uuringule tulnud kandidaatidest ütlete Te "ei"?</strong> (Turvalise kliiniku eitavate vastuste osakaal peaks olema 20–30%. Kui opereeritakse peaaegu kõiki, on ohutusstandardid liiga liberaalsed).</li>
-          <li><strong>Milliseid diagnostilisi masinaid Te täna kasutate?</strong> (Nimekirjas peavad olema Scheimpflug kaamera, topograafia süsteem, pakhümeetria, OCT, keratomeetria, refraktomeetria, põhjalik kuivasilma diagnostika, perimeetrid, silmapõhja fotograafia).</li>
-          <li><strong>Mis on minu täpne pakhümeetria väärtus  ja kui palju see muutub operatsioonikäigus?</strong> ( Kliinik oskab öelda vastust, milline see on täna ja nad saavad küllaltki täpselt arvutada protseduuri järgse väärtuse 10 mikromeetri täpsusega ).</li>
+          <li><strong>Milliseid diagnostilisi masinaid Te täna kasutate?</strong> (Nimekirjas peavad olema Scheimpflug kaamera, topograafia süsteem, pahhümeetria, OCT, keratomeetria, refraktomeetria, põhjalik kuivasilma diagnostika, perimeetrid, silmapõhja fotograafia).</li>
+          <li><strong>Mis on minu täpne pahhümeetria väärtus  ja kui palju see muutub operatsioonikäigus?</strong> ( Kliinik oskab öelda vastust, milline see on täna ja nad saavad küllaltki täpselt arvutada protseduuri järgse väärtuse 10 mikromeetri täpsusega ).</li>
           <li><strong>Mis on minu algne sarvkesta paksus ja kui palju puutumatut stroomakude (RSB) jääb pärast laserdamist alles?</strong> (Ohutu miinimum on 250–300 mikromeetrit).</li>
           <li><strong>Kas Te vaatate minu võrkkesta perifeeriat laiendatud pupillidega?</strong> (See on absoluutne ohutusstandard, kui kasutatakse protseduuri jooksul vaakumit ).</li>
         </ol>

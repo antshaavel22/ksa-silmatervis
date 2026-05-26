@@ -26,7 +26,7 @@ const STRINGS = {
     authorRole: 'основатель и медицинский руководитель, KSA Silmakeskus',
     publishedPrefix: 'Опубликовано',
     publishedSuffix: '• KSA Silmakeskus, Таллинн и Тарту',
-    bookingLabel: 'Записаться на исследование Flow3',
+    bookingLabel: 'Записаться на обследование перед Flow3',
   },
   en: {
     backToLP: '← Guide landing page',

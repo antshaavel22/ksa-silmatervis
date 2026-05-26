@@ -16,6 +16,7 @@ const STRINGS = {
     backToLP: '← Juhendi avaleht',
     backToLPHref: '/refraktiivkirurgia-juhend',
     authorRole: 'asutaja ja meditsiinijuht, KSA Silmakeskus',
+    authorName: 'Dr. Ants Haavel',
     publishedPrefix: 'Avaldatud',
     publishedSuffix: '• KSA Silmakeskus, Tallinn ja Tartu',
     bookingLabel: 'Broneeri Flow3 uuring',
@@ -24,6 +25,7 @@ const STRINGS = {
     backToLP: '← На главную руководства',
     backToLPHref: '/refraktiivkirurgia-juhend-ru',
     authorRole: 'основатель и медицинский руководитель, KSA Silmakeskus',
+    authorName: 'д-р Антс Хаавель',
     publishedPrefix: 'Опубликовано',
     publishedSuffix: '• KSA Silmakeskus, Таллинн и Тарту',
     bookingLabel: 'Записаться на обследование перед Flow3',
@@ -32,6 +34,7 @@ const STRINGS = {
     backToLP: '← Guide landing page',
     backToLPHref: '/refraktiivkirurgia-juhend-en',
     authorRole: 'founder and medical director, KSA Silmakeskus',
+    authorName: 'Dr. Ants Haavel',
     publishedPrefix: 'Published',
     publishedSuffix: '• KSA Silmakeskus, Tallinn and Tartu',
     bookingLabel: 'Book a Flow3 exam',
@@ -73,7 +76,7 @@ export default function GuideLayout({ children, publicationDate = '2026-05-26', 
       <footer className="border-t border-[#e8e4dc] mt-24">
         <div className="max-w-[720px] mx-auto px-6 py-12 text-center">
           <p className="font-serif italic text-[#1a1a1a] text-lg mb-1">
-            Dr. Ants Haavel
+            {t.authorName}
           </p>
           <p className="text-sm text-[#6f7f80] mb-6">
             {t.authorRole}

@@ -473,3 +473,159 @@ select:focus {
     margin: 2.5em -20px;
   }
 }
+
+/* ============================================================
+   RU language overrides — Fraunces lacks full Cyrillic glyph
+   coverage, so swap to Source Serif 4 (full Cyrillic) for any
+   serif headings inside a [lang="ru"] container. Body Source
+   Serif 4 already works for Cyrillic.
+   ============================================================ */
+
+[lang="ru"] .prose-v2 h1,
+[lang="ru"] .prose-v2 h2 {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+[lang="ru"] h1.font-serif,
+[lang="ru"] .font-serif {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+}
+
+/* ============================================================
+   Comparison table styling for prose-v2 — clean medical-journal
+   look. Sits inside .prose-v2 but uses .prose-v2-table for clarity.
+   ============================================================ */
+
+.prose-v2-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.5em 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.prose-v2-table thead {
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.prose-v2-table th {
+  padding: 14px 12px;
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6f7f80;
+  vertical-align: bottom;
+}
+
+.prose-v2-table tbody tr {
+  border-bottom: 1px solid #e8e4dc;
+}
+
+.prose-v2-table tbody tr:last-child {
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.prose-v2-table td {
+  padding: 16px 12px;
+  vertical-align: top;
+  color: #1a1a1a;
+}
+
+.prose-v2-table td:first-child {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .prose-v2-table {
+    font-size: 14px;
+  }
+  .prose-v2-table th,
+  .prose-v2-table td {
+    padding: 10px 8px;
+  }
+}
+
+/* ============================================================
+   Callout box variants — clinical / disclosure framing
+   ============================================================ */
+
+.prose-v2 .callout-abstract,
+.prose-v2 .callout-disclosure {
+  background: #faf7f0;
+  border-left: 3px solid #1a1a1a;
+  padding: 22px 26px;
+  margin: 2.5em 0;
+}
+
+.prose-v2 .callout-disclosure {
+  background: transparent;
+  border-left-color: #92a0a1;
+}
+
+.prose-v2 .callout-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #6f7f80;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+/* ============================================================
+   Diagnostic protocol blocks — numbered + left-rule format
+   ============================================================ */
+
+.prose-v2 .protocol-list {
+  margin: 2em 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.prose-v2 .protocol-list > li {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0 18px 18px;
+  border-left: 1px solid #e8e4dc;
+  margin-bottom: 0;
+}
+
+.prose-v2 .protocol-list > li + li {
+  border-top: 1px solid #e8e4dc;
+}
+
+.prose-v2 .protocol-list .protocol-num {
+  font-family: "Source Serif 4", "Source Serif Pro", serif;
+  font-size: 26px;
+  line-height: 1;
+  color: #92a0a1;
+  font-weight: 400;
+  min-width: 40px;
+  padding-top: 2px;
+}
+
+.prose-v2 .protocol-list .protocol-body {
+  flex: 1;
+}
+
+.prose-v2 .protocol-list .protocol-title {
+  display: block;
+  font-family: "Source Serif 4", "Source Serif Pro", serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1a1a1a;
+}
+
+.prose-v2 .protocol-list .protocol-text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1a1a1a;
+}

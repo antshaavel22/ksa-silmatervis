@@ -15,9 +15,9 @@
  *   3. Mandrill magic-link email → lead's email with guide URL
  *
  * Env vars (gracefully degrades if missing):
- *   SLACK_KIIRTESTI_WEBHOOK  — Slack incoming webhook for #kiirtesti-täitmised
- *   MANDRILL_API_KEY         — Mailchimp Transactional (Mandrill) for outbound email
- *   GUIDE_SECRET             — HMAC secret for magic-link token generation
+ *   SLACK_LP_CHANNEL_WEBHOOK_URL  — Slack incoming webhook (same as kiirtest project)
+ *   RESEND_API_KEY                — Resend for outbound email (same as kiirtest)
+ *   GUIDE_SECRET                  — HMAC secret for magic-link token generation
  */
 
 import crypto from 'crypto';
@@ -80,9 +80,9 @@ function generateGuideToken(email) {
 }
 
 async function sendToSlack(lead) {
-  const webhook = process.env.SLACK_KIIRTESTI_WEBHOOK;
+  const webhook = process.env.SLACK_LP_CHANNEL_WEBHOOK_URL;
   if (!webhook) {
-    console.warn('[guide-signup] SLACK_KIIRTESTI_WEBHOOK missing — skipping Slack');
+    console.warn('[guide-signup] SLACK_LP_CHANNEL_WEBHOOK_URL missing — skipping Slack');
     return { skipped: true };
   }
 
@@ -117,36 +117,37 @@ async function sendToSlack(lead) {
 }
 
 async function notifyKsaEmail(lead, guideUrl) {
-  // For V1 we route the staff notification through Mandrill too; keeps a single transport.
-  // Real-world: prefer dedicated SMTP if available.
-  const apiKey = process.env.MANDRILL_API_KEY;
+  const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
-    console.warn('[guide-signup] MANDRILL_API_KEY missing — skipping staff email');
+    console.warn('[guide-signup] RESEND_API_KEY missing — skipping staff email');
     return { skipped: true };
   }
 
-  const message = {
-    from_email: 'noreply@ksa.ee',
-    from_name: 'KSA Lead Magnet',
-    subject: `Uus juhendi tellimus: ${lead.name}`,
-    text: `Nimi: ${lead.name}\nE-mail: ${lead.email}\nKeel: ${lead.language}\nAllikas: ${lead.source}\nAeg: ${lead.submittedAt}\n\nJuhendi link: ${guideUrl}\n`,
-    to: [{ email: 'registreerumised@ksa.ee', type: 'to' }],
-  };
-
-  const res = await fetch('https://mandrillapp.com/api/1.0/messages/send', {
+  const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ key: apiKey, message }),
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      from: 'KSA Lead Magnet <noreply@ksa.ee>',
+      to: ['registreerumised@ksa.ee'],
+      subject: `Uus juhendi tellimus: ${lead.name}`,
+      text: `Nimi: ${lead.name}\nE-mail: ${lead.email}\nKeel: ${lead.language}\nAllikas: ${lead.source}\nAeg: ${lead.submittedAt}\n\nJuhendi link: ${guideUrl}\n`,
+    }),
   });
 
-  if (!res.ok) throw new Error(`Mandrill staff notify responded ${res.status}`);
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`Resend staff notify responded ${res.status} ${body}`);
+  }
   return { ok: true };
 }
 
 async function sendMagicLinkEmail(lead, guideUrl) {
-  const apiKey = process.env.MANDRILL_API_KEY;
+  const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
-    console.warn('[guide-signup] MANDRILL_API_KEY missing — skipping magic-link');
+    console.warn('[guide-signup] RESEND_API_KEY missing — skipping magic-link');
     return { skipped: true };
   }
 
@@ -167,20 +168,23 @@ async function sendMagicLinkEmail(lead, guideUrl) {
 
   const text = `${greeting}\n\n${guideUrl}\n\nSinu silmade ja eluaegse vabaduse heaks,\nDr. Ants Haavel\nKSA Silmakeskus\n`;
 
-  const message = {
-    from_email: 'noreply@ksa.ee',
-    from_name: 'Dr. Ants Haavel — KSA Silmakeskus',
-    subject,
-    text,
-    to: [{ email: lead.email, name: lead.name, type: 'to' }],
-  };
-
-  const res = await fetch('https://mandrillapp.com/api/1.0/messages/send', {
+  const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ key: apiKey, message }),
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      from: 'Dr. Ants Haavel — KSA Silmakeskus <noreply@ksa.ee>',
+      to: [lead.email],
+      subject,
+      text,
+    }),
   });
 
-  if (!res.ok) throw new Error(`Mandrill magic-link responded ${res.status}`);
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`Resend magic-link responded ${res.status} ${body}`);
+  }
   return { ok: true };
 }

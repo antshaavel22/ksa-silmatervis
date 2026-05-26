@@ -129,9 +129,9 @@ async function sendToCrm(lead) {
 }
 
 async function sendToSlack(lead) {
-  const webhook = process.env.SLACK_KIIRTESTI_WEBHOOK;
+  const webhook = process.env.SLACK_LP_CHANNEL_WEBHOOK_URL;
   if (!webhook) {
-    console.warn('[guide-callback] SLACK_KIIRTESTI_WEBHOOK missing — skipping Slack');
+    console.warn('[guide-callback] SLACK_LP_CHANNEL_WEBHOOK_URL missing — skipping Slack');
     return { skipped: true };
   }
 

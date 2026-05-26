@@ -155,16 +155,16 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li><strong>Meditsiinilised piirangud ja riskid:</strong> Kaasaegsed biomehaanilised uuringud on näidanud, et kuna kude eemaldatakse sarvkesta sügavamatest kihtidest, vähendab SMILE silma üldist tugevust siiski oluliselt rohkem kui pinnameetodid. Teine väga kriitiline aspekt on protseduuri aegne vaakumi kasutamine. Silm fikseeritakse tugeva imuriga, mis tõstab silmasisese rõhu lühikeseks ajaks normist 4–5 korda kõrgemaks (kuni 65–90 mmHg). See tekitab mehaanilist stressi silma tagaosale ning võib olla ohtlik eriti suurema lühinägelikkuse ja õhema võrkkestaga patsientidele. Samuti on SMILE-meetodi korral vajaduspõhine hilisem kordusoperatsioon (täppiskorrektsioon) tehniliselt väga keeruline.</li>
         </ul>
 
-        <h3>Modernsed pinnameetodid ja 100% puutevaba Flow3</h3>
+        <h3>Modernsed pinnameetodid ja puutevaba Flow3</h3>
 
         <p>Mõistes sisselõigetega seotud pikaajalisi riske, on paljud maailma tippkirurgid ning ka KSA Silmakeskus Eestis valinud tagasitee anatoomiat maksimaalselt säästvate pinnameetodite (PRK, tPRK, Flow3) juurde. See on lähenemine, mis asetab silma pikaajalise tervise ja tugevuse lühiajalisest mugavusest kõrgemale.</p>
 
         <ul>
-          <li><strong>Kuidas see toimib:</strong> Sarvkestale ei lõigata ühtegi klappi ega tehta sisselõikeid. Protseduuri käigus eemaldatakse vaid sarvkesta kõige pindmine ja loomulikult taastuv epiteelikiht ning laser lihvib uue kuju otse sarvkesta pinnale. KSA Silmakeskuse poolt kasutatava modernse Flow3 protseduuri puhul teostatakse kogu ravi üheainsa laseriga, muutes protsessi 100% puute- ja lõikevabaks.</li>
+          <li><strong>Kuidas see toimib:</strong> Sarvkestale ei lõigata ühtegi klappi ega tehta sisselõikeid. Protseduuri käigus eemaldatakse vaid sarvkesta kõige pindmine ja loomulikult taastuv epiteelikiht ning laser lihvib uue kuju otse sarvkesta pinnale. KSA Silmakeskuse poolt kasutatava modernse Flow3 protseduuri puhul teostatakse kogu ravi üheainsa laseriga, muutes protsessi puute- ja lõikevabaks.</li>
           <li><strong>Meditsiinilised eelised:</strong>
             <ul>
               <li><strong>Säilinud biomehaaniline tugevus:</strong> Kuna sarvkesta sügavamaid struktuure ei lõigata, säilitab silm peaaegu täielikult oma loomuliku tugevuse (tugevuskadu on vaid 10–15%). See viib sarvkesta hilisema väljakummumise ehk ektaasia riski miinimumini.</li>
-              <li><strong>Puuduvad klapiriskid:</strong> Kuna klappi ei tehta, on välistatud igasugune risk, et see võiks aastate pärast trauma tagajärjel paigast nihkuda. Seetõttu sobib meetod suurepäraselt aktiivse eluviisiga inimestele, noortele emadele ja sportlastele.</li>
+              <li><strong>Puuduvad klapiriskid:</strong> Kuna klappi ei tehta, väldib meetod klapinihkumise riski aastate pärast trauma tagajärjel. Seetõttu sobib meetod suurepäraselt aktiivse eluviisiga inimestele, noortele emadele ja sportlastele.</li>
               <li><strong>Ohutu võrkkestale:</strong> Protseduuri ajal ei kasutata vaakumit ega imurit, seega ei tõuse silmasisene rõhk ja võrkkest ei saa mingit mehaanilist lisastressi.</li>
               <li><strong>Väiksem kuiva silma oht:</strong> Sarvkesta närvivõrgustikku ei poolitata massiliselt, mistõttu on raskekujulise ja püsiva kuiva silma sündroomi tekkimise tõenäosus oluliselt väiksem.</li>
             </ul>
@@ -173,26 +173,6 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         </ul>
 
         <p>KSA Silmakeskuse lähenemine on ühene: patsiendi silmade 30–50 aasta pikkust tervist, silma struktuurset tugevust ja ohutust ei tasu ohverdada paari päeva mugavuse nimel. Seda konservatiivset filosoofiat toetab otseselt ka statistika: 21 aasta ja enam kui 55 000 pinna-ablatsiooni protseduuri jooksul ei ole registreeritud ühtegi sarvkesta ektaasia juhtumit. Valides biomehaaniliselt kõige säästvama meetodi, on võimalik pakkuda patsiendile maksimaalset eluaegset turvalisust.</p>
-
-        <hr />
-
-        <h2>Millal Flow3 ei pruugi olla parim valik</h2>
-
-        <p>Kuigi KSA Silmakeskus eelistab Flow3 pinnameetodit selle anatoomilise säästvuse ja pikaajalise ohutusloogika tõttu, ei tähenda see, et Flow3 sobiks igale inimesele või igale silmale. Hea refraktiivkirurgia algab alati mitte küsimusest "millist protseduuri teha?", vaid küsimusest "kas üldse on mõistlik sekkuda?".</p>
-
-        <p>Just seetõttu on põhjalik silmauuring enne otsust nii oluline. Laserprotseduuri eesmärk ei ole lihtsalt prillinumbrit eemaldada. Eesmärk on parandada elukvaliteeti viisil, mis ei sea ohtu silma pikaajalist tervist.</p>
-
-        <p>Flow3 ei pruugi olla sobiv valik näiteks siis, kui sarvkest on liiga õhuke, selle kuju on ebakorrapärane või mõõtmised viitavad varjatud biomehaanilisele nõrkusele. Sellisel juhul võib ka kõige säästvam pinnameetod olla ebamõistlik risk. Sama kehtib olukorras, kus nägemisnumber ei ole veel piisavalt stabiilne. Kui miinus või astigmatism muutub aasta-aastalt, tasub enne protseduuri oodata ja jälgida, mitte kiirustada.</p>
-
-        <p>Oluline vastunäidustus võib olla ka ravimata või tugev kuivasilma sündroom. Kuiv silm ei ole lihtsalt ebamugavus. See mõjutab sarvkesta pinda, mõõtmiste täpsust, paranemist ja hilisemat nägemiskvaliteeti. Mõnikord tuleb esmalt ravida silmapinda ja alles seejärel otsustada, kas laserprotseduur on üldse mõistlik.</p>
-
-        <p>Flow3 ei ole õige lahendus ka siis, kui inimese peamine probleem ei ole enam sarvkesta kujust tingitud lühinägelikkus, vaid silmaläätse vananemine. Umbes 40.–50. eluaasta vahel hakkab paljudel inimestel tekkima presbüoopia ehk lähedale nägemise raskus. Kui lisandub algav hallkae, võib mõnel juhul olla tulevikku vaadates mõistlikum arutada silmasisese läätsevahetuse võimalust, mitte sarvkesta laserprotseduuri.</p>
-
-        <p>On ka inimesi, kelle puhul parim soovitus on mitte opereerida. Kui ootus on absoluutne täiuslikkus igas valguses, igas vanuses ja ilma ühegi kompromissita, tuleb kõigepealt ootused väga ausalt läbi rääkida. Refraktiivkirurgia võib anda suure elukvaliteedi võidu, kuid see ei tee silma bioloogiat olematuks.</p>
-
-        <p>Mõnel juhul võib parem tee olla ICL ehk silmasisene kontaktlääts, mõnel juhul läätsevahetus, mõnel juhul prillide või kontaktläätsede kandmise jätkamine. See ei ole ebaõnnestumine. Vastupidi: kui uuring näitab, et laserprotseduur ei ole Sinu silmadele parim lahendus, on selle teadmine väga väärtuslik tulemus.</p>
-
-        <p>KSA Silmakeskuses ütleme ligikaudu igale neljandale kandidaadile "ei". Me ei tee seda selleks, et olla liiga ettevaatlikud. Me teeme seda selleks, et laserprotseduur jääks nendele silmadele, kus kasu ja ohutus on selgelt samal poolel. Hea tulemus algab õigest valikust, mitte operatsioonipäevast.</p>
 
         <hr />
 
@@ -241,7 +221,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kuidas silm siis paigal püsib, kui vaakumit pole? Vastus on see, et kuna lõikeid ei tehta siis silm saab olla vabalt ja laser, kasutab jälgimistehnoloogiat. Laserit juhib  ülikiire 7-mõõtmeline silma jälgimissüsteem (<em>eye-tracker</em>), mis analüüsib silma igat mikroskoopilist liikumist enam kui 1000 korda sekundis. Kui Sinu silm liigub, liigub laseri kiir täpselt kaasa, tagades maksimaalse täpsuse ilma füüsilise surveta.</p>
 
-        <p>See teeb Flow3 meetodist <strong>ainukese 100% võrkkesta-säästliku ja stressivaba lahenduse</strong>, olles hea valik suurema miinusega patsientidele, kes hoolivad oma silmade eluaegsest ohutusest.</p>
+        <p>See teeb Flow3-st <strong>vaakumivaba lahenduse, mis ei lisa võrkkestale operatsiooniaegset mehaanilist stressi</strong>, olles hea valik suurema miinusega patsientidele, kes hoolivad oma silmade eluaegsest ohutusest.</p>
 
         <hr />
 
@@ -253,7 +233,25 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Selles peatükis selgitame lahti, mis täpselt toimub põhjaliku silmauuringu (KSA Auditi) käigus, milliseid nähtamatuid ohumärke arstid otsivad ja miks 15-minutiline kiirkontroll ei ole kunagi piisav, et tagada sinu silmade eluaegne tervis.</p>
 
-        {/* DIAGNOSTIC PHOTO — moved here from end of III OSA; fits the diagnostics chapter narratively */}
+        <h3>Millal Flow3 ei pruugi olla parim valik</h3>
+
+        <p>Kuigi KSA Silmakeskus eelistab Flow3 pinnameetodit selle anatoomilise säästvuse ja pikaajalise ohutusloogika tõttu, ei tähenda see, et Flow3 sobiks igale inimesele või igale silmale. Hea refraktiivkirurgia algab alati mitte küsimusest "millist protseduuri teha?", vaid küsimusest "kas üldse on mõistlik sekkuda?".</p>
+
+        <p>Just seetõttu on põhjalik silmauuring enne otsust nii oluline. Laserprotseduuri eesmärk ei ole lihtsalt prillinumbrit eemaldada. Eesmärk on parandada elukvaliteeti viisil, mis ei sea ohtu silma pikaajalist tervist.</p>
+
+        <p>Flow3 ei pruugi olla sobiv valik näiteks siis, kui sarvkest on liiga õhuke, selle kuju on ebakorrapärane või mõõtmised viitavad varjatud biomehaanilisele nõrkusele. Sellisel juhul võib ka kõige säästvam pinnameetod olla ebamõistlik risk. Sama kehtib olukorras, kus nägemisnumber ei ole veel piisavalt stabiilne. Kui miinus või astigmatism muutub aasta-aastalt, tasub enne protseduuri oodata ja jälgida, mitte kiirustada.</p>
+
+        <p>Oluline vastunäidustus võib olla ka ravimata või tugev kuivasilma sündroom. Kuiv silm ei ole lihtsalt ebamugavus. See mõjutab sarvkesta pinda, mõõtmiste täpsust, paranemist ja hilisemat nägemiskvaliteeti. Mõnikord tuleb esmalt ravida silmapinda ja alles seejärel otsustada, kas laserprotseduur on üldse mõistlik.</p>
+
+        <p>Flow3 ei ole õige lahendus ka siis, kui inimese peamine probleem ei ole enam sarvkesta kujust tingitud lühinägelikkus, vaid silmaläätse vananemine. Umbes 40.–50. eluaasta vahel hakkab paljudel inimestel tekkima presbüoopia ehk lähedale nägemise raskus. Kui lisandub algav hallkae, võib mõnel juhul olla tulevikku vaadates mõistlikum arutada silmasisese läätsevahetuse võimalust, mitte sarvkesta laserprotseduuri.</p>
+
+        <p>On ka inimesi, kelle puhul parim soovitus on mitte opereerida. Kui ootus on absoluutne täiuslikkus igas valguses, igas vanuses ja ilma ühegi kompromissita, tuleb kõigepealt ootused väga ausalt läbi rääkida. Refraktiivkirurgia võib anda suure elukvaliteedi võidu, kuid see ei tee silma bioloogiat olematuks.</p>
+
+        <p>Mõnel juhul võib parem tee olla ICL ehk silmasisene kontaktlääts, mõnel juhul läätsevahetus, mõnel juhul prillide või kontaktläätsede kandmise jätkamine. See ei ole ebaõnnestumine. Vastupidi: kui uuring näitab, et laserprotseduur ei ole Sinu silmadele parim lahendus, on selle teadmine väga väärtuslik tulemus.</p>
+
+        <p>KSA Silmakeskuses ütleme ligikaudu igale neljandale kandidaadile "ei". Me ei tee seda selleks, et olla liiga ettevaatlikud. Me teeme seda selleks, et laserprotseduur jääks nendele silmadele, kus kasu ja ohutus on selgelt samal poolel. Hea tulemus algab õigest valikust, mitte operatsioonipäevast.</p>
+
+        {/* DIAGNOSTIC PHOTO — visual break between 'Millal Flow3...' and diagnostics deep-dive */}
         <figure>
           <Image
             src="/images/guide/diagnostic-oct.jpg"
@@ -318,7 +316,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p><strong>3. Ortokeratoloogia, kontaktläätsed ja kvaliteetsed prillid</strong></p>
 
-        <p>Lastele ja noortele, kelle miinus alles kasvab, on parimaks lahenduseks ortokeratoloogia (spetsiaalsed öösel kantavad läätsed, mis aeglustavad miinuse kasvu). Ning alati tuleb meeles pidada, et hästi sobitatud tänapäevased kontaktläätsed või kvaliteetsed prillid on 0-riskiga eluaegne alternatiiv, mis mõnele patsiendile ongi kõige õigem ja stressivabam lahendus.</p>
+        <p>Lastele ja noortele, kelle miinus alles kasvab, on parimaks lahenduseks ortokeratoloogia (spetsiaalsed öösel kantavad läätsed, mis aeglustavad miinuse kasvu). Ning alati tuleb meeles pidada, et hästi sobitatud tänapäevased kontaktläätsed või kvaliteetsed prillid on väga madala riskiga eluaegne alternatiiv, mis mõnele patsiendile ongi kõige õigem ja stressivabam lahendus.</p>
 
         <p>Lõppkokkuvõttes on Flow3 uuringu eesmärk leida just sinule, sinu eluetapile ja silmade anatoomiale sobivaim lahendus. Hea kliinik suunab sind vajadusel teise spetsialisti juurde või soovitab operatsiooniga oodata, sest silmade pikaajaline tervis on hindamatu väärtusega.</p>
 
@@ -436,7 +434,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Meie põhjaliku teekonna kõige olulisem õppetund peitus sarvkesta biomehaanikas. Tänapäeva kiires maailmas, kus kõike soovitakse "kohe ja praegu", on ahvatlev valida meetod, mis pakub teravat nägemist juba järgmisel hommikul, isegi kui selleks tuleb silma sisse lõigata sügav klapp (LASIK) või eemaldada kude sügavamatest kihtidest (SMILE).</p>
 
-        <p>Kuid teaduslikud uuringud ja kaasaegsed sarvkesta biomehaanilised mõõtmised (nagu Corvis ST analüüs ja <em>Stress-Strain Index</em>) tõestavad üheselt: iga sisselõige nõrgendab silma struktuuri püsivalt. KSA Silmakeskus on teinud teadliku valiku seda teed mitte minna. Meie Flow3 (transepiteliaalne PRK) on 100% puute- ja lõikevaba, säästes Sinu sarvkesta sügavamaid ja tugevamaid kihte ning Sinu võrkkesta ohtlikust vaakumist. Jah, pinnameetod nõuab Sinult esimestel päevadel pisut kannatlikkust ja 3–7 päeva rahulikku taastumisaega, mil nägemine võib olla udune. Aga see on imeväike hind, mida maksta selle eest, et su silm jääb eluks ajaks tugevaks ja tüsistuste, nagu sarvkesta väljakummumine (ektaasia), risk on viidud praktiliselt nulli.</p>
+        <p>Kuid teaduslikud uuringud ja kaasaegsed sarvkesta biomehaanilised mõõtmised (nagu Corvis ST analüüs ja <em>Stress-Strain Index</em>) toetavad seisukohta: iga sisselõige nõrgendab silma struktuuri püsivalt. KSA Silmakeskus on teinud teadliku valiku seda teed mitte minna. Meie Flow3 (transepiteliaalne PRK) on puute- ja lõikevaba, säästes Sinu sarvkesta sügavamaid ja tugevamaid kihte ning Sinu võrkkesta ohtlikust vaakumist. Jah, pinnameetod nõuab Sinult esimestel päevadel pisut kannatlikkust ja 3–7 päeva rahulikku taastumisaega, mil nägemine võib olla udune. Aga see on imeväike hind, mida maksta selle eest, et su silm jääb eluks ajaks tugevaks ja tüsistuste, nagu sarvkesta väljakummumine (ektaasia), risk on erakordselt madal — KSA 21 aasta ja 55 000 protseduuri jooksul ühtegi registreeritud juhtumit ei ole.</p>
 
         <h3>Professionaalide käekiri: pidev sõelumine</h3>
 
@@ -484,17 +482,22 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p>See juhend põhineb globaalselt tunnustatud meditsiinilisel teaduskirjandusel, rahvusvaheliste oftalmoloogia organisatsioonide juhistel ja ulatuslikul pikaajalisel kliinilisel statistikal. Usaldusväärsuse tagamiseks toome välja peamised viited, mis kinnitavad sarvkesta biomehaanika, pinnameetodite eeliste ja ektaasia vältimise olulisust:</p>
 
         <ol>
-          <li><strong>Xin Y, Lopes BT, Wang J, et al. (2022).</strong> <em>"Biomechanical Effects of tPRK, FS-LASIK, and SMILE on the Cornea."</em> Frontiers in Bioengineering and Biotechnology. (Uuring, mis tõestab Corvis ST mõõtmistega, et tugevuse kadu on kõige väiksem tPRK pinnameetodi puhul ja suurim LASIK-u puhul).</li>
-          <li><strong>Hashemi H, Roberts CJ, Elsheikh A, et al. (2023).</strong> <em>"Corneal Biomechanics After SMILE, Femtosecond-Assisted LASIK, and Photorefractive Keratectomy: A Matched Comparison Study."</em> Translational Vision Science &amp; Technology. (Uuring järelejäänud strooma, ehk RSB paksuse fundamentaalsest olulisusest sarvkesta jäikuse säilitamisel).</li>
-          <li><strong>Hwang ES, Stagg BC, Swan R, et al. (2017).</strong> <em>"Corneal biomechanical properties after laser-assisted in situ keratomileusis and photorefractive keratectomy."</em> Clinical Ophthalmology. (Analüüs sarvkesta biomehaaniliste omaduste langusest pärast klapimeetodeid).</li>
-          <li><strong>Gurnani B, Patel BC. (2025/2026).</strong> <em>"Photorefractive Keratectomy."</em> StatPearls Publishing, National Center for Biotechnology Information (NCBI). (Laiaulatuslik ülevaade PRK/pinnameetodite eelistest õhukese sarvkestaga patsientidele ja klapikomplikatsioonide vältimisel).</li>
-          <li><strong>Kanellopoulos AJ. (2012).</strong> <em>"Preventing Ectasia With Cross-linking After PRK or LASIK."</em> Cataract &amp; Refractive Surgery Today. (Ülevaade biomehaanilisest stabiilsusest ja ektaasia vältimise protokollidest).</li>
-          <li><strong>Wu D, Liu M, et al. (2019).</strong> <em>"Corneal biomechanical properties after SMILE versus FLEX, LASIK, LASEK, or PRK: a systematic review and meta-analysis."</em> BMC Ophthalmology. (Süstemaatiline meta-analüüs, mis toetab pinnameetodite biomehaanilist paremust).</li>
-          <li><strong>Alió JL, Soria FA, Abbouda A, et al. (2016).</strong> <em>"Fifteen years follow-up of photorefractive keratectomy up to 10 D of myopia: outcomes and analysis of the refractive regression."</em> British Journal of Ophthalmology. (15-aastane PRK järeluuring, mis kinnitab pikaajalist visuaalset stabiilsust ja efektiivsust).</li>
-          <li><strong>Krueger RR, Trokel SL, Schubert HD.</strong> <em>"Interaction of ultraviolet laser light with the cornea."</em> Investigative Ophthalmology &amp; Visual Science. (Alusuuringud excimer-laseri mõjust kudedele).</li>
-          <li><strong>Mitry D, Singh J, Yorston D, et al. (2011).</strong> <em>"The predisposing pathology and clinical characteristics in the Scottish retinal detachment study."</em> Ophthalmology. (Uuring võrkkesta irdumise riskifaktoritest ja seostest kõrge lühinägelikkuse ning mehaanilise stressiga).</li>
-          <li><strong>All About Vision (2026).</strong> <em>"The Oculomics Revolution &amp; Its Impact on Health Care."</em> (Ülevaade silma diagnostikaseadmete, nagu OCT ja adaptiivoptika, rollist süsteemsete haiguste varajases avastamises.)</li>
+          <li><strong>Xin Y, Lopes BT, Wang J, et al. (2022).</strong> <em>"Biomechanical Effects of tPRK, FS-LASIK, and SMILE on the Cornea."</em> Frontiers in Bioengineering and Biotechnology. (Uuring, mis tõestab Corvis ST mõõtmistega, et tugevuse kadu on kõige väiksem tPRK pinnameetodi puhul ja suurim LASIK-u puhul). <a href="https://pubmed.ncbi.nlm.nih.gov/35433653/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
+          <li><strong>Hashemi H, Roberts CJ, Elsheikh A, et al. (2023).</strong> <em>"Corneal Biomechanics After SMILE, Femtosecond-Assisted LASIK, and Photorefractive Keratectomy: A Matched Comparison Study."</em> Translational Vision Science &amp; Technology. (Uuring järelejäänud strooma, ehk RSB paksuse fundamentaalsest olulisusest sarvkesta jäikuse säilitamisel). <a href="https://pubmed.ncbi.nlm.nih.gov/36928130/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
+          <li><strong>Hwang ES, Stagg BC, Swan R, et al. (2017).</strong> <em>"Corneal biomechanical properties after laser-assisted in situ keratomileusis and photorefractive keratectomy."</em> Clinical Ophthalmology. (Analüüs sarvkesta biomehaaniliste omaduste langusest pärast klapimeetodeid). <a href="https://pubmed.ncbi.nlm.nih.gov/29042748/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
+          <li><strong>Gurnani B, Patel BC. (2026).</strong> <em>"Photorefractive Keratectomy."</em> StatPearls Publishing, National Center for Biotechnology Information (NCBI). (Laiaulatuslik ülevaade PRK/pinnameetodite eelistest õhukese sarvkestaga patsientidele ja klapikomplikatsioonide vältimisel). <a href="https://www.ncbi.nlm.nih.gov/books/NBK549887/" target="_blank" rel="noopener noreferrer">NCBI Bookshelf →</a></li>
+          <li><strong>Kanellopoulos AJ. (2012).</strong> <em>"Preventing Ectasia With Cross-linking After PRK or LASIK."</em> Cataract &amp; Refractive Surgery Today. (Ülevaade biomehaanilisest stabiilsusest ja ektaasia vältimise protokollidest). <a href="https://crstoday.com/articles/2012-may/preventing-ectasia-with-cross-linking-after-prk-or-lasik" target="_blank" rel="noopener noreferrer">Loe artiklit →</a></li>
+          <li><strong>Guo H, Hosseini-Moghaddam SM, Hodge W. (2019).</strong> <em>"Corneal biomechanical properties after SMILE versus FLEX, LASIK, LASEK, or PRK: a systematic review and meta-analysis."</em> BMC Ophthalmology. (Süstemaatiline meta-analüüs, mis toetab pinnameetodite biomehaanilist paremust). <a href="https://pubmed.ncbi.nlm.nih.gov/31370817/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
+          <li><strong>Alió JL, Soria FA, Abbouda A, et al. (2016).</strong> <em>"Fifteen years follow-up of photorefractive keratectomy up to 10 D of myopia: outcomes and analysis of the refractive regression."</em> British Journal of Ophthalmology. (15-aastane PRK järeluuring, mis kinnitab pikaajalist visuaalset stabiilsust ja efektiivsust). <a href="https://doi.org/10.1136/bjophthalmol-2014-306459" target="_blank" rel="noopener noreferrer">DOI →</a></li>
+          <li><strong>Krueger RR, Trokel SL, Schubert HD. (1985).</strong> <em>"Interaction of ultraviolet laser light with the cornea."</em> Investigative Ophthalmology &amp; Visual Science. (Alusuuringud excimer-laseri mõjust kudedele). <a href="https://pubmed.ncbi.nlm.nih.gov/4055287/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
+          <li><strong>Mitry D, Singh J, Yorston D, et al. (2011).</strong> <em>"The predisposing pathology and clinical characteristics in the Scottish retinal detachment study."</em> Ophthalmology. (Uuring võrkkesta irdumise riskifaktoritest ja seostest kõrge lühinägelikkuse ning mehaanilise stressiga). <a href="https://pubmed.ncbi.nlm.nih.gov/21561662/" target="_blank" rel="noopener noreferrer">PubMed →</a></li>
         </ol>
+
+        <h3>Täiendav lugemine</h3>
+
+        <ul>
+          <li><strong>All About Vision (2026).</strong> <em>"The Oculomics Revolution &amp; Its Impact on Health Care."</em> (Populaarteaduslik ülevaade silma diagnostikaseadmete, nagu OCT ja adaptiivoptika, rollist süsteemsete haiguste varajases avastamises.) <a href="https://www.allaboutvision.com/" target="_blank" rel="noopener noreferrer">allaboutvision.com →</a></li>
+        </ul>
 
       </article>
     </GuideLayout>

@@ -37,7 +37,7 @@ const STRINGS = {
     authorName: 'Dr. Ants Haavel',
     publishedPrefix: 'Published',
     publishedSuffix: '• KSA Silmakeskus, Tallinn and Tartu',
-    bookingLabel: 'Book a Flow3 exam',
+    bookingLabel: 'Book a Flow3 suitability evaluation',
   },
 };
 

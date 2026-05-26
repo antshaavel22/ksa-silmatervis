@@ -123,7 +123,7 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
         <ul>
           <li>the clinical experience of KSA Silmakeskus;</li>
           <li>peer-reviewed scientific literature;</li>
-          <li>medical fact, not marketing.</li>
+          <li>clinical facts rather than marketing claims.</li>
         </ul>
 
         <p>You will find:</p>
@@ -131,20 +131,20 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
         <ul>
           <li>links to peer-reviewed studies behind the main claims;</li>
           <li>the experience of KSA over 21 years and more than 55,000 procedures;</li>
-          <li>an honest look at alternatives such as ICL and lens exchange, even though our clinic does not perform them daily.</li>
+          <li>an honest look at alternatives such as ICL and lens exchange, even though our clinic does not routinely offer them.</li>
         </ul>
 
         <p>And most importantly, at the end of the guide you will find <strong>20 questions</strong> that help you take stock of your own situation — or evaluate the competence of any specialist or clinic you may visit.</p>
 
         <h3>My position</h3>
 
-        <p>My position is open: at KSA Silmakeskus the primary method is Flow3 — transepithelial PRK. I consider this approach particularly tissue-sparing for patients whose ocular anatomy suits it. This view is based on corneal biomechanics and more than 20 years of accumulated clinical data.</p>
+        <p>My position is open: at KSA Silmakeskus the primary method is Flow3 — transepithelial PRK. I consider this approach particularly tissue-sparing for patients whose eye anatomy suits it. This view is based on corneal biomechanics and more than 20 years of accumulated clinical data.</p>
 
         <p>That said, Flow3 is not right for everyone. In some cases the more reasonable option is ICL (an implantable lens), refractive lens exchange, careful observation, or simply continuing with glasses or contacts. The long-term health of your eyes always matters more than where, or with whom, the procedure is done.</p>
 
         <h3>One more important point</h3>
 
-        <p>If, after reading this guide, you decide to come to KSA Silmakeskus for an examination, we will be glad to see you. But let me be direct: not every person is a candidate for Flow3.</p>
+        <p>If, after reading this guide, you decide to come to KSA Silmakeskus for an examination, we would be happy to examine you. But let me be direct: not every person is a candidate for Flow3.</p>
 
         <p>We say "no" to roughly one in four candidates. This is not a formality and not caution "just in case." It is part of a strict medical safety standard. If a person cannot safely undergo laser correction, an honest refusal is not bad news — it is protection from a risk they may not have known existed.</p>
 
@@ -279,7 +279,7 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
 
         <p>SMILE is often described as "flapless." It is — in the sense that no large flap is created. But tissue is still removed from the deep corneal layers, so the biomechanical strength of the cornea is also reduced. SMILE should not be judged on incision size alone.</p>
 
-        <p>Another important point is the use of vacuum. During the procedure the eye is fixated by a suction cup that briefly raises intraocular pressure to 4–5 times its normal value (up to 65–90 mmHg). This creates mechanical load on the posterior segment and warrants particular caution in patients with high myopia, a thin retina, or an elongated globe. Subsequent enhancements after SMILE are also technically harder.</p>
+        <p>Another important point is the use of vacuum. During the procedure the eye is fixated by a suction cup that briefly raises intraocular pressure to 4–5 times its normal value (up to 65–90 mmHg). This creates mechanical load on the back of the eye and warrants particular caution in patients with high myopia, a thin retina, or a longer eyeball. Later touch-up corrections after SMILE are also technically harder.</p>
 
         <h3>Modern surface methods and the no-touch Flow3</h3>
 
@@ -293,8 +293,8 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
 
         <ul>
           <li><strong>Preserved biomechanical strength.</strong> Because deep corneal structures are not cut, the eye keeps almost all of its natural strength. Strength loss is only about 10–15%, which keeps the risk of corneal ectasia to a minimum.</li>
-          <li><strong>No flap-related risks.</strong> With no flap, there is no risk of flap displacement years later. The method suits athletes, people with active lifestyles, young parents and anyone in contact sports.</li>
-          <li><strong>Safer for the retina.</strong> Because no vacuum is used, the brief rise in intraocular pressure seen with flap-based methods is avoided.</li>
+          <li><strong>No flap-related risks.</strong> With no flap, flap-displacement risk is avoided. The method suits athletes, people with active lifestyles, young parents and anyone in contact sports.</li>
+          <li><strong>No vacuum-related pressure spike.</strong> Because no vacuum is used, the brief rise in intraocular pressure seen with flap-based methods is avoided. This may be especially relevant for patients with high myopia.</li>
           <li><strong>Lower risk of chronic dry eye.</strong> The corneal nerve network is not severed at scale, so the chance of severe chronic dry-eye syndrome is substantially lower.</li>
         </ul>
 
@@ -319,7 +319,7 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
 
         <p><strong>What happens during LASIK.</strong> In LASIK or Femto-LASIK, the laser creates a flap. This means the strongest anterior collagen fibres are cut and they do not recover their original strength. Modern measurements show that <strong>flap-based methods reduce the eye's strength by roughly 20–25%</strong>. It is similar to cutting the main load-bearing beams of a bridge — the bridge may still stand, but its load capacity is no longer the same.</p>
 
-        <p><strong>And SMILE?</strong> SMILE is often described as flapless. It is, in that no large flap is created. But tissue is still removed from the deep corneal layers, and the eye still becomes noticeably weaker.</p>
+        <p><strong>And SMILE?</strong> SMILE is often described as flapless. It is, in that no large flap is created. But tissue is still removed from the deep corneal layers, and corneal biomechanical strength is also reduced.</p>
 
         <p><strong>The surface-method philosophy.</strong> Flow3, PRK and tPRK work the other way around. Only the regenerative surface epithelium is removed; the laser reshapes the cornea directly on the surface; the deep structures are not cut. As a result the natural strength of the eye is preserved as fully as possible — and that preservation lasts decades, not just on day one.</p>
 
@@ -579,7 +579,7 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
 
         <h2 id="conclusion">
           <span className="chapter-eyebrow">Conclusion</span>
-          <span className="chapter-title">Your vision is a lifetime investment</span>
+          <span className="chapter-title">Your vision is a long-term health decision</span>
         </h2>
 
         <p>Stepping away from glasses and contacts is not just a matter of convenience. It is a decision that affects quality of life, freedom, eye health and every day of the decades ahead.</p>
@@ -759,7 +759,7 @@ function EndOfGuideCTAsEn() {
           <div className="flex items-baseline gap-4 mb-5">
             <span className="font-serif text-2xl text-[#1a1a1a] leading-none">II.</span>
             <p className="font-serif text-[19px] text-[#1a1a1a] leading-snug flex-1">
-              I am 18–45, short-sighted, and would like to book a Flow3 evaluation myself.
+              I am 18–45, have myopia, and would like to book a Flow3 evaluation myself.
             </p>
           </div>
 
@@ -770,7 +770,7 @@ function EndOfGuideCTAsEn() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 transition"
             >
-              Book a Flow3 evaluation →
+              Book a Flow3 suitability evaluation →
             </a>
             <p className="text-[11px] uppercase tracking-[0.15em] text-[#6f7f80] mt-3">
               Use code G39 when booking. Evaluation fee: 39&nbsp;€.

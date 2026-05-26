@@ -87,19 +87,19 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
           <p>KSA Silmakeskus специализируется на Flow3 и рассматривает этот метод как наиболее щадящий для подходящих пациентов. При этом не каждый пациент подходит для Flow3, и в ряде случаев более разумным выбором могут быть ICL, замена хрусталика (RLE) или отказ от операции.</p>
         </div>
 
-        {/* TOC */}
-        <nav aria-label="Содержание" className="callout-disclosure">
+        {/* TOC — journal-style numbered list */}
+        <nav aria-label="Содержание" className="guide-toc">
           <span className="callout-label">Содержание</span>
-          <ul style={{ marginLeft: 0, paddingLeft: '1.2em' }}>
-            <li><a href="#introduction">Введение</a></li>
+          <ol>
+            <li><a href="#introduction">Введение и моя позиция</a></li>
             <li><a href="#part-1">Часть I. Как очки и линзы влияют на качество жизни</a></li>
-            <li><a href="#part-2">Часть II. Развитие методов рефракционной хирургии и их сравнение</a></li>
-            <li><a href="#part-3">Часть III. Невидимая безопасность: биомеханика и сетчатка</a></li>
-            <li><a href="#part-4">Часть IV. Клиническая правда: кому подходит, а кому — нет</a></li>
-            <li><a href="#part-5">Часть V. Жизнь после операции и 20 вопросов врачу</a></li>
+            <li><a href="#part-2">Часть II. Сравнение методов рефракционной хирургии</a></li>
+            <li><a href="#part-3">Часть III. Невидимая безопасность — биомеханика, эктазия, сетчатка</a></li>
+            <li><a href="#part-4">Часть IV. Кому подходит операция, а кому — нет</a></li>
+            <li><a href="#part-5">Часть V. Восстановление и 20 вопросов врачу</a></li>
             <li><a href="#conclusion">Заключение</a></li>
             <li><a href="#references">Источники и научная литература</a></li>
-          </ul>
+          </ol>
         </nav>
       </article>
 

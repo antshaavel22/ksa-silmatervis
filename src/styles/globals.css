@@ -495,8 +495,9 @@ select:focus {
   max-width: 640px;
 }
 
-/* Structured chapter headings — eyebrow + title (JCRS / NEJM style) */
-[lang="ru"] .prose-v2 h2 .chapter-eyebrow {
+/* Structured chapter headings — eyebrow + title (JCRS / NEJM style).
+   Language-agnostic base styling so EN + ET also render correctly. */
+.prose-v2 h2 .chapter-eyebrow {
   display: block;
   font-family: var(--font-sans);
   font-size: 11px;
@@ -507,7 +508,7 @@ select:focus {
   margin-bottom: 10px;
 }
 
-[lang="ru"] .prose-v2 h2 .chapter-title {
+.prose-v2 h2 .chapter-title {
   display: block;
 }
 

@@ -2,32 +2,61 @@
  * Callback request endpoint — end-of-guide CTA #1.
  *
  * User says "KSA Silmakeskus võtab minuga ühendust telefoni teel."
- * Routing:
- *   1. CRM intake with source=guide-callback
- *   2. Slack → #kiirtesti-täitmised (high priority — same-day callback)
+ *
+ * Wired to Mai's NEW CRM intake (PHASE-44, 2026-05-26):
+ *   POST https://crm.ksa.ee/api/v1/leads/intake/refraktiivkirurgia-juhend
+ *   Auth: X-KSA-API-Key: ksa_<key>   (env: KSA_TICKETS_API_KEY)
+ *   Source: hardcoded server-side as "refraktiivkirurgia_juhend"
+ *
+ * Mandatory fields per Mai's spec:
+ *   - lang ("et" | "en" | "ru")
+ *   - contact.phone (E.164)
+ *   - contact.email
+ *   - magnet.consent_data: true (GDPR — server rejects with 400 if false)
+ *
+ * Routing (best-effort, parallel; failure of one doesn't block others):
+ *   1. CRM intake → Mai's system (Lilia call queue)
+ *   2. Slack → #kiirtesti-täitmised (so Lilia + team see it instantly)
  */
 
-const CRM_ENDPOINT = 'https://crm.ksa.ee/api/v1/tickets/intake/flow3';
+const CRM_ENDPOINT = 'https://crm.ksa.ee/api/v1/leads/intake/refraktiivkirurgia-juhend';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, phone, source = 'guide-callback' } = req.body || {};
+  const {
+    name,
+    phone,
+    email,
+    lang = 'et',
+    source = 'guide-callback',
+  } = req.body || {};
 
-  if (!name || !phone) {
-    return res.status(400).json({ error: 'Nimi ja telefon on kohustuslikud.' });
+  if (!name || !phone || !email) {
+    return res.status(400).json({ error: 'Nimi, telefon ja e-mail on kohustuslikud.' });
   }
 
-  const cleanedPhone = phone.replace(/\s+/g, '');
-  if (cleanedPhone.length < 7) {
-    return res.status(400).json({ error: 'Palun sisesta korrektne telefoninumber.' });
+  // Normalise + light validation
+  const cleanedPhone = normalisePhone(phone);
+  if (!/^\+\d{8,15}$/.test(cleanedPhone)) {
+    return res.status(400).json({ error: 'Palun sisesta korrektne telefoninumber (nt +372 5xxx xxxx).' });
   }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return res.status(400).json({ error: 'Palun sisesta korrektne e-maili aadress.' });
+  }
+
+  // Split name into first/last (Mai's spec allows either or both as optional)
+  const [firstName, ...rest] = name.trim().split(/\s+/);
+  const lastName = rest.join(' ') || undefined;
 
   const lead = {
-    name: name.trim(),
+    firstName,
+    lastName,
     phone: cleanedPhone,
+    email: email.trim().toLowerCase(),
+    lang,
     source,
     submittedAt: new Date().toISOString(),
   };
@@ -39,11 +68,21 @@ export default async function handler(req, res) {
 
   console.log('[guide-callback]', {
     phone: lead.phone,
+    email: lead.email,
     crm: crmResult.status,
+    crmReason: crmResult.status === 'rejected' ? crmResult.reason?.message : undefined,
     slack: slackResult.status,
   });
 
   return res.status(200).json({ ok: true });
+}
+
+function normalisePhone(input) {
+  const trimmed = input.replace(/[\s\-()]/g, '');
+  if (trimmed.startsWith('+')) return trimmed;
+  // Bare Estonian number (5xxx xxxx) → assume +372
+  if (/^\d{7,8}$/.test(trimmed)) return `+372${trimmed}`;
+  return trimmed;
 }
 
 async function sendToCrm(lead) {
@@ -53,23 +92,39 @@ async function sendToCrm(lead) {
     return { skipped: true };
   }
 
+  const payload = {
+    lang: lead.lang,
+    contact: {
+      first_name: lead.firstName,
+      last_name: lead.lastName,
+      phone: lead.phone,
+      email: lead.email,
+    },
+    magnet: {
+      version: 'v1',
+      consent_data: true, // user clicked the callback button on the guide; GDPR-purpose consent implicit
+      consent_marketing: false,
+    },
+    utm: {
+      source: 'silmatervis',
+      medium: 'guide',
+      campaign: 'refraktiivkirurgia-juhend',
+    },
+  };
+
   const res = await fetch(CRM_ENDPOINT, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
+      'X-KSA-API-Key': apiKey,
     },
-    body: JSON.stringify({
-      name: lead.name,
-      phone: lead.phone,
-      source: lead.source,
-      priority: 'high',
-      callback_requested: true,
-      submitted_at: lead.submittedAt,
-    }),
+    body: JSON.stringify(payload),
   });
 
-  if (!res.ok) throw new Error(`CRM responded ${res.status}`);
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`CRM responded ${res.status} ${body}`);
+  }
   return { ok: true };
 }
 
@@ -88,14 +143,16 @@ async function sendToSlack(lead) {
     {
       type: 'section',
       fields: [
-        { type: 'mrkdwn', text: `*Nimi:*\n${lead.name}` },
+        { type: 'mrkdwn', text: `*Nimi:*\n${lead.firstName}${lead.lastName ? ' ' + lead.lastName : ''}` },
         { type: 'mrkdwn', text: `*Telefon:*\n${lead.phone}` },
+        { type: 'mrkdwn', text: `*E-mail:*\n${lead.email}` },
+        { type: 'mrkdwn', text: `*Keel:*\n${lead.lang.toUpperCase()}` },
       ],
     },
     {
       type: 'context',
       elements: [
-        { type: 'mrkdwn', text: `Allikas: refraktiivkirurgia-juhend • Helistada hiljemalt järgmise tööpäeva jooksul • Saabunud: ${lead.submittedAt}` },
+        { type: 'mrkdwn', text: `Allikas: refraktiivkirurgia-juhend • Lilia helistab • Saabunud: ${lead.submittedAt}` },
       ],
     },
   ];

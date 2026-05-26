@@ -505,7 +505,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 }
 
 function EndOfGuideCTAs() {
-  const [callback, setCallback] = useState({ name: '', phone: '' });
+  const [callback, setCallback] = useState({ name: '', phone: '', email: '' });
   const [status, setStatus] = useState('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -521,6 +521,7 @@ function EndOfGuideCTAs() {
         body: JSON.stringify({
           ...callback,
           source: 'guide-callback',
+          lang: 'et',
         }),
       });
       if (!res.ok) {
@@ -580,8 +581,22 @@ function EndOfGuideCTAs() {
                     type="tel"
                     id="cb-phone"
                     required
+                    placeholder="+372..."
                     value={callback.phone}
                     onChange={(e) => setCallback({ ...callback, phone: e.target.value })}
+                    className="w-full px-0 py-1.5 bg-transparent border-0 border-b border-[#1a1a1a] focus:border-[#1a1a1a] focus:ring-0 focus:outline-none text-[#1a1a1a]"
+                  />
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="cb-email" className="block text-[10px] uppercase tracking-[0.2em] font-semibold text-[#1a1a1a] mb-1.5">
+                    E-mail
+                  </label>
+                  <input
+                    type="email"
+                    id="cb-email"
+                    required
+                    value={callback.email}
+                    onChange={(e) => setCallback({ ...callback, email: e.target.value })}
                     className="w-full px-0 py-1.5 bg-transparent border-0 border-b border-[#1a1a1a] focus:border-[#1a1a1a] focus:ring-0 focus:outline-none text-[#1a1a1a]"
                   />
                 </div>
@@ -615,7 +630,7 @@ function EndOfGuideCTAs() {
 
           <div className="ml-9">
             <a
-              href="https://booking.ksa.ee/?code=G39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend"
+              href="https://booking.ksa.ee/?promokood=G39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 transition"

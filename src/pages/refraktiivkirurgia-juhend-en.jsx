@@ -4,21 +4,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
 
-/**
- * Refraktiivkirurgia tarbijajuhend — landing page (ET).
- *
- * V2 (2026-05-26): preview pattern. Reader sees the actual Eessõna prose
- * before the email gate. Form sits after the intro. On submit:
- * 1. Email magic link sent via Resend
- * 2. Slack staff ping fired
- * 3. Reader is redirected to the full guide immediately (no wait)
- */
-export default function RefraktiivkirurgiaJuhendLP() {
+export default function RefraktiivkirurgiaJuhendLpEn() {
   const router = useRouter();
   const [formState, setFormState] = useState({
     name: '',
     email: '',
-    language: 'et',
+    language: 'en',
     consent: false,
   });
   const [status, setStatus] = useState('idle');
@@ -40,19 +31,18 @@ export default function RefraktiivkirurgiaJuhendLP() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...formState,
-          source: 'refraktiivkirurgia-juhend-gate',
+          source: 'refraktiivkirurgia-juhend-gate-en',
         }),
       });
 
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || 'Tekkis viga. Palun proovi uuesti.');
+        throw new Error(data.error || 'Something went wrong. Please try again.');
       }
 
       setStatus('success');
-      // Redirect to full guide after a brief moment so success state is visible.
       setTimeout(() => {
-        router.push('/refraktiivkirurgia-tarbijajuhend');
+        router.push('/refraktiivkirurgia-tarbijajuhend-en');
       }, 1400);
     } catch (err) {
       setStatus('error');
@@ -63,32 +53,27 @@ export default function RefraktiivkirurgiaJuhendLP() {
   return (
     <Layout>
       <Head>
-        <title>Refraktiivkirurgia tarbijajuhend — Dr. Ants Haavel | KSA Silmakeskus</title>
+        <title>Refractive Surgery — A Patient Guide | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="Tasuta 25-minutiline juhend, mille Dr. Ants Haavel kirjutas 21 aasta praktika ja 55 000 protseduuri baasil. 20 küsimust, mis aitavad valida õige kliiniku ja meetodi."
+          content="A free 25-minute patient guide written by Dr. Ants Haavel from 21 years of practice and 55,000+ procedures. 20 questions to ask any clinic before deciding."
         />
-        <meta property="og:title" content="Refraktiivkirurgia tarbijajuhend — Dr. Ants Haavel" />
-        <meta
-          property="og:description"
-          content="Tasuta juhend, mis aitab teha teadliku otsuse oma silmade kohta. KSA Silmakeskus, 21 aastat, 55 000 protseduuri, 0 ektaasia juhtumit."
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://silmatervis.ksa.ee/images/guide/dr-haavel-portrait.jpg" />
-        <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-juhend" />
+        <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-juhend-en" />
       </Head>
+
+      <div lang="en">
 
       {/* TITLE BAND */}
       <section className="bg-beige-light py-16 md:py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block text-xs uppercase tracking-widest font-semibold text-lime-darker mb-5">
-            Tasuta patsiendijuhend • 25 min lugemine
+            Free patient guide • 25 min read
           </div>
           <h1 className="font-sans text-4xl md:text-5xl font-semibold text-ink leading-tight mb-5 tracking-tight">
-            Refraktiivkirurgia tarbijajuhend
+            Refractive Surgery — A Patient Guide
           </h1>
           <p className="font-serif italic text-xl text-ink leading-relaxed max-w-xl mx-auto">
-            Mida pead teadma enne, kui valid kliiniku ja meetodi oma silmadele.
+            What you need to know before choosing a clinic and a method for your eyes.
           </p>
         </div>
       </section>
@@ -98,40 +83,39 @@ export default function RefraktiivkirurgiaJuhendLP() {
         <div className="max-w-4xl mx-auto grid grid-cols-3 gap-6 text-center">
           <div>
             <div className="font-serif text-4xl md:text-5xl font-semibold text-lime-darker mb-1">21</div>
-            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">aastat praktikat</div>
+            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">years of practice</div>
           </div>
           <div>
-            <div className="font-serif text-4xl md:text-5xl font-semibold text-lime-darker mb-1">55&nbsp;000+</div>
-            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">protseduuri</div>
+            <div className="font-serif text-4xl md:text-5xl font-semibold text-lime-darker mb-1">55,000+</div>
+            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">procedures</div>
           </div>
           <div>
             <div className="font-serif text-4xl md:text-5xl font-semibold text-lime-darker mb-1">0</div>
-            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">registreeritud ektaasiat</div>
+            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">registered ectasia cases</div>
           </div>
         </div>
       </section>
 
-      {/* EESSÕNA PREVIEW — real prose from the guide */}
+      {/* INTRODUCTION PREVIEW */}
       <section className="py-16 md:py-20 px-4">
         <div className="max-w-[680px] mx-auto">
           <p className="text-xs uppercase tracking-[0.25em] text-ink-60 mb-4 font-semibold">
-            Eessõna
+            Introduction
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-medium text-ink mb-8 leading-tight">
-            Miks ma selle juhendi kirjutasin
+            Why I wrote this guide
           </h2>
 
           <div className="prose-v2">
-            <p>Oma 21-aastase praktika jooksul olen näinud tuhandeid patsiente, kes tulevad kliinikusse suurte ootuste ja paljude küsimustega, kuid lahkuvad uuringult sõnadega: "Ma pean seda veel seedima ja mõtlema." See ei juhtu seetõttu, et me ei püüaks asju selgitada, vaid seetõttu, et refraktiivkirurgia on äärmiselt mitmetahuline ning ühetunnise uuringu jooksul antav infotulv on patsiendi jaoks lihtsalt liiga suur.</p>
+            <p>In 21 years of practice I have seen thousands of patients who arrive with high expectations and a long list of questions, and who leave the examination saying: "I need to think this through." This is not because we fail to explain. Refractive surgery is genuinely multilayered, and the volume of information a patient receives in a one-hour examination is simply too much.</p>
 
-            <p>Uued ja keerulised terminid nagu "Flow", "SMILE", "Femto-LASIK", "sarvkesta biomehaanika", "läätsevahetus" ja "ektaasia" võivad esialgu tekitada tõelise peapöörituse. Kuidas teha nii oluline ja elukvaliteeti muutev otsus, kui sa ei mõista täielikult, mis Sinu silmadega tegelikult toimuma hakkab?</p>
+            <p>New and unfamiliar terms — Flow, SMILE, Femto-LASIK, corneal biomechanics, lens exchange, ectasia — can leave a person disoriented. How do you make a decision that will change your daily quality of life if you do not fully understand what will happen to your eyes?</p>
 
-            <p>Olen aastate jooksul mõistnud, et Eestis puudub üks tõeline, patsiendikeskne teejuht silmade laserkirurgia maailma – dokument, mis ei oleks pelgalt turundusmaterjal, vaid tehniliselt täpne, kuid samas lihtsalt ja arusaadavalt kirjutatud. Iga kliinik räägib peamiselt endast ja oma toodetest, jättes tarbija ülesandeks kogu see keeruline pusle ise kokku panna. Just seetõttu otsustasingi selle lünga täita ja puuduoleva ning ülevaatliku juhendi Sinu jaoks ise valmis kirjutada.</p>
+            <p>Over time I came to see that Estonia lacks a patient-facing guide to laser vision correction: a document that is technically accurate but written so that a non-medical reader can understand it.</p>
 
-            <p>See juhend ei ole müügimaterjal. Kui Sa loed selle läbi ja otsustad minna mõnda teise kliinikusse, siis on see igati arusaadav – aga usun, et see materjal aitab leida parima kliiniku ja arsti just Sinu vajaduste jaoks.</p>
+            <p>This is not a sales brochure. If you read it and decide to go to a different clinic, that is a perfectly reasonable outcome. My aim is different: to help you better understand your options and choose a clinic and a doctor you can calmly trust with your eyes.</p>
           </div>
 
-          {/* Author signature line */}
           <div className="mt-10 pt-8 border-t border-line flex items-center gap-5">
             <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
               <Image
@@ -144,42 +128,42 @@ export default function RefraktiivkirurgiaJuhendLP() {
             </div>
             <div>
               <p className="font-serif italic text-lg text-ink leading-tight">Dr. Ants Haavel</p>
-              <p className="text-sm text-ink-60">asutaja ja meditsiinijuht, KSA Silmakeskus</p>
+              <p className="text-sm text-ink-60">founder and medical director, KSA Silmakeskus</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* GATE — read on by giving email */}
+      {/* GATE */}
       <section className="bg-beige-light py-16 md:py-20 px-4 border-t border-b border-line">
         <div className="max-w-[560px] mx-auto">
           <div className="text-center mb-8">
             <p className="text-xs uppercase tracking-[0.25em] text-ink-60 mb-3 font-semibold">
-              Lugemise jätkamiseks
+              Keep reading
             </p>
             <h2 className="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">
-              Saada mulle juhendi täisversioon
+              Send me the full guide
             </h2>
             <p className="text-base text-ink-60 leading-relaxed">
-              Saadame Sulle e-mailile lingi täisversioonile (5 osa, ~25 min lugemist,
-              kaasa arvatud 20 küsimust kliinikule). Saad lugeda kohe, salvestada
-              hiljemaks või jagada lähedasega.
+              We'll email you the link to the full version (5 parts, ~25 min read,
+              including the 20 questions to ask any clinic). Read it now, save it for
+              later, or share it with a loved one.
             </p>
           </div>
 
           {status === 'success' ? (
             <div className="bg-lime-wash border-l-4 border-lime p-6 rounded">
               <h3 className="text-lg font-semibold text-ink mb-2">
-                Aitäh! Juhend on teel.
+                Thank you — the guide is on its way.
               </h3>
               <p className="text-ink-80 mb-1">
-                E-mail on saadetud. Suuname Sind kohe juhendi täisversiooni juurde…
+                The email has been sent. We'll take you straight to the full version now…
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-card p-6 md:p-8 space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-ink mb-1">Nimi</label>
+                <label htmlFor="name" className="block text-sm font-medium text-ink mb-1">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -188,12 +172,12 @@ export default function RefraktiivkirurgiaJuhendLP() {
                   value={formState.name}
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none transition"
-                  placeholder="Sinu nimi"
+                  placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-ink mb-1">E-mail</label>
+                <label htmlFor="email" className="block text-sm font-medium text-ink mb-1">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -202,12 +186,12 @@ export default function RefraktiivkirurgiaJuhendLP() {
                   value={formState.email}
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none transition"
-                  placeholder="sinu@email.ee"
+                  placeholder="you@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="language" className="block text-sm font-medium text-ink mb-1">Keel</label>
+                <label htmlFor="language" className="block text-sm font-medium text-ink mb-1">Language</label>
                 <select
                   id="language"
                   name="language"
@@ -215,9 +199,9 @@ export default function RefraktiivkirurgiaJuhendLP() {
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none transition bg-white"
                 >
+                  <option value="en">English</option>
                   <option value="et">Eesti</option>
                   <option value="ru">Русский</option>
-                  <option value="en">English</option>
                 </select>
               </div>
 
@@ -232,8 +216,8 @@ export default function RefraktiivkirurgiaJuhendLP() {
                   className="mt-1 h-4 w-4 text-lime border-line rounded focus:ring-lime"
                 />
                 <label htmlFor="consent" className="text-sm text-ink-60 leading-snug">
-                  Nõustun, et KSA Silmakeskus saadab mulle juhendi lingi e-mailile
-                  ja vajadusel kasulikke meeldetuletusi. Saan tellimusest igal ajal loobuda.
+                  I agree that KSA Silmakeskus may email me the guide link and useful
+                  reminders. I can unsubscribe at any time.
                 </label>
               </div>
 
@@ -248,37 +232,37 @@ export default function RefraktiivkirurgiaJuhendLP() {
                 disabled={status === 'submitting' || !formState.consent}
                 className="w-full bg-lime hover:bg-lime-dark disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-3 rounded transition"
               >
-                {status === 'submitting' ? 'Saadame…' : 'Saada juhend ja loe edasi'}
+                {status === 'submitting' ? 'Sending…' : 'Send the guide and keep reading'}
               </button>
 
               <p className="text-xs text-ink-40 text-center pt-1">
-                Sinu andmeid ei jaga me kunagi kolmandate osapooltega.
+                We never share your data with third parties.
               </p>
             </form>
           )}
         </div>
       </section>
 
-      {/* WHAT'S INSIDE — short preview list */}
+      {/* WHAT'S INSIDE */}
       <section className="py-16 md:py-20 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-medium text-ink mb-3 text-center">
-            Mida juhendist leiad
+            What's in the guide
           </h2>
           <p className="text-ink-60 text-center mb-12 max-w-xl mx-auto text-sm leading-relaxed">
-            Materjal põhineb teaduskirjandusel ja KSA 21 aasta kogemusel — kirjutatud
-            nii, et oskaksid teha teadliku otsuse, ükskõik millisesse kliinikusse Sa
-            lõpuks lähed.
+            Built on peer-reviewed literature and 21 years of clinical experience at
+            KSA — written so that you can make an informed decision, no matter which
+            clinic you ultimately choose.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { title: 'Silma anatoomia ja nägemishäirete teke', body: 'Miks Sa näed nii nagu näed — ja mida operatsioon tegelikult silmas muudab.' },
-              { title: 'LASIK vs SMILE vs Flow3 — aus võrdlus', body: 'Iga meetodi tugevused, riskid ja pikaajalised tagajärjed sarvkesta tugevusele.' },
-              { title: 'Sarvkesta biomehaanika', body: 'Miks 20% tugevuse kadu LASIK-ist tähendab probleeme alles 10 aastat hiljem.' },
-              { title: 'Taastumine päev-päevalt', body: 'Mis täpselt juhtub silmas 1., 3., 7. ja 30. päeval. Ilma ilustamata.' },
-              { title: 'Presbüoopia ja silmaläätse vananemine', body: 'Miks 45+ vanuses tuleb prilliprobleem tagasi — ja mida sellega teha.' },
-              { title: '20 küsimust kliinikule', body: 'Trüki välja ja vii kaasa. Aus kliinik vastab kõigile täpsete numbritega.' },
+              { title: 'Eye anatomy and how vision problems develop', body: 'Why you see the way you do — and what surgery actually changes inside the eye.' },
+              { title: 'LASIK vs SMILE vs Flow3 — honest comparison', body: 'Each method’s strengths, risks, and long-term effects on corneal strength.' },
+              { title: 'Corneal biomechanics', body: 'Why a 20% strength loss from LASIK shows up as problems only a decade later.' },
+              { title: 'Recovery day by day', body: 'Exactly what happens inside the eye on days 1, 3, 7 and 30. Without sugar-coating.' },
+              { title: 'Presbyopia and lens ageing', body: 'Why reading glasses come back around age 45 — and what to do about it.' },
+              { title: '20 questions to ask any clinic', body: 'Print and take with you. An honest clinic answers all of them with precise numbers.' },
             ].map((item) => (
               <div key={item.title} className="border-l-4 border-lime pl-5 py-1">
                 <h3 className="font-semibold text-ink mb-1">{item.title}</h3>
@@ -288,6 +272,8 @@ export default function RefraktiivkirurgiaJuhendLP() {
           </div>
         </div>
       </section>
+
+      </div>
     </Layout>
   );
 }

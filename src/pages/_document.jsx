@@ -1,14 +1,17 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { GTM_ID } from '@/lib/constants';
 
-// Routes that serve Estonian-only content. Anything matching these prefixes
-// gets <html lang="et"> instead of the default "en" used for the EN/RU
+// Per-route language overrides for the refraktiivkirurgia guide family.
+// Anything else falls through to the default "en" used for the EN
 // silmatervis platform pages.
-const ET_ROUTE_PREFIXES = ['/refraktiivkirurgia'];
-
 function getLangFromPath(pathname) {
   if (!pathname) return 'en';
-  return ET_ROUTE_PREFIXES.some((p) => pathname.startsWith(p)) ? 'et' : 'en';
+  if (pathname.startsWith('/refraktiivkirurgia')) {
+    if (pathname.endsWith('-ru')) return 'ru';
+    if (pathname.endsWith('-en')) return 'en';
+    return 'et'; // ET is the default for /refraktiivkirurgia* unless suffixed
+  }
+  return 'en';
 }
 
 class MyDocument extends Document {

@@ -6,10 +6,43 @@ import Head from 'next/head';
  *
  * Deliberately strips the regular Silmatervis nav/footer to make the
  * page feel like a publication, not a website.
+ *
+ * Pass `lang` ("et" | "ru" | "en") to render localised chrome strings
+ * and lang attribute. LP back-link adjusts to language version.
  */
-export default function GuideLayout({ children, publicationDate = '2026-05-26' }) {
+
+const STRINGS = {
+  et: {
+    backToLP: '← Juhendi avaleht',
+    backToLPHref: '/refraktiivkirurgia-juhend',
+    authorRole: 'asutaja ja meditsiinijuht, KSA Silmakeskus',
+    publishedPrefix: 'Avaldatud',
+    publishedSuffix: '• KSA Silmakeskus, Tallinn ja Tartu',
+    bookingLabel: 'Broneeri Flow3 uuring',
+  },
+  ru: {
+    backToLP: '← На главную руководства',
+    backToLPHref: '/refraktiivkirurgia-juhend-ru',
+    authorRole: 'основатель и медицинский руководитель, KSA Silmakeskus',
+    publishedPrefix: 'Опубликовано',
+    publishedSuffix: '• KSA Silmakeskus, Таллинн и Тарту',
+    bookingLabel: 'Записаться на исследование Flow3',
+  },
+  en: {
+    backToLP: '← Guide landing page',
+    backToLPHref: '/refraktiivkirurgia-juhend-en',
+    authorRole: 'founder and medical director, KSA Silmakeskus',
+    publishedPrefix: 'Published',
+    publishedSuffix: '• KSA Silmakeskus, Tallinn and Tartu',
+    bookingLabel: 'Book a Flow3 exam',
+  },
+};
+
+export default function GuideLayout({ children, publicationDate = '2026-05-26', lang = 'et' }) {
+  const t = STRINGS[lang] || STRINGS.et;
+
   return (
-    <div lang="et" className="min-h-screen bg-white text-[#1a1a1a] flex flex-col">
+    <div lang={lang} className="min-h-screen bg-white text-[#1a1a1a] flex flex-col">
       <Head>
         <meta name="theme-color" content="#ffffff" />
       </Head>
@@ -24,10 +57,10 @@ export default function GuideLayout({ children, publicationDate = '2026-05-26' }
             KSA Silmakeskus
           </Link>
           <Link
-            href="/refraktiivkirurgia-juhend"
+            href={t.backToLPHref}
             className="text-sm text-[#6f7f80] hover:text-[#1a1a1a] transition no-underline"
           >
-            ← Juhendi avaleht
+            {t.backToLP}
           </Link>
         </div>
       </header>
@@ -43,10 +76,10 @@ export default function GuideLayout({ children, publicationDate = '2026-05-26' }
             Dr. Ants Haavel
           </p>
           <p className="text-sm text-[#6f7f80] mb-6">
-            asutaja ja meditsiinijuht, KSA Silmakeskus
+            {t.authorRole}
           </p>
           <p className="text-xs text-[#92a0a1] uppercase tracking-widest">
-            Avaldatud {publicationDate} • KSA Silmakeskus, Tallinn ja Tartu
+            {t.publishedPrefix} {publicationDate} {t.publishedSuffix}
           </p>
           <div className="mt-8 flex justify-center gap-6 text-sm">
             <Link
@@ -56,10 +89,10 @@ export default function GuideLayout({ children, publicationDate = '2026-05-26' }
               ksa.ee
             </Link>
             <Link
-              href="https://booking.ksa.ee/?promokood=G39&utm_source=silmatervis&utm_medium=guide-footer"
+              href={`https://booking.ksa.ee/?promokood=G39&utm_source=silmatervis&utm_medium=guide-footer&utm_content=${lang}`}
               className="text-[#6f7f80] hover:text-[#1a1a1a] no-underline"
             >
-              Broneeri Flow3 uuring
+              {t.bookingLabel}
             </Link>
             <Link
               href="mailto:info@ksa.ee"

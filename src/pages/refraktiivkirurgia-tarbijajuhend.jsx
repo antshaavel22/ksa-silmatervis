@@ -462,7 +462,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p>Ära tee oma silmade osas kiirustavaid otsuseid. Kui oled valmis astuma sammu selgema elu suunas:</p>
 
         <ol>
-          <li>Prindi välja <strong>ülaltoodud 20 küsimust</strong> ja lae need oma telefoni alla. Hangi kasvõi enda jaoks kõigile neist vastused.</li>
+          <li>Prindi välja <strong>ülaltoodud 20 küsimust</strong> või lae need oma telefoni alla. Hangi kasvõi enda jaoks kõigile neist vastused.</li>
           <li>Alusta lihtsalt: tee kodus <strong>KSA 90-sekundiline tasuta kiirtest (kiirtest.ksa.ee)</strong>, et näha esmast hinnangut oma sobivusele.</li>
           <li>Kui kiirtest on positiivne, broneeri <strong>Flow3 silmauuring</strong>. See poolteist tundi pühendatud diagnostikat ja vestlust spetsialistiga annab sulle selguse, kas Sinu silmad on laseroperatsiooniks sobivad ja valmis.</li>
         </ol>

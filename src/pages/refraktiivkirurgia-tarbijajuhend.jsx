@@ -60,7 +60,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <h2>Eessõna: Miks ma selle juhendi kirjutasin</h2>
 
-        <p>Oma 21-aastase praktika jooksul olen näinud tuhandeid patsiente, kes tulevad kliinikusse suurte ootuste ja paljude küsimustega, kuid lahkuvad uuringult sõnadega: "Ma pean seda veel seedima ja mõtlema." See ei juhtu seetõttu, et me ei püüaks asju selgitada, vaid seetõttu, et refraktiivkirurgia on äärmiselt mitmetahuline ning pooleteisetunnise uuringu jooksul antav infotulv on patsiendi jaoks lihtsalt liiga suur.</p>
+        <p>Oma 21-aastase praktika jooksul olen näinud tuhandeid patsiente, kes tulevad kliinikusse suurte ootuste ja paljude küsimustega, kuid lahkuvad uuringult sõnadega: "Ma pean seda veel seedima ja mõtlema." See ei juhtu seetõttu, et me ei püüaks asju selgitada, vaid seetõttu, et refraktiivkirurgia on äärmiselt mitmetahuline ning ühetunnise uuringu jooksul antav infotulv on patsiendi jaoks lihtsalt liiga suur.</p>
 
         <p>Uued ja keerulised terminid nagu "Flow", "SMILE", "Femto-LASIK", "sarvkesta biomehaanika", "läätsevahetus" ja "ektaasia" võivad esialgu tekitada tõelise peapöörituse. Kuidas teha nii oluline ja elukvaliteeti muutev otsus, kui sa ei mõista täielikult, mis Sinu silmadega tegelikult toimuma hakkab?</p>
 

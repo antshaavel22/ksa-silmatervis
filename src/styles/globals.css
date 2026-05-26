@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -475,49 +475,83 @@ select:focus {
 }
 
 /* ============================================================
-   RU language overrides — Fraunces lacks Cyrillic coverage.
-   We bring in PT Serif (Russian-designed editorial serif, full
-   Cyrillic, magazine-grade) for display headings, keep Source
-   Serif 4 for body. This restores the display↔body serif
-   contrast that gives ET its magazine feel.
+   RU language overrides — Cormorant Garamond for display
+   headings (full Cyrillic, JAMA/Atlantic-grade editorial serif).
+   Source Serif 4 keeps body + h3. Cormorant lifts the magazine
+   feel that PT Serif couldn't quite match.
+
+   Also tuned for Cyrillic: slightly looser line-height because
+   Russian compound words are longer; tighter optical letter
+   spacing on display sizes.
    ============================================================ */
 
+[lang="ru"] .prose-v2 {
+  line-height: 1.7;
+}
+
 [lang="ru"] .prose-v2 h1 {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  font-weight: 700;
-  letter-spacing: -0.015em;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-size: 50px;
+  line-height: 1.05;
 }
 
 [lang="ru"] .prose-v2 h2 {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.22;
-  letter-spacing: -0.012em;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -0.008em;
+  margin-top: 2.8em;
+  margin-bottom: 0.55em;
 }
 
 [lang="ru"] .prose-v2 h3 {
   font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
-  font-weight: 700;
-  font-size: 21px;
+  font-weight: 600;
+  font-size: 22px;
   letter-spacing: -0.003em;
+  margin-top: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+[lang="ru"] .prose-v2 h4 {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  letter-spacing: 0.13em;
+  color: #6f7f80;
+  margin-top: 2em;
 }
 
 [lang="ru"] h1.font-serif,
 [lang="ru"] .font-serif {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
-  font-weight: 700;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 500;
 }
 
-/* Cover-page H1 (title page) on RU — heavier display weight */
+/* Title page H1 on RU — premium display weight + tracking */
+[lang="ru"] section h1.font-serif {
+  font-weight: 500;
+  letter-spacing: -0.018em;
+}
+
+/* Dropcap on first paragraph after first h2 in RU */
 [lang="ru"] .prose-v2 > h2:first-of-type + p::first-letter {
-  font-family: "PT Serif", Georgia, serif;
-  font-weight: 700;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 0.82;
+  color: #1a1a1a;
+  float: left;
+  margin: 6px 16px -6px 0;
 }
 
 @media (max-width: 768px) {
-  [lang="ru"] .prose-v2 h2 { font-size: 26px; }
+  [lang="ru"] .prose-v2 h1 { font-size: 36px; }
+  [lang="ru"] .prose-v2 h2 { font-size: 28px; margin-top: 2.2em; }
   [lang="ru"] .prose-v2 h3 { font-size: 19px; }
+  [lang="ru"] .prose-v2 > h2:first-of-type + p::first-letter { font-size: 72px; }
 }
 
 /* ============================================================
@@ -574,8 +608,9 @@ select:focus {
 }
 
 [lang="ru"] .prose-v2-table td:first-child {
-  font-family: "PT Serif", Georgia, serif;
-  font-weight: 700;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -667,11 +702,11 @@ select:focus {
 .prose-v2 .guide-toc li {
   counter-increment: toc-counter;
   margin: 0;
-  padding: 12px 0;
-  border-bottom: 1px dotted #e8e4dc;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0ece2;
   display: flex;
   align-items: baseline;
-  gap: 14px;
+  gap: 18px;
 }
 
 .prose-v2 .guide-toc li:last-child {
@@ -679,13 +714,20 @@ select:focus {
 }
 
 .prose-v2 .guide-toc li::before {
-  content: counter(toc-counter, decimal-leading-zero);
-  font-family: var(--font-sans);
-  font-size: 11px;
+  content: counter(toc-counter, upper-roman) ".";
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  font-style: italic;
   color: #92a0a1;
-  min-width: 28px;
+  min-width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+[lang="ru"] .prose-v2 .guide-toc li::before {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
 }
 
 .prose-v2 .guide-toc a {
@@ -698,9 +740,10 @@ select:focus {
 }
 
 [lang="ru"] .prose-v2 .guide-toc a {
-  font-family: "PT Serif", Georgia, serif;
-  font-weight: 400;
-  font-size: 17px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: -0.003em;
 }
 
 .prose-v2 .guide-toc a:hover {
@@ -743,7 +786,9 @@ select:focus {
 }
 
 [lang="ru"] .prose-v2 .protocol-list .protocol-num {
-  font-family: "PT Serif", Georgia, serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 26px;
 }
 
 .prose-v2 .protocol-list .protocol-body {
@@ -762,7 +807,9 @@ select:focus {
 }
 
 [lang="ru"] .prose-v2 .protocol-list .protocol-title {
-  font-family: "PT Serif", Georgia, serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  font-size: 21px;
 }
 
 .prose-v2 .protocol-list .protocol-text {

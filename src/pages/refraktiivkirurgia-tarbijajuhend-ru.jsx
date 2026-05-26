@@ -34,20 +34,21 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
       </Head>
 
       {/* TITLE PAGE */}
-      <section className="max-w-[720px] mx-auto px-6 pt-16 md:pt-24 pb-12 md:pb-16 text-center">
-        <p className="text-xs uppercase tracking-[0.25em] text-[#6f7f80] mb-6">
+      <section className="max-w-[720px] mx-auto px-6 pt-20 md:pt-32 pb-16 md:pb-20 text-center">
+        <p className="text-[11px] uppercase tracking-[0.32em] text-[#6f7f80] mb-10 font-medium">
           Руководство для пациента
         </p>
         <h1
           aria-label="Рефракционная хирургия — Руководство для пациента"
-          className="font-serif text-4xl md:text-6xl font-medium text-[#1a1a1a] leading-[1.05] tracking-tight mb-8"
+          className="font-serif text-[44px] md:text-[64px] font-medium text-[#1a1a1a] leading-[1.02] mb-10"
+          style={{ letterSpacing: '-0.018em' }}
         >
           Рефракционная<br />хирургия
         </h1>
-        <p className="font-serif italic text-xl text-[#1a1a1a] mb-8 max-w-md mx-auto leading-relaxed">
+        <p className="font-serif italic text-[19px] md:text-[21px] text-[#1a1a1a] mb-12 max-w-[520px] mx-auto leading-[1.45]">
           Что нужно знать перед тем, как выбрать клинику и метод для своих глаз.
         </p>
-        <div className="flex items-center justify-center gap-3 text-sm text-[#6f7f80]">
+        <div className="flex items-center justify-center gap-3 text-[13px] text-[#6f7f80] tracking-wide">
           <span>Dr. Ants Haavel</span>
           <span className="text-[#bbbbbb]">·</span>
           <span>25 мин чтения</span>
@@ -56,7 +57,7 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
         </div>
       </section>
 
-      {/* Cover photo band */}
+      {/* Cover photo band — editorial captioning */}
       <section className="relative w-full h-[36vh] md:h-[48vh] min-h-[280px] max-h-[520px] bg-[#1a1a1a]">
         <Image
           src="/images/guide/flow3-oproom.jpg"
@@ -66,9 +67,9 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
           sizes="100vw"
           style={{ objectFit: 'cover', opacity: 0.92 }}
         />
-        <div className="absolute bottom-0 left-0 right-0 px-6 py-4 bg-gradient-to-t from-black/70 to-transparent">
-          <p className="max-w-[720px] mx-auto text-xs text-white/80 italic">
-            Операционная KSA Silmakeskus, Schwind Amaris 1050RS. Фото: KSA Silmakeskus.
+        <div className="absolute bottom-0 left-0 right-0 px-6 py-5 bg-gradient-to-t from-black/75 to-transparent">
+          <p className="max-w-[720px] mx-auto text-[11px] uppercase tracking-[0.18em] text-white/85 font-medium">
+            Операционная KSA Silmakeskus &nbsp;·&nbsp; Schwind Amaris 1050RS &nbsp;·&nbsp; Фото: KSA Silmakeskus
           </p>
         </div>
       </section>

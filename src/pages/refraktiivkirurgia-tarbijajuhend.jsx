@@ -270,7 +270,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Põhjalik silmauuring peab kestma umbes tund aega ja kasutama mitut erinevat kõrgtehnoloogilist mõõteseadet. Iga masin vastab ühele kindlale küsimusele sinu silmade tervise ja biomehaanika kohta.</p>
 
-        <p><strong>1. Pentacam (Topograafia ja tomograafia)</strong></p>
+        <p><strong>1. Sirius Plus (Topograafia ja tomograafia)</strong></p>
 
         <p>Kujuta ette, et topograafia loob sinu sarvkestast ülimalt detailse 3D-reljeefkaardi. Kui sellel kaardil ilmneb vähimgi asümmeetria – näiteks on sarvkesta alumine osa liiga kumer või esineb äärte ebaloomulikku õhenemist –, on see väga tõsine ohumärk. Need on märgid varjatud keratokoonusest (sarvkesta kuju moondumisest), mis tähendab, et sarvkest on oma loomu poolest järele andmas. Nende varjatud nõrkuste leidmiseks kasutatakse tarkvara, mis märkab riske ammu enne sümptomite teket.</p>
 
@@ -440,7 +440,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>KSA 21 aasta ja üle 55 000 operatsiooni pikkune kogemus on andnud meile ohutusstandardi – täpselt 0 ektaasia juhtumit. See ei ole juhus. See rekord püsib kahel sambal: biomehaaniliselt säästev Flow3 meetod ja meie kompromissitud sõeluuringud.</p>
 
-        <p>Kui sa tuled meie juurde Flow3 silmauuringule ja meie diagnostilised kõrgtehnoloogilised seadmed (Pentacam Scheimpflug-kaamera, Sirius topograafia, OCT, Corvis ST jt.) näitavad isegi väikseimat kõrvalekallet sinu sarvkesta paksuses või tugevuses, siis me ütleme sulle "EI". Iga neljas kandidaat saab meilt eitava vastuse, sest me ei riski kunagi patsiendi silmadega lihtsalt operatsiooni tegemise pärast. Kui selgub, et laserkirurgia ei ole sulle ohutu, soovitame sulle ausalt parimaid alternatiive, olgu selleks silmasisesed läätsed (ICL), läätsevahetus (RLE) või lihtsalt oma prillide edasi kandmine.</p>
+        <p>Kui sa tuled meie juurde Flow3 silmauuringule ja meie diagnostilised kõrgtehnoloogilised seadmed (Sirius Plus, OCT, Corvis ST jt.) näitavad isegi väikseimat kõrvalekallet sinu sarvkesta paksuses või tugevuses, siis me ütleme sulle "EI". Iga neljas kandidaat saab meilt eitava vastuse, sest me ei riski kunagi patsiendi silmadega lihtsalt operatsiooni tegemise pärast. Kui selgub, et laserkirurgia ei ole sulle ohutu, soovitame sulle ausalt parimaid alternatiive, olgu selleks silmasisesed läätsed (ICL), läätsevahetus (RLE) või lihtsalt oma prillide edasi kandmine.</p>
 
         {/* WARM CLOSING PHOTO */}
         <figure>

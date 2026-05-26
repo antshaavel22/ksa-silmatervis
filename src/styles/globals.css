@@ -485,8 +485,73 @@ select:focus {
    spacing on display sizes.
    ============================================================ */
 
+/* ESCRS / Journal of Cataract & Refractive Surgery aesthetic for RU:
+   denser body, justified alignment with hyphenation, numbered figures. */
 [lang="ru"] .prose-v2 {
-  line-height: 1.7;
+  font-size: 17.5px;
+  line-height: 1.62;
+  max-width: 660px;
+}
+
+[lang="ru"] .prose-v2 p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+}
+
+/* List items and callouts stay left-aligned (justified short lines look bad) */
+[lang="ru"] .prose-v2 li,
+[lang="ru"] .prose-v2 .callout-abstract p,
+[lang="ru"] .prose-v2 .callout-disclosure p,
+[lang="ru"] .prose-v2 .guide-toc a,
+[lang="ru"] .prose-v2 .protocol-list .protocol-text,
+[lang="ru"] .prose-v2-table td {
+  text-align: left;
+  hyphens: manual;
+}
+
+/* Tighter consistent rhythm between blocks (journal-paced) */
+[lang="ru"] .prose-v2 > p + p,
+[lang="ru"] .prose-v2 > ul + p,
+[lang="ru"] .prose-v2 > ol + p,
+[lang="ru"] .prose-v2 > p + ul,
+[lang="ru"] .prose-v2 > p + ol {
+  margin-top: 1.25em;
+}
+
+[lang="ru"] .prose-v2 > * + * {
+  margin-top: 1.2em;
+}
+
+/* Figure captions: "Рисунок N." formal numbering */
+[lang="ru"] .prose-v2 figure {
+  counter-increment: figure-counter;
+}
+
+[lang="ru"] .prose-v2 figcaption::before {
+  content: "Рисунок " counter(figure-counter) ". ";
+  font-weight: 600;
+  font-style: normal;
+  color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2 figcaption {
+  text-align: left;
+  font-size: 13.5px;
+  font-style: normal;
+  color: #4a5a5b;
+  border-top: 1px solid #e8e4dc;
+  padding-top: 8px;
+  margin-top: 12px;
+  max-width: 100%;
+}
+
+/* Reset counters at top of article */
+[lang="ru"] .prose-v2 {
+  counter-reset: figure-counter chapter-counter;
 }
 
 [lang="ru"] .prose-v2 h1 {
@@ -567,6 +632,49 @@ select:focus {
   font-size: 15px;
   line-height: 1.55;
   color: #1a1a1a;
+  counter-increment: table-counter;
+}
+
+.prose-v2-table caption {
+  caption-side: top;
+  text-align: left;
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a5a5b;
+  padding-bottom: 12px;
+  border-bottom: none;
+}
+
+.prose-v2-table caption::before {
+  content: "Таблица " counter(table-counter) ". ";
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+[lang="en"] .prose-v2-table caption::before {
+  content: "Table " counter(table-counter) ". ";
+}
+
+[lang="et"] .prose-v2-table caption::before {
+  content: "Tabel " counter(table-counter) ". ";
+}
+
+[lang="ru"] .prose-v2-table caption {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+[lang="ru"] .prose-v2-table caption::before {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #6f7f80;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .prose-v2-table thead {

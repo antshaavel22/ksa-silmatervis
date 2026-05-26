@@ -33,45 +33,52 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend-ru" />
       </Head>
 
-      {/* TITLE PAGE */}
-      <section className="max-w-[720px] mx-auto px-6 pt-20 md:pt-32 pb-16 md:pb-20 text-center">
-        <p className="text-[11px] uppercase tracking-[0.32em] text-[#6f7f80] mb-10 font-medium">
-          Руководство для пациента
-        </p>
+      {/* TITLE PAGE — tightened journal-cover proportions */}
+      <section className="max-w-[680px] mx-auto px-6 pt-20 md:pt-28 pb-12 md:pb-16">
+        <div className="border-b border-[#e8e4dc] pb-6 mb-12">
+          <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
+            Руководство для пациента &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; том&nbsp;I, май 2026
+          </p>
+        </div>
+
         <h1
           aria-label="Рефракционная хирургия — Руководство для пациента"
-          className="font-serif text-[44px] md:text-[64px] font-medium text-[#1a1a1a] leading-[1.02] mb-10"
+          className="font-serif text-[40px] md:text-[56px] font-medium text-[#1a1a1a] leading-[1.04] mb-6"
           style={{ letterSpacing: '-0.018em' }}
         >
-          Рефракционная<br />хирургия
+          Рефракционная хирургия
         </h1>
-        <p className="font-serif italic text-[19px] md:text-[21px] text-[#1a1a1a] mb-12 max-w-[520px] mx-auto leading-[1.45]">
+
+        <p className="font-serif italic text-[19px] md:text-[22px] text-[#1a1a1a] mb-12 leading-[1.4] max-w-[560px]">
           Что нужно знать перед тем, как выбрать клинику и метод для своих глаз.
         </p>
-        <div className="flex items-center justify-center gap-3 text-[13px] text-[#6f7f80] tracking-wide">
-          <span>Dr. Ants Haavel</span>
+
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[12.5px] text-[#6f7f80] tracking-wide">
+          <span><strong className="text-[#1a1a1a] font-medium">Автор:</strong> Dr. Ants Haavel</span>
           <span className="text-[#bbbbbb]">·</span>
-          <span>25 мин чтения</span>
+          <span><strong className="text-[#1a1a1a] font-medium">Опубликовано:</strong> 26 мая 2026</span>
           <span className="text-[#bbbbbb]">·</span>
-          <span>26 мая 2026</span>
+          <span><strong className="text-[#1a1a1a] font-medium">Чтение:</strong> ~25 мин</span>
         </div>
       </section>
 
-      {/* Cover photo band — editorial captioning */}
-      <section className="relative w-full h-[36vh] md:h-[48vh] min-h-[280px] max-h-[520px] bg-[#1a1a1a]">
-        <Image
-          src="/images/guide/flow3-oproom.jpg"
-          alt="Операционная KSA Silmakeskus — лазер Schwind Amaris 1050RS"
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: 'cover', opacity: 0.92 }}
-        />
-        <div className="absolute bottom-0 left-0 right-0 px-6 py-5 bg-gradient-to-t from-black/75 to-transparent">
-          <p className="max-w-[720px] mx-auto text-[11px] uppercase tracking-[0.18em] text-white/85 font-medium">
-            Операционная KSA Silmakeskus &nbsp;·&nbsp; Schwind Amaris 1050RS &nbsp;·&nbsp; Фото: KSA Silmakeskus
-          </p>
-        </div>
+      {/* Cover photo — smaller, formal journal-like figure with caption below */}
+      <section className="max-w-[680px] mx-auto px-6 mb-8">
+        <figure className="not-prose">
+          <div className="relative w-full aspect-[16/10] bg-[#1a1a1a] overflow-hidden">
+            <Image
+              src="/images/guide/flow3-oproom.jpg"
+              alt="Операционная KSA Silmakeskus — лазер Schwind Amaris 1050RS"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 680px"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+          <figcaption className="text-[12.5px] text-[#4a5a5b] mt-3 pt-2 border-t border-[#e8e4dc]" style={{ lineHeight: 1.5 }}>
+            Операционная KSA Silmakeskus, оснащённая лазером Schwind Amaris 1050RS. Фото: KSA Silmakeskus.
+          </figcaption>
+        </figure>
       </section>
 
       <article className="prose-v2 px-6 md:px-0 pt-16 md:pt-24 pb-8">
@@ -234,6 +241,7 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
 
         {/* COMPARISON TABLE */}
         <table className="prose-v2-table">
+          <caption>Сравнение трёх основных методов рефракционной хирургии: механика, преимущества и компромиссы.</caption>
           <thead>
             <tr>
               <th>Метод</th>

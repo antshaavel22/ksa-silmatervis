@@ -56,7 +56,7 @@ export default function GuideLayout({ children, publicationDate = '2026-05-26' }
               ksa.ee
             </Link>
             <Link
-              href="https://booking.ksa.ee/?code=G39&utm_source=silmatervis&utm_medium=guide-footer"
+              href="https://booking.ksa.ee/?promokood=G39&utm_source=silmatervis&utm_medium=guide-footer"
               className="text-[#6f7f80] hover:text-[#1a1a1a] no-underline"
             >
               Broneeri Flow3 uuring

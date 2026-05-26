@@ -490,7 +490,51 @@ select:focus {
 [lang="ru"] .prose-v2 {
   font-size: 17.5px;
   line-height: 1.62;
-  max-width: 660px;
+  max-width: 600px;  /* narrower journal column */
+}
+
+/* Structured chapter headings — eyebrow + title (JCRS / NEJM style) */
+[lang="ru"] .prose-v2 h2 .chapter-eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #6f7f80;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+[lang="ru"] .prose-v2 h2 .chapter-title {
+  display: block;
+}
+
+/* Pull-quote — single key statement treatment between sections */
+[lang="ru"] .prose-v2 .pull-quote {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1.32;
+  color: #1a1a1a;
+  text-align: left;
+  margin: 2.5em 0;
+  padding: 14px 0;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  letter-spacing: -0.005em;
+  hyphens: manual;
+}
+
+[lang="ru"] .prose-v2 .pull-quote::before,
+[lang="ru"] .prose-v2 .pull-quote::after {
+  content: none;
+}
+
+@media (max-width: 768px) {
+  [lang="ru"] .prose-v2 .pull-quote {
+    font-size: 22px;
+  }
 }
 
 [lang="ru"] .prose-v2 p {
@@ -741,10 +785,11 @@ select:focus {
    ============================================================ */
 
 .prose-v2 .callout-abstract {
-  background: #faf7f0;
+  background: transparent;
   border: none;
-  border-left: 3px solid #1a1a1a;
-  padding: 26px 30px;
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 24px 0;
   margin: 2.5em 0;
   font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
 }

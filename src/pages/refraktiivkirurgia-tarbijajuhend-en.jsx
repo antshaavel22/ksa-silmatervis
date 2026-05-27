@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import InlineGate from '@/components/InlineGate';
 
 /**
  * English version of the refractive surgery patient guide.
@@ -113,6 +114,8 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
         <p>Over time I came to see that Estonia lacks a patient-facing guide to laser vision correction: a document that is technically accurate but written so that a non-medical reader can understand it.</p>
 
         <p>Each clinic mostly talks about itself and its own methods. The patient is left to assemble the terms, risks, promises and competing approaches on their own. This guide was written to make that choice calmer and clearer.</p>
+
+        <InlineGate lang="en">
 
         <h3>What this guide is — and what it is not</h3>
 
@@ -614,6 +617,8 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
         <p>If the examination shows that laser correction is not the right choice for you, that is also a good outcome. Genuine quality medicine is not about operating on everyone. It is about honestly assessing risk, protecting eye health, and choosing a solution that is genuinely safe.</p>
 
         <p>With care for the health of your eyes and the quality of your life for many years to come.</p>
+
+        </InlineGate>
 
       </article>
 

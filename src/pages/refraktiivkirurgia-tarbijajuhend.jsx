@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import InlineGate from '@/components/InlineGate';
 
 export default function RefraktiivkirurgiaTarbijajuhend() {
   return (
@@ -65,6 +66,8 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p>Uued ja keerulised terminid nagu "Flow", "SMILE", "Femto-LASIK", "sarvkesta biomehaanika", "läätsevahetus" ja "ektaasia" võivad esialgu tekitada tõelise peapöörituse. Kuidas teha nii oluline ja elukvaliteeti muutev otsus, kui sa ei mõista täielikult, mis Sinu silmadega tegelikult toimuma hakkab?</p>
 
         <p>Olen aastate jooksul mõistnud, et Eestis puudub üks tõeline, patsiendikeskne teejuht silmade laserkirurgia maailma – dokument, mis ei oleks pelgalt turundusmaterjal, vaid tehniliselt täpne, kuid samas lihtsalt ja arusaadavalt kirjutatud. Iga kliinik räägib peamiselt endast ja oma toodetest, jättes tarbija ülesandeks kogu see keeruline pusle ise kokku panna. Just seetõttu otsustasingi selle lünga täita ja puuduoleva ning ülevaatliku juhendi Sinu jaoks ise valmis kirjutada.</p>
+
+        <InlineGate lang="et">
 
         <h3>Mida see juhend on ja mis ta ei ole</h3>
 
@@ -468,6 +471,8 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         </ol>
 
         <p>Silmad ja hea nägemine on meile kõigile hindamatu väärtus. Täname Sind, et võtsid aja süveneda ja õppida. Kui oled valmis, ootame Sind KSA Silmakeskusesse, et saaksime koos avastada, milline näeb välja maailm ilma prillideta – turvaliselt, teadlikult ja kogu eluks.</p>
+
+        </InlineGate>
 
       </article>
 

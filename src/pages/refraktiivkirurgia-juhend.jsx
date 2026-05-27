@@ -120,7 +120,7 @@ export default function RefraktiivkirurgiaJuhendLP() {
             />
           </div>
           <figcaption className="text-[12.5px] text-[#4a5a5b] mt-3 pt-2 border-t border-[#e8e4dc]" style={{ lineHeight: 1.5 }}>
-            Dr. Ants Haavel — KSA Silmakeskuse asutaja, silmakirurg, 21 aastat praktikat. Fotograaf: KSA Silmakeskus.
+            Dr. Ants Haavel — KSA Silmakeskuse asutaja, silmakirurg, 21 aastat praktikat.
           </figcaption>
         </figure>
         <p className="text-center text-[12px] uppercase tracking-[0.22em] text-[#6f7f80] mt-8 font-medium">
@@ -133,7 +133,7 @@ export default function RefraktiivkirurgiaJuhendLP() {
         {/* AUTHOR POSITION DISCLOSURE — same as guide */}
         <div className="callout-disclosure">
           <span className="callout-label">Autori positsioon</span>
-          <p>KSA Silmakeskus on spetsialiseerunud Flow3 meetodile ja peab seda anatoomiliselt sobivatele patsientidele kõige säästvamaks valikuks. Samas ei sobi Flow3 kõigile — mõnel juhul on mõistlikum valida silmasisesed läätsed (ICL), läätsevahetus (RLE) või jätkata prillide ja kontaktläätsede kandmist.</p>
+          <p>KSA Silmakeskus on spetsialiseerunud Flow3 meetodile ja peab seda sobivatele patsientidele kõige säästvamaks valikuks. Samas ei sobi Flow3 kõigile — mõnel juhul on mõistlikum valida silmasisesed läätsed (ICL), läätsevahetus (RLE) või jätkata prillide ja kontaktläätsede kandmist.</p>
         </div>
 
         {/* EESSÕNA — 3 real paragraphs from the guide */}

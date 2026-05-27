@@ -46,7 +46,7 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="en" showBackLink={false}>
       <Head>
-        <title>Refractive surgery — a patient guide | KSA Silmakeskus</title>
+        <title>Refractive surgery — a consumer guide | KSA Silmakeskus</title>
         <meta
           name="description"
           content="A calm, understandable guide for people considering laser eye surgery who want to understand the methods, risks and recovery before making a decision."
@@ -58,12 +58,12 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
       <section className="max-w-[680px] mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
         <div className="border-b border-[#e8e4dc] pb-6 mb-10">
           <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
-            Patient guide &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; introduction
+            Consumer guide &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; introduction
           </p>
         </div>
 
         <h1
-          aria-label="Refractive surgery — a patient guide"
+          aria-label="Refractive surgery — a consumer guide"
           className="font-serif text-[40px] md:text-[56px] font-medium text-[#1a1a1a] leading-[1.04] mb-6"
           style={{ letterSpacing: '-0.018em' }}
         >

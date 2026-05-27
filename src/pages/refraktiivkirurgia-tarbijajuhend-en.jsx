@@ -5,7 +5,7 @@ import GuideLayout from '@/components/GuideLayout';
 import InlineGate from '@/components/InlineGate';
 
 /**
- * English version of the refractive surgery patient guide.
+ * English version of the refractive surgery consumer guide.
  * Independent article written in Dr. Haavel's voice — not a translation.
  * Same structure as the bystander-polished ET version.
  * lang="en" routing handled by _document.jsx + GuideLayout.
@@ -14,10 +14,10 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="en">
       <Head>
-        <title>Refractive Surgery — A Patient Guide | KSA Silmakeskus</title>
+        <title>Refractive Surgery — A Consumer Guide | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="A patient guide to refractive surgery, written by Dr. Ants Haavel from 21 years of practice and 55,000+ procedures at KSA Silmakeskus."
+          content="A consumer guide to refractive surgery, written by Dr. Ants Haavel from 21 years of practice and 55,000+ procedures at KSA Silmakeskus."
         />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend-en" />
       </Head>
@@ -26,12 +26,12 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
       <section className="max-w-[680px] mx-auto px-6 pt-20 md:pt-28 pb-12 md:pb-16">
         <div className="border-b border-[#e8e4dc] pb-6 mb-12">
           <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
-            Patient Guide &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; Vol. I, May 2026
+            Consumer Guide &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; Vol. I, May 2026
           </p>
         </div>
 
         <h1
-          aria-label="Refractive Surgery — A Patient Guide"
+          aria-label="Refractive Surgery — A Consumer Guide"
           className="font-serif text-[40px] md:text-[56px] font-medium text-[#1a1a1a] leading-[1.04] mb-6"
           style={{ letterSpacing: '-0.018em' }}
         >

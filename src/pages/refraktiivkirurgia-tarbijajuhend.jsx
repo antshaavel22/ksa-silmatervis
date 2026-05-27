@@ -19,7 +19,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
       {/* TITLE PAGE — editorial style, not a marketing hero */}
       <section className="max-w-[720px] mx-auto px-6 pt-16 md:pt-24 pb-12 md:pb-16 text-center">
         <p className="text-xs uppercase tracking-[0.25em] text-[#6f7f80] mb-6">
-          Patsiendijuhend
+          Tarbijajuhend
         </p>
         <h1
           aria-label="Refraktiivkirurgia tarbijajuhend"

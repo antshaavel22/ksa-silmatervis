@@ -46,7 +46,7 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="ru" showBackLink={false}>
       <Head>
-        <title>Рефракционная хирургия — руководство для пациента | KSA Silmakeskus</title>
+        <title>Рефракционная хирургия — потребительское руководство | KSA Silmakeskus</title>
         <meta
           name="description"
           content="Спокойное и понятное руководство для тех, кто думает о лазерной коррекции зрения и хочет заранее разобраться в методах, рисках и восстановлении."
@@ -58,12 +58,12 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
       <section className="max-w-[680px] mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
         <div className="border-b border-[#e8e4dc] pb-6 mb-10">
           <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
-            Руководство для пациента &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; вводная страница
+            Потребительское руководство &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; вводная страница
           </p>
         </div>
 
         <h1
-          aria-label="Рефракционная хирургия — руководство для пациента"
+          aria-label="Рефракционная хирургия — потребительское руководство"
           className="font-serif text-[40px] md:text-[56px] font-medium text-[#1a1a1a] leading-[1.04] mb-6"
           style={{ letterSpacing: '-0.018em' }}
         >

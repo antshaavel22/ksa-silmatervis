@@ -5,7 +5,7 @@ import GuideLayout from '@/components/GuideLayout';
 import InlineGate from '@/components/InlineGate';
 
 /**
- * Russian version of the refractive surgery patient guide.
+ * Russian version of the refractive surgery consumer guide.
  * Base text by Jana (verbatim). Polished per bystander review 2026-05-26:
  *   - Added TOC (Содержание), abstract callout (Кратко перед чтением),
  *     author-position disclosure (Авторская позиция)
@@ -26,10 +26,10 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="ru">
       <Head>
-        <title>Рефракционная хирургия — Руководство для пациента | KSA Silmakeskus</title>
+        <title>Рефракционная хирургия — Потребительское руководство | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="Подробное руководство для пациента о лазерной коррекции зрения. Составлено д-ром Антсом Хаавелем на основе 21 года практики и более 55 000 процедур."
+          content="Подробное потребительское руководство о лазерной коррекции зрения. Составлено д-ром Антсом Хаавелем на основе 21 года практики и более 55 000 процедур."
         />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend-ru" />
       </Head>
@@ -38,12 +38,12 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
       <section className="max-w-[680px] mx-auto px-6 pt-20 md:pt-28 pb-12 md:pb-16">
         <div className="border-b border-[#e8e4dc] pb-6 mb-12">
           <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
-            Руководство для пациента &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; том&nbsp;I, май 2026
+            Потребительское руководство &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; том&nbsp;I, май 2026
           </p>
         </div>
 
         <h1
-          aria-label="Рефракционная хирургия — Руководство для пациента"
+          aria-label="Рефракционная хирургия — Потребительское руководство"
           className="font-serif text-[40px] md:text-[56px] font-medium text-[#1a1a1a] leading-[1.04] mb-6"
           style={{ letterSpacing: '-0.018em' }}
         >

@@ -81,7 +81,7 @@ export default function RefraktiivkirurgiaJuhendLP() {
       <section className="max-w-[680px] mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
         <div className="border-b border-[#e8e4dc] pb-6 mb-10">
           <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
-            Patsiendijuhend &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; tutvustus
+            Tarbijajuhend &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; tutvustus
           </p>
         </div>
 

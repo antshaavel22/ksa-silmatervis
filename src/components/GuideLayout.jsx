@@ -41,7 +41,7 @@ const STRINGS = {
   },
 };
 
-export default function GuideLayout({ children, publicationDate = '2026-05-26', lang = 'et' }) {
+export default function GuideLayout({ children, publicationDate = '2026-05-26', lang = 'et', showBackLink = true }) {
   const t = STRINGS[lang] || STRINGS.et;
 
   return (
@@ -59,12 +59,14 @@ export default function GuideLayout({ children, publicationDate = '2026-05-26', 
           >
             KSA Silmakeskus
           </Link>
-          <Link
-            href={t.backToLPHref}
-            className="text-sm text-[#6f7f80] hover:text-[#1a1a1a] transition no-underline"
-          >
-            {t.backToLP}
-          </Link>
+          {showBackLink && (
+            <Link
+              href={t.backToLPHref}
+              className="text-sm text-[#6f7f80] hover:text-[#1a1a1a] transition no-underline"
+            >
+              {t.backToLP}
+            </Link>
+          )}
         </div>
       </header>
 

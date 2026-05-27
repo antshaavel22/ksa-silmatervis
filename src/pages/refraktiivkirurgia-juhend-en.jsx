@@ -2,16 +2,11 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '@/components/Layout';
+import GuideLayout from '@/components/GuideLayout';
 
 export default function RefraktiivkirurgiaJuhendLpEn() {
   const router = useRouter();
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    language: 'en',
-    consent: false,
-  });
+  const [formState, setFormState] = useState({ name: '', email: '', consent: false });
   const [status, setStatus] = useState('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -24,25 +19,23 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
     e.preventDefault();
     setStatus('submitting');
     setErrorMsg('');
-
     try {
       const res = await fetch('/api/guide-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...formState,
+          language: 'en',
           source: 'refraktiivkirurgia-juhend-gate-en',
         }),
       });
-
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error || 'Something went wrong. Please try again.');
       }
-
       setStatus('success');
       setTimeout(() => {
-        router.push('/refraktiivkirurgia-tarbijajuhend-en');
+        router.push('/refraktiivkirurgia-tarbijajuhend-en?unlocked=1');
       }, 1400);
     } catch (err) {
       setStatus('error');
@@ -51,229 +44,207 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
   };
 
   return (
-    <Layout>
+    <GuideLayout publicationDate="2026-05-26" lang="en" showBackLink={false}>
       <Head>
-        <title>Refractive Surgery — A Patient Guide | KSA Silmakeskus</title>
+        <title>Refractive surgery — a patient guide | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="A free 25-minute patient guide written by Dr. Ants Haavel from 21 years of practice and 55,000+ procedures. 20 questions to ask any clinic before deciding."
+          content="A calm, understandable guide for people considering laser eye surgery who want to understand the methods, risks and recovery before making a decision."
         />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-juhend-en" />
       </Head>
 
-      <div lang="en">
-
-      {/* TITLE BAND */}
-      <section className="bg-beige-light py-16 md:py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-block text-xs uppercase tracking-widest font-semibold text-lime-darker mb-5">
-            Free patient guide • 25 min read
-          </div>
-          <h1 className="font-sans text-4xl md:text-5xl font-semibold text-ink leading-tight mb-5 tracking-tight">
-            Refractive Surgery — A Patient Guide
-          </h1>
-          <p className="font-serif italic text-xl text-ink leading-relaxed max-w-xl mx-auto">
-            What you need to know before choosing a clinic and a method for your eyes.
+      {/* TITLE PAGE */}
+      <section className="max-w-[680px] mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
+        <div className="border-b border-[#e8e4dc] pb-6 mb-10">
+          <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
+            Patient guide &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; introduction
           </p>
         </div>
-      </section>
 
-      {/* TRUST STRIP */}
-      <section className="bg-white py-10 px-4 border-b border-line">
-        <div className="max-w-4xl mx-auto grid grid-cols-3 gap-6 text-center">
-          <div>
-            <div className="font-serif text-4xl md:text-5xl font-semibold text-lime-darker mb-1">21</div>
-            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">years of practice</div>
-          </div>
-          <div>
-            <div className="font-serif text-4xl md:text-5xl font-semibold text-lime-darker mb-1">55,000+</div>
-            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">procedures</div>
-          </div>
-          <div>
-            <div className="font-serif text-4xl md:text-5xl font-semibold text-lime-darker mb-1">0</div>
-            <div className="text-xs md:text-sm text-ink-60 uppercase tracking-wide">registered ectasia cases</div>
-          </div>
+        <h1
+          aria-label="Refractive surgery — a patient guide"
+          className="font-serif text-[40px] md:text-[56px] font-medium text-[#1a1a1a] leading-[1.04] mb-6"
+          style={{ letterSpacing: '-0.018em' }}
+        >
+          Refractive surgery
+        </h1>
+
+        <p className="font-serif italic text-[19px] md:text-[22px] text-[#1a1a1a] mb-10 leading-[1.4] max-w-[580px]">
+          What you need to know before choosing a clinic and a method for your eyes.
+        </p>
+
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[12.5px] text-[#6f7f80] tracking-wide">
+          <span><strong className="text-[#1a1a1a] font-medium">Author:</strong> Dr. Ants Haavel</span>
+          <span className="text-[#bbbbbb]">·</span>
+          <span><strong className="text-[#1a1a1a] font-medium">Reading time:</strong> ~25 min</span>
+          <span className="text-[#bbbbbb]">·</span>
+          <span><strong className="text-[#1a1a1a] font-medium">Published:</strong> May 2026</span>
         </div>
       </section>
 
-      {/* INTRODUCTION PREVIEW */}
-      <section className="py-16 md:py-20 px-4">
-        <div className="max-w-[680px] mx-auto">
-          <p className="text-xs uppercase tracking-[0.25em] text-ink-60 mb-4 font-semibold">
-            Introduction
+      {/* COVER PHOTO */}
+      <section className="max-w-[680px] mx-auto px-6 mb-8">
+        <figure className="not-prose">
+          <div className="relative w-full aspect-[16/10] bg-[#1a1a1a] overflow-hidden">
+            <Image
+              src="/images/guide/dr-haavel-portrait.jpg"
+              alt="Dr. Ants Haavel — founder and medical director of KSA Silmakeskus"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 680px"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+          <figcaption className="text-[12.5px] text-[#4a5a5b] mt-3 pt-2 border-t border-[#e8e4dc]" style={{ lineHeight: 1.5 }}>
+            Dr. Ants Haavel — founder of KSA Silmakeskus, ophthalmic surgeon with 21 years of practice. Photo: KSA Silmakeskus.
+          </figcaption>
+        </figure>
+        <p className="text-center text-[12px] uppercase tracking-[0.22em] text-[#6f7f80] mt-8 font-medium">
+          Read the introduction below&nbsp;↓
+        </p>
+      </section>
+
+      <article className="prose-v2 px-6 md:px-0 pt-12 md:pt-16 pb-10">
+
+        <div className="callout-disclosure">
+          <span className="callout-label">Author's position</span>
+          <p>KSA Silmakeskus specialises in the Flow3 method and considers it the most tissue-sparing choice for patients whose eye anatomy is suitable. At the same time, Flow3 is not for everyone — in some cases intraocular lenses (ICL), lens replacement (RLE), or simply continuing with glasses or contact lenses may be the more sensible option.</p>
+        </div>
+
+        <h2 id="introduction">
+          <span className="chapter-eyebrow">Introduction</span>
+          <span className="chapter-title">Why I wrote this guide</span>
+        </h2>
+
+        <p>In 21 years of practice I have seen thousands of patients who arrive at the clinic with high expectations and many questions, but who leave the examination saying: "I need to take all of this in and think about it." This is not because we explain things poorly. Refractive surgery is simply an unusually multi-layered field, and the volume of information a patient receives during a one-hour examination is too much.</p>
+
+        <p>New and complex terms — Flow, SMILE, Femto-LASIK, corneal biomechanics, lens replacement, ectasia — can be disorienting at first. How do you make a decision this important, one that can change your quality of life, when you don't fully understand what will actually happen to your eyes?</p>
+
+        <p>Over time I realised that Estonia is missing a guide to laser vision correction written for the patient: technically accurate, but understandable to someone without a medical background.</p>
+
+        <p className="pull-quote">21 years, more than 55,000 surface procedures, and not a single registered case of corneal&nbsp;ectasia.</p>
+
+        {/* TRUST LINE — "not a booking page" */}
+        <p className="font-serif italic text-[17px] text-[#1a1a1a] leading-[1.55] border-l-2 border-[#1a1a1a] pl-5 my-10">
+          The aim of this guide is not to persuade you to have surgery, but to help you understand the decision before you make&nbsp;it.
+        </p>
+
+        <h3>What you'll find in the guide</h3>
+
+        <p>The full version (~25 minutes of reading) is in five parts and contains 20 questions you can use to evaluate the competence of any clinic.</p>
+
+        <nav aria-label="Contents" className="guide-toc">
+          <span className="callout-label">Contents</span>
+          <ol style={{ listStyleType: 'upper-roman' }}>
+            <li>Eye anatomy and how refractive errors arise</li>
+            <li>Comparison of LASIK, SMILE and Flow3</li>
+            <li>Corneal biomechanics, ectasia risk and retinal safety</li>
+            <li>The clinical truth — who is a candidate and who is not</li>
+            <li>Recovery, presbyopia and 20 questions to ask the clinic</li>
+          </ol>
+        </nav>
+
+        {/* SOFT FADE — preview ends here */}
+        <div className="mt-12 pt-8 text-center" style={{
+          background: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(248,245,237,0.6) 100%)',
+        }}>
+          <p className="text-[13px] italic text-[#4a5a5b] leading-[1.55]">
+            The full guide continues from the link we email you&nbsp;↓
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-medium text-ink mb-8 leading-tight">
-            Why I wrote this guide
-          </h2>
-
-          <div className="prose-v2">
-            <p>In 21 years of practice I have seen thousands of patients who arrive with high expectations and a long list of questions, and who leave the examination saying: "I need to think this through." This is not because we fail to explain. Refractive surgery is genuinely multilayered, and the volume of information a patient receives in a one-hour examination is simply too much.</p>
-
-            <p>New and unfamiliar terms — Flow, SMILE, Femto-LASIK, corneal biomechanics, lens exchange, ectasia — can leave a person disoriented. How do you make a decision that will change your daily quality of life if you do not fully understand what will happen to your eyes?</p>
-
-            <p>Over time I came to see that Estonia lacks a patient-facing guide to laser vision correction: a document that is technically accurate but written so that a non-medical reader can understand it.</p>
-
-            <p>This is not a sales brochure. If you read it and decide to go to a different clinic, that is a perfectly reasonable outcome. My aim is different: to help you better understand your options and choose a clinic and a doctor you can calmly trust with your eyes.</p>
-          </div>
-
-          <div className="mt-10 pt-8 border-t border-line flex items-center gap-5">
-            <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-              <Image
-                src="/images/guide/dr-haavel-portrait.jpg"
-                alt="Dr. Ants Haavel"
-                fill
-                sizes="64px"
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-            <div>
-              <p className="font-serif italic text-lg text-ink leading-tight">Dr. Ants Haavel</p>
-              <p className="text-sm text-ink-60">founder and medical director, KSA Silmakeskus</p>
-            </div>
-          </div>
         </div>
-      </section>
 
-      {/* GATE */}
-      <section className="bg-beige-light py-16 md:py-20 px-4 border-t border-b border-line">
+      </article>
+
+      <section className="px-6 pb-16 md:pb-20">
         <div className="max-w-[560px] mx-auto">
-          <div className="text-center mb-8">
-            <p className="text-xs uppercase tracking-[0.25em] text-ink-60 mb-3 font-semibold">
-              Keep reading
+          <div className="border-t-2 border-[#1a1a1a] pt-10">
+            <p className="text-[10.5px] uppercase tracking-[0.25em] text-[#6f7f80] mb-3 font-semibold">
+              Get the guide
             </p>
-            <h2 className="font-serif text-2xl md:text-3xl text-ink mb-3 leading-tight">
-              Send me the full guide
+            <h2 className="font-serif text-[28px] md:text-[34px] text-[#1a1a1a] leading-snug mb-4" style={{ letterSpacing: '-0.012em' }}>
+              Send me the link to the full version by email
             </h2>
-            <p className="text-base text-ink-60 leading-relaxed">
-              We'll email you the link to the full version (5 parts, ~25 min read,
-              including the 20 questions to ask any clinic). Read it now, save it for
-              later, or share it with a loved one.
+            <p className="text-[16px] text-[#1a1a1a] leading-relaxed mb-8">
+              We'll send you an email with a link to the full version (5 parts, ~25 minutes of reading, including the 20 questions for the clinic). You can read it in your browser right away or open it later from your inbox.
             </p>
-          </div>
 
-          {status === 'success' ? (
-            <div className="bg-lime-wash border-l-4 border-lime p-6 rounded">
-              <h3 className="text-lg font-semibold text-ink mb-2">
-                Thank you — the guide is on its way.
-              </h3>
-              <p className="text-ink-80 mb-1">
-                The email has been sent. We'll take you straight to the full version now…
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-card p-6 md:p-8 space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-ink mb-1">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  value={formState.name}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none transition"
-                  placeholder="Your name"
-                />
+            {status === 'success' ? (
+              <div className="bg-[#faf7f0] border-l-[3px] border-[#1a1a1a] p-6">
+                <p className="font-semibold text-[#1a1a1a] mb-1">Thank you. The guide is on its way.</p>
+                <p className="text-[15px] text-[#1a1a1a]">Taking you to the full version now…</p>
               </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-ink mb-1">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  value={formState.email}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none transition"
-                  placeholder="you@email.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="language" className="block text-sm font-medium text-ink mb-1">Language</label>
-                <select
-                  id="language"
-                  name="language"
-                  value={formState.language}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 border border-line rounded focus:border-lime focus:ring-1 focus:ring-lime outline-none transition bg-white"
-                >
-                  <option value="en">English</option>
-                  <option value="et">Eesti</option>
-                  <option value="ru">Русский</option>
-                </select>
-              </div>
-
-              <div className="flex items-start gap-3 pt-2">
-                <input
-                  type="checkbox"
-                  id="consent"
-                  name="consent"
-                  required
-                  checked={formState.consent}
-                  onChange={handleChange}
-                  className="mt-1 h-4 w-4 text-lime border-line rounded focus:ring-lime"
-                />
-                <label htmlFor="consent" className="text-sm text-ink-60 leading-snug">
-                  I agree that KSA Silmakeskus may email me the guide link and useful
-                  reminders. I can unsubscribe at any time.
-                </label>
-              </div>
-
-              {status === 'error' && (
-                <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded p-3">
-                  {errorMsg}
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="lp-name-en" className="block text-[10.5px] uppercase tracking-[0.18em] font-semibold text-[#1a1a1a] mb-1.5">
+                    First name
+                  </label>
+                  <input
+                    type="text"
+                    id="lp-name-en"
+                    name="name"
+                    required
+                    value={formState.name}
+                    onChange={handleChange}
+                    placeholder="Your first name"
+                    className="w-full px-0 py-2 bg-transparent border-0 border-b border-[#1a1a1a] focus:border-[#1a1a1a] focus:ring-0 focus:outline-none text-[#1a1a1a] text-[16px]"
+                  />
                 </div>
-              )}
 
-              <button
-                type="submit"
-                disabled={status === 'submitting' || !formState.consent}
-                className="w-full bg-lime hover:bg-lime-dark disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-3 rounded transition"
-              >
-                {status === 'submitting' ? 'Sending…' : 'Send the guide and keep reading'}
-              </button>
+                <div>
+                  <label htmlFor="lp-email-en" className="block text-[10.5px] uppercase tracking-[0.18em] font-semibold text-[#1a1a1a] mb-1.5">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="lp-email-en"
+                    name="email"
+                    required
+                    value={formState.email}
+                    onChange={handleChange}
+                    placeholder="you@email.com"
+                    className="w-full px-0 py-2 bg-transparent border-0 border-b border-[#1a1a1a] focus:border-[#1a1a1a] focus:ring-0 focus:outline-none text-[#1a1a1a] text-[16px]"
+                  />
+                </div>
 
-              <p className="text-xs text-ink-40 text-center pt-1">
-                We never share your data with third parties.
-              </p>
-            </form>
-          )}
-        </div>
-      </section>
+                <div className="flex items-start gap-3 pt-3">
+                  <input
+                    type="checkbox"
+                    id="lp-consent-en"
+                    name="consent"
+                    required
+                    checked={formState.consent}
+                    onChange={handleChange}
+                    className="mt-1 h-4 w-4 text-[#86bc25] border-[#1a1a1a] rounded-none focus:ring-0"
+                  />
+                  <label htmlFor="lp-consent-en" className="text-[13.5px] text-[#4a5a5b] leading-snug">
+                    I agree that KSA Silmakeskus may email me the link to the guide and, if useful, occasional reminders on the same topic. You can unsubscribe at any time.
+                  </label>
+                </div>
 
-      {/* WHAT'S INSIDE */}
-      <section className="py-16 md:py-20 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="font-serif text-2xl md:text-3xl font-medium text-ink mb-3 text-center">
-            What's in the guide
-          </h2>
-          <p className="text-ink-60 text-center mb-12 max-w-xl mx-auto text-sm leading-relaxed">
-            Built on peer-reviewed literature and 21 years of clinical experience at
-            KSA — written so that you can make an informed decision, no matter which
-            clinic you ultimately choose.
-          </p>
+                {status === 'error' && (
+                  <p className="text-[13px] text-red-700 bg-red-50 border border-red-200 rounded p-3">{errorMsg}</p>
+                )}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { title: 'Eye anatomy and how vision problems develop', body: 'Why you see the way you do — and what surgery actually changes inside the eye.' },
-              { title: 'LASIK vs SMILE vs Flow3 — honest comparison', body: 'Each method’s strengths, risks, and long-term effects on corneal strength.' },
-              { title: 'Corneal biomechanics', body: 'Why a 20% strength loss from LASIK shows up as problems only a decade later.' },
-              { title: 'Recovery day by day', body: 'Exactly what happens inside the eye on days 1, 3, 7 and 30. Without sugar-coating.' },
-              { title: 'Presbyopia and lens ageing', body: 'Why reading glasses come back around age 45 — and what to do about it.' },
-              { title: '20 questions to ask any clinic', body: 'Print and take with you. An honest clinic answers all of them with precise numbers.' },
-            ].map((item) => (
-              <div key={item.title} className="border-l-4 border-lime pl-5 py-1">
-                <h3 className="font-semibold text-ink mb-1">{item.title}</h3>
-                <p className="text-sm text-ink-60 leading-snug">{item.body}</p>
-              </div>
-            ))}
+                <div className="pt-2">
+                  <button
+                    type="submit"
+                    disabled={status === 'submitting' || !formState.consent}
+                    className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 disabled:opacity-30 transition"
+                  >
+                    {status === 'submitting' ? 'Sending…' : 'Send me the guide →'}
+                  </button>
+                </div>
+
+                <p className="text-[12px] text-[#92a0a1] pt-2">
+                  The guide is free. We never share your details with third parties.
+                </p>
+              </form>
+            )}
           </div>
         </div>
       </section>
-
-      </div>
-    </Layout>
+    </GuideLayout>
   );
 }

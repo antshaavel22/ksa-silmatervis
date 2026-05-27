@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import { GOOGLE_ADS_CONVERSIONS } from '@/lib/constants';
 
 export default function RefraktiivkirurgiaJuhendLpRu() {
   const router = useRouter();
@@ -34,6 +35,12 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
         throw new Error(data.error || 'Произошла ошибка. Пожалуйста, попробуйте снова.');
       }
       setStatus('success');
+      // Google Ads conversion fire — Consumer Guide Email Signup
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+          send_to: GOOGLE_ADS_CONVERSIONS.consumerGuideEmailSignup,
+        });
+      }
       setTimeout(() => {
         router.push('/refraktiivkirurgia-tarbijajuhend-ru?unlocked=1');
       }, 1400);

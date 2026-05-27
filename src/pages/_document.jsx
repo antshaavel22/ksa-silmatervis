@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import { GTM_ID } from '@/lib/constants';
+import { GTM_ID, GOOGLE_ADS_ID } from '@/lib/constants';
 
 /**
  * Document shell.
@@ -27,6 +27,7 @@ export default function Document() {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${GTM_ID}');
+              gtag('config', '${GOOGLE_ADS_ID}');
             `,
           }}
         />

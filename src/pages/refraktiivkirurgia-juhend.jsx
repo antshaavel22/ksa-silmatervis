@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import { GOOGLE_ADS_CONVERSIONS } from '@/lib/constants';
 
 /**
  * Refraktiivkirurgia tarbijajuhend — landing page (ET) — V3
@@ -53,6 +54,12 @@ export default function RefraktiivkirurgiaJuhendLP() {
         throw new Error(data.error || 'Tekkis viga. Palun proovi uuesti.');
       }
       setStatus('success');
+      // Google Ads conversion fire — Consumer Guide Email Signup
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+          send_to: GOOGLE_ADS_CONVERSIONS.consumerGuideEmailSignup,
+        });
+      }
       setTimeout(() => {
         router.push('/refraktiivkirurgia-tarbijajuhend?unlocked=1');
       }, 1400);

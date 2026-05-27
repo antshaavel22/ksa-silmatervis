@@ -74,6 +74,14 @@ export const KSA_ORG = {
 // Google Tag Manager
 export const GTM_ID = "GTM-KCZVRJ8";
 
+// Google Ads (Flow3 account 5380588148) — for conversion tracking
+export const GOOGLE_ADS_ID = "AW-18030087653";
+export const GOOGLE_ADS_CONVERSIONS = {
+  // ConversionAction "Consumer Guide — Email Signup" (created 2026-05-28)
+  // primary_for_goal=false → won't leak as default into other campaigns
+  consumerGuideEmailSignup: "AW-18030087653/t3zxCKSz0bQcEOWbtZVD",
+};
+
 // Rendia Integration
 export const RENDIA = {
   apiBase: "https://api.rendia.com/v1", // Placeholder - update with actual

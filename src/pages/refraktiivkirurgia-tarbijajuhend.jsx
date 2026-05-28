@@ -8,7 +8,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
   return (
     <GuideLayout publicationDate="2026-05-26">
       <Head>
-        <title>Refraktiivkirurgia tarbijajuhend — Dr. Ants Haavel | KSA Silmakeskus</title>
+        <title>Silma laserprotseduuri juhend — Dr. Ants Haavel | KSA Silmakeskus</title>
         <meta
           name="description"
           content="Põhjalik tarbijajuhend silmade laserkirurgia kohta. Kirjutanud Dr. Ants Haavel 21 aasta praktika ja 55 000+ protseduuri baasil."
@@ -22,11 +22,11 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           Tarbijajuhend
         </p>
         <h1
-          aria-label="Refraktiivkirurgia tarbijajuhend"
+          aria-label="Silma laserprotseduuri juhend"
           className="font-serif text-4xl md:text-6xl font-medium text-[#1a1a1a] leading-[1.05] tracking-tight mb-8"
         >
-          Refraktiivkirurgia<br />
-          tarbijajuhend
+          Silma laserprotseduuri<br />
+          juhend
         </h1>
         <p className="font-serif italic text-xl text-[#1a1a1a] mb-8 max-w-md mx-auto leading-relaxed">
           Mida pead teadma enne, kui valid kliiniku ja meetodi oma silmadele.
@@ -52,7 +52,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         />
         <div className="absolute bottom-0 left-0 right-0 px-6 py-4 bg-gradient-to-t from-black/70 to-transparent">
           <p className="max-w-[720px] mx-auto text-xs text-white/80 italic">
-            KSA Silmakeskuse operatsioonituba — Schwind Amaris 1050RS laser.
+            KSA Silmakeskuse protseduurituba — Schwind Amaris 1050RS laser.
           </p>
         </div>
       </section>
@@ -163,7 +163,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p>Mõistes sisselõigetega seotud pikaajalisi riske, on paljud maailma tippkirurgid ning ka KSA Silmakeskus Eestis valinud tagasitee anatoomiat maksimaalselt säästvate pinnameetodite (PRK, tPRK, Flow3) juurde. See on lähenemine, mis asetab silma pikaajalise tervise ja tugevuse lühiajalisest mugavusest kõrgemale.</p>
 
         <ul>
-          <li><strong>Kuidas see toimib:</strong> Sarvkestale ei lõigata ühtegi klappi ega tehta sisselõikeid. Protseduuri käigus eemaldatakse vaid sarvkesta kõige pindmine ja loomulikult taastuv epiteelikiht ning laser lihvib uue kuju otse sarvkesta pinnale. KSA Silmakeskuse poolt kasutatava modernse Flow3 protseduuri puhul teostatakse kogu ravi üheainsa laseriga, muutes protsessi puute- ja lõikevabaks.</li>
+          <li><strong>Kuidas see toimib:</strong> Sarvkestale ei lõigata ühtegi klappi ega tehta sisselõikeid. Protseduuri käigus eemaldatakse vaid sarvkesta kõige pindmine ja loomulikult taastuv epiteelikiht ning laser lihvib uue kuju otse sarvkesta pinnale. KSA Silmakeskuses teostatav Flow3 protseduur tehakse ühe laseriga, mistõttu ei ole protseduuri käigus vaja silma mehaaniliselt puudutada ega sarvkesta lõigata.</li>
           <li><strong>Meditsiinilised eelised:</strong>
             <ul>
               <li><strong>Säilinud biomehaaniline tugevus:</strong> Kuna sarvkesta sügavamaid struktuure ei lõigata, säilitab silm peaaegu täielikult oma loomuliku tugevuse (tugevuskadu on vaid 10–15%). See viib sarvkesta hilisema väljakummumise ehk ektaasia riski miinimumini.</li>
@@ -172,7 +172,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
               <li><strong>Väiksem kuiva silma oht:</strong> Sarvkesta närvivõrgustikku ei poolitata massiliselt, mistõttu on raskekujulise ja püsiva kuiva silma sündroomi tekkimise tõenäosus oluliselt väiksem.</li>
             </ul>
           </li>
-          <li><strong>Ajaline kompromiss:</strong> Nii kõrge ohutusstandardiga kaasneb vaid üks kompromiss – pikem paranemisaeg. Pindmine epiteelikiht vajab tagasikasvamiseks umbes 3–5 päeva. Sel perioodil katab silma kaitsev kontaktlääts ning esimesed paar päeva on silmad tundlikuma eredale valgusele, vesitsevad ja nägemine on esimese kolme päeva jooksul ebastabiilne.</li>
+          <li><strong>Ajaline kompromiss:</strong> Nii kõrge ohutusstandardiga kaasneb vaid üks kompromiss – pikem paranemisaeg. Pindmine epiteelikiht vajab tagasikasvamiseks umbes 3–5 päeva. Sel perioodil katab silma kaitsev kontaktlääts ning esimestel päevadel on silmad eredale valgusele tundlikumad, vesitsevad ja nägemine on esimese kolme päeva jooksul ebastabiilne.</li>
         </ul>
 
         <p>KSA Silmakeskuse lähenemine on ühene: patsiendi silmade 30–50 aasta pikkust tervist, silma struktuurset tugevust ja ohutust ei tasu ohverdada paari päeva mugavuse nimel. Seda konservatiivset filosoofiat toetab otseselt ka statistika: 21 aasta ja enam kui 55 000 pinna-ablatsiooni protseduuri jooksul ei ole registreeritud ühtegi sarvkesta ektaasia juhtumit. Valides biomehaaniliselt kõige säästvama meetodi, on võimalik pakkuda patsiendile maksimaalset eluaegset turvalisust.</p>
@@ -209,7 +209,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Ohutuse kuldstandard näeb ette, et <strong>pärast laserdamist peab puutumatut kude alles jääma absoluutse miinimumina 250–300 mikromeetrit</strong>. Kuna LASIK ja SMILE raiskavad väärtuslikku paksust vastavalt klapi või "mütsikese" loomisele (tavaliselt 100–120 mikromeetrit), jääb RSB tihti piiripealseks. Kuna Flow3 pinnameetod <strong>ei raiska mikromeetritki kude klapi tegemisele</strong>, jääb elutähtis RSB kiht oluliselt paksemaks ja turvalisemaks.</p>
 
-        <p>Tänu puutevaba meetodi eelistele ja hoolikale patsientide sõelumisele, on KSA Silmakeskuse ohutusstatistika märkimisväärne: <strong>21 aasta jooksul ja enam kui 55 000 teostatud pinna-ablatsiooni protseduuri järel on neil täpselt null ektaasia juhtumit</strong>. See ei ole hea õnn – see on igapäevane kliiniline töö, kus patsientide eluaegne ohutus seatakse alati esikohale.</p>
+        <p>Tänu puutevaba meetodi eelistele ja hoolikale patsientide valikule on KSA Silmakeskuse ohutusstatistika märkimisväärne: <strong>21 aasta jooksul ja enam kui 55 000 tehtud pinna-ablatsiooni protseduuri järel on olnud täpselt null ektaasia juhtumit</strong>. See ei ole hea õnn – see on igapäevane kliiniline töö, kus patsientide eluaegne ohutus seatakse alati esikohale.</p>
 
         <h3>Vaakum ja võrkkest: Informatsioon, millest alati ei räägita</h3>
 
@@ -222,7 +222,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p><strong>Kuidas on lood Flow3 pinnameetodiga?</strong><br />
         Flow3 puhul on pilt täiesti erinev. <strong>Operatsiooni ajal ei kasutata mitte mingisugust imurit ega vaakumit</strong>. Silmasisene rõhk püsib täiesti normaalsena ja <strong>Sinu võrkkest ei saa grammigi mehaanilist stressi</strong>.</p>
 
-        <p>Kuidas silm siis paigal püsib, kui vaakumit pole? Vastus on see, et kuna lõikeid ei tehta siis silm saab olla vabalt ja laser, kasutab jälgimistehnoloogiat. Laserit juhib  ülikiire 7-mõõtmeline silma jälgimissüsteem (<em>eye-tracker</em>), mis analüüsib silma igat mikroskoopilist liikumist enam kui 1000 korda sekundis. Kui Sinu silm liigub, liigub laseri kiir täpselt kaasa, tagades maksimaalse täpsuse ilma füüsilise surveta.</p>
+        <p>Kuidas silm siis paigal püsib, kui vaakumit pole? Kuna lõikeid ei tehta, saab silm olla loomulikus asendis ning laser kasutab silma liikumise jälgimiseks täpset jälgimistehnoloogiat. Laserit juhib ülikiire 7-mõõtmeline silma jälgimissüsteem (<em>eye-tracker</em>), mis analüüsib silma igat mikroskoopilist liikumist enam kui 1000 korda sekundis. Kui Sinu silm liigub, liigub laseri kiir täpselt kaasa, tagades maksimaalse täpsuse ilma füüsilise surveta.</p>
 
         <p>See teeb Flow3-st <strong>vaakumivaba lahenduse, mis ei lisa võrkkestale operatsiooniaegset mehaanilist stressi</strong>, olles hea valik suurema miinusega patsientidele, kes hoolivad oma silmade eluaegsest ohutusest.</p>
 
@@ -238,7 +238,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <h3>Millal Flow3 ei pruugi olla parim valik</h3>
 
-        <p>Kuigi KSA Silmakeskus eelistab Flow3 pinnameetodit selle anatoomilise säästvuse ja pikaajalise ohutusloogika tõttu, ei tähenda see, et Flow3 sobiks igale inimesele või igale silmale. Hea refraktiivkirurgia algab alati mitte küsimusest "millist protseduuri teha?", vaid küsimusest "kas üldse on mõistlik sekkuda?".</p>
+        <p>Kuigi KSA Silmakeskus eelistab Flow3 pinnameetodit selle anatoomilise säästvuse ja pikaajalise ohutusloogika tõttu, ei tähenda see, et Flow3 sobiks igale inimesele või igale silmale. Hea refraktiivkirurgia ei alga küsimusest „millist protseduuri teha?“, vaid küsimusest „kas üldse on mõistlik sekkuda?“.</p>
 
         <p>Just seetõttu on põhjalik silmauuring enne otsust nii oluline. Laserprotseduuri eesmärk ei ole lihtsalt prillinumbrit eemaldada. Eesmärk on parandada elukvaliteeti viisil, mis ei sea ohtu silma pikaajalist tervist.</p>
 
@@ -279,7 +279,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p><strong>2. Pahhümeetria (Sarvkesta paksus)</strong></p>
 
-        <p>Sarvkest peab olema piisavalt paks, et pärast uue kuju lihvimist säiliks silma tugevus. Pinnameetodi (nagu Flow3) puhul peab sarvkesta paksus enne operatsiooni olema absoluutse miinimumina 450 mikromeetrit. Ohutuse kuldstandard, ehk "kuldne RSB reegel" (Residual Stromal Bed), näeb ette, et pärast laserdamist peab puutumatut kude alles jääma vähemalt 250–300 mikromeetrit. Kuna pinnameetod ei raiska kude klapi lõikamisele, jääb elutähtis RSB kiht oluliselt paksemaks ja turvalisemaks.</p>
+        <p>Sarvkest peab olema piisavalt paks, et pärast uue kuju lihvimist säiliks silma tugevus. Pinnameetodi (nagu Flow3) puhul peab sarvkesta paksus enne operatsiooni olema absoluutse miinimumina 450 mikromeetrit. Ohutuse kuldstandard ehk „kuldne RSB reegel“ (Residual Stromal Bed) näeb ette, et pärast laserdamist peab puutumatut kude alles jääma vähemalt 250–300 mikromeetrit. Kuna pinnameetod ei raiska kude klapi lõikamisele, jääb elutähtis RSB kiht oluliselt paksemaks ja turvalisemaks.</p>
 
         <p><strong>3. OCT (Optiline koherentstomograafia)</strong></p>
 
@@ -329,7 +329,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kui põhjalik diagnostika on tehtud ja turvaline meetod valitud, jõuame viimase ja patsiendi jaoks kõige isiklikuma etapini: milline näeb välja tegelik elu pärast operatsioonisaalist lahkumist?</p>
 
-        <p>Klapi-meetodite (LASIK) puhul räägitakse sageli „vau-efektist" juba järgmisel hommikul. Pinnameetodite, nagu Flow3 (PRK/tPRK), filosoofia on aga teistsugune: me palume patsiendilt mõnepäevast kannatlikkust, et vastutasuks tagada silma eluaegne biomehaaniline tugevus ja turvalisus. Selles peatükis vaatame anatoomilise täpsusega, mis toimub silmas taastumise ajal, miks me kõik vajame ühel hetkel lugemisprille ning anname Sulle kõige olulisema tööriista – 20 elutähtsat küsimust, mida pead enne otsuse langetamist küsima endalt või laserkeskuse spetsialistilt.</p>
+        <p>Klapimeetodite (LASIK) puhul räägitakse sageli „vau-efektist“ juba järgmisel hommikul. Pinnameetodite, nagu Flow3 (PRK/tPRK), filosoofia on aga teistsugune: me palume patsiendilt mõnepäevast kannatlikkust, et vastutasuks tagada silma eluaegne biomehaaniline tugevus ja turvalisus. Selles peatükis vaatame anatoomilise täpsusega, mis toimub silmas taastumise ajal, miks me kõik vajame ühel hetkel lugemisprille ning anname Sulle kõige olulisema tööriista – 20 elutähtsat küsimust, mida pead enne otsuse langetamist küsima endalt või laserkeskuse spetsialistilt.</p>
 
         <h3>Taastumise anatoomia: tund-tunnilt ja päev-päevalt</h3>
 
@@ -337,7 +337,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <h4>Esimesed 1–3 päeva: Epiteeli tagasikasvamine</h4>
 
-        <p>Kohe pärast operatsiooni asetab kirurg Sinu silmale spetsiaalse kaitsva kontaktläätse (tavaliselt kõrge hapnikuläbilaskvusega silikoonhüdrogeellääts), mis toimib bioloogilise sidemena. See lääts kaitseb laseri poolt paljastatud närvilõpmeid ja toetab uue epiteeli kasvamist.</p>
+        <p>Kohe pärast protseduuri asetab kirurg sinu silmale spetsiaalse kaitsva kontaktläätse, tavaliselt kõrge hapnikuläbilaskvusega silikoonhüdrogeelläätse, mis toimib bioloogilise sidemena. See lääts kaitseb laseri poolt paljastatud närvilõpmeid ja toetab uue epiteeli kasvamist.</p>
 
         <p>Nendel esimestel päevadel teeb silm läbi intensiivse bioloogilise paranemisprotsessi. Ligikaudu 10% patsientidest kogeb kerget kuni mõõdukat valu või ebamugavustunnet esimese 24–36 tunni jooksul. Kõige sagedamini kirjeldatakse seda kui tunnet, et „silmas on liivatera". Silmad võivad joosta vett, olla tundlikud valgusele (fotofoobia) ja nägemine on sageli udune, justkui vaataksid läbi vee. See kõik on täiesti normaalne füsioloogiline reaktsioon. Vajadusel leevendatakse seda ebamugavust spetsiaalsete põletikuvastaste (NSAID) tilkade ja suukaudsete valuvaigistitega.</p>
 
@@ -351,11 +351,11 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <h4>Kuud 1–6: Miks silmatilgad on nii olulised?</h4>
 
-        <p>Pärast pinnameetodit on Sinu kõige olulisemaks ülesandeks täpse raviskeemi järgimine. Silmaarst kirjutab Sulle välja põletikuvastased steroidtilgad, mida tuleb kasutada kahanevas annuses mitme nädala vältel. Nende tilkade eesmärk ei ole valu vaigistamine, vaid taastumisprotsessi aeglustamine ja <strong>sarvkesta hägu (haze) ennetamine</strong>. Nii, et paljud kõrvalseisvad isikud kehitavad õlgu, miks peaks silmakeskus ise soodustama aeglasemat taastumist, aga aastakümnete pikkune kogemus näitab, et just kindlalt juhitud taastumisprotsess tagab hilisema väga hea nägemiskvaliteedi.</p>
+        <p>Pärast pinnameetodit on Sinu kõige olulisemaks ülesandeks täpse raviskeemi järgimine. Silmaarst kirjutab Sulle välja põletikuvastased steroidtilgad, mida tuleb kasutada kahanevas annuses mitme nädala vältel. Nende tilkade eesmärk ei ole valu vaigistamine, vaid taastumisprotsessi aeglustamine ja <strong>sarvkesta hägu (haze) ennetamine</strong>. Paljud võivad küsida, miks peaks silmakeskus ise soodustama aeglasemat taastumist, kuid aastakümnete pikkune kogemus näitab, et just kindlalt juhitud taastumisprotsess tagab hiljem väga hea nägemiskvaliteedi.</p>
 
-        <p>Hägu ehk haze on seisund, kus sarvkesta rakud (keratotsüüdid) toodavad paranemise käigus ebakorrapärast kollageeni, muutes sarvkesta kergelt läbipaistmatuks. Modernse tehnoloogia (nagu SmartPulse), operatsiooniaegse jahutatud lahuste ja spetsiaalsete ravimite kasutamisega on hägu tekkimise risk viidud miinimumini ja seetõttu on tilkade korralik kasutamine, hea lõpptulemuse nimel, kriitilise tähtsusega. Samuti tuleb kasutada säilitusainetevabu kunstpisaraid, et toetada silma niiskustasakaalu ja vältida ajutist kuivustunnet.</p>
+        <p>Hägu ehk haze on seisund, kus sarvkesta rakud (keratotsüüdid) toodavad paranemise käigus ebakorrapärast kollageeni, muutes sarvkesta kergelt läbipaistmatuks. Kaasaegse tehnoloogia, näiteks SmartPulse’i, protseduuriaegsete jahutatud lahuste ja spetsiaalsete ravimite kasutamisega on hägu tekkimise risk viidud miinimumini ning seetõttu on tilkade korralik kasutamine hea lõpptulemuse nimel kriitilise tähtsusega. Samuti tuleb kasutada säilitusainetevabu kunstpisaraid, et toetada silma niiskustasakaalu ja vältida ajutist kuivustunnet.</p>
 
-        <h3>Presbüoopia ehk miks 45-aastaselt käed lühikeseks jäävad + head uudised.</h3>
+        <h3>Presbüoopia ehk miks 45-aastaselt käed lühikeseks jäävad + head uudised</h3>
 
         <p>Üks kõige levinumaid küsimusi ja hirme, millega patsiendid uuringule tulevad, on: <em>"Kas mu nägemine läheb aastate pärast uuesti halvaks ja operatsiooni mõju kaob?"</em> Siinkohal on meditsiiniliselt ülioluline eristada kahte täiesti erinevat protsessi: sarvkesta regressiooni ja läätse loomulikku vananemist ehk presbüoopiat.</p>
 
@@ -377,7 +377,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>Kui oled lugenud seda juhendit algusest peale, tead Sa nüüd refraktiivkirurgia anatoomiast, biomehaanikast, tüsistustest ja meetoditest rohkem kui enamik inimesi. Kuid teadmine üksi ei taga turvalisust – turvalisuse tagab see, millise spetsialisti kätesse Sa oma silmad usaldad.</p>
 
-        <p>Selle juhendi kokkuvõttena oleme koostanud Sulle meditsiinilistele juhistele toetuva 20 küsimuse nimekirja. Soovitan kasvõi iseeneses leida vastused nendele küsimustele. Aus ja professionaalne laserkliiniku spetsialist vastab neile küsimustele hea meelega ja täpsete numbritega.</p>
+        <p>Selle juhendi kokkuvõttena oleme koostanud Sulle meditsiinilistele juhistele toetuva 20 küsimuse nimekirja. Soovitan kasvõi enda jaoks leida vastused nendele küsimustele. Aus ja professionaalne laserkliiniku spetsialist vastab neile küsimustele hea meelega ja täpsete numbritega.</p>
 
         <h4>Kirurgi isiklik kogemus ja taust</h4>
 
@@ -385,7 +385,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li><strong>Mitu refraktiivset operatsiooni olete Teie isiklikult oma karjääri jooksul teinud?</strong> (Hea näitaja on vähemalt 1000, tippspetsialistidel 5000+ kuni 20 000+).</li>
           <li><strong>Mitu protseduuri Te aastas teete?</strong> (See näitab, kas tegemist on igapäevase rutiini või harva harrastusega. Hea number on vähemalt 200).</li>
           <li><strong>Mitu ektaasia (sarvkesta väljakummumise) juhtumit on Teil viimase 5 aasta jooksul esinenud?</strong> (Usaldusväärne kirurg jälgib seda täpselt; ideaalne vastus on 0 või 1-2).</li>
-          <li><strong>Kas Te teostate ise erinevaid meetodeid (nii klapiga kui pinnameetodit)?</strong> (Kui arst teeb ainult ühte, siis küsige tema argumente ja veendumusi ).</li>
+          <li><strong>Kas te teete ise erinevaid protseduure, nii klapiga meetodeid kui ka pinnameetodeid?</strong> Kui arst teeb ainult üht meetodit, küsige tema põhjendusi ja veendumusi.</li>
         </ol>
 
         <h4>Sõelumine ja ohutuse mõõtmine</h4>
@@ -393,9 +393,9 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <ol start="5">
           <li><strong>Mitmele protsendile uuringule tulnud kandidaatidest ütlete Te "ei"?</strong> (Turvalise kliiniku eitavate vastuste osakaal peaks olema 20–30%. Kui opereeritakse peaaegu kõiki, on ohutusstandardid liiga liberaalsed).</li>
           <li><strong>Milliseid diagnostilisi masinaid Te täna kasutate?</strong> (Nimekirjas peavad olema Scheimpflug kaamera, topograafia süsteem, pahhümeetria, OCT, keratomeetria, refraktomeetria, põhjalik kuivasilma diagnostika, perimeetrid, silmapõhja fotograafia).</li>
-          <li><strong>Mis on minu täpne pahhümeetria väärtus  ja kui palju see muutub operatsioonikäigus?</strong> ( Kliinik oskab öelda vastust, milline see on täna ja nad saavad küllaltki täpselt arvutada protseduuri järgse väärtuse 10 mikromeetri täpsusega ).</li>
+          <li><strong>Mis on minu täpne pahhümeetria väärtus ja kui palju see protseduuri käigus muutub?</strong> Kliinik oskab öelda, milline see väärtus on täna, ning arvutada küllaltki täpselt ka protseduurijärgse väärtuse 10 mikromeetri täpsusega.</li>
           <li><strong>Mis on minu algne sarvkesta paksus ja kui palju puutumatut stroomakude (RSB) jääb pärast laserdamist alles?</strong> (Ohutu miinimum on 250–300 mikromeetrit).</li>
-          <li><strong>Kas Te vaatate minu võrkkesta perifeeriat laiendatud pupillidega?</strong> (See on absoluutne ohutusstandard, kui kasutatakse protseduuri jooksul vaakumit ).</li>
+          <li><strong>Kas te vaatate minu võrkkesta perifeeriat laiendatud pupillidega?</strong> See on oluline ohutusstandard, kui protseduuri käigus kasutatakse vaakumit.</li>
         </ol>
 
         <h4>Meetodi valik ja alternatiivid</h4>
@@ -404,8 +404,8 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li><strong>Miks Te soovitate just seda meetodit minule?</strong> (Vastus peab põhinema Sinu sarvkesta paksusel, anatoomial ja elustiilil, mitte väitel, et "see on meie parim toode").</li>
           <li><strong>Mis on biomehaaniline erinevus pinnameetodi (Flow3) ja klapimeetodi (LASIK/SMILE) vahel minu silmade jaoks?</strong> (Arst peab oskama selgitada kollageenkiudude ja tugevuse kadu).</li>
           <li><strong>Millised on minu alternatiivid, kui laseroperatsioon mulle ei sobi?</strong> (Objektiivne spetsialist pakub välja ICL läätsed, läätsevahetuse või prillide/läätsede kandmise jätkamise).</li>
-          <li><strong>Kas minu elustiil (sport, raske füüsiline töö) seab klapimeetodi tõttu mind hilisemasse riski?</strong>.</li>
-          <li><strong>Kuidas mõjutab valitud meetod minu olemasolevat kuiva silma sündroomi pikas plaanis?</strong>.</li>
+          <li><strong>Kas minu elustiil, näiteks sport või raske füüsiline töö, võib klapimeetodi tõttu suurendada hilisemaid riske?</strong></li>
+          <li><strong>Kuidas mõjutab valitud meetod minu olemasolevat kuiva silma sündroomi pikas plaanis?</strong></li>
         </ol>
 
         <h4>Pikaajaline hooldus, riskid ja garantii</h4>
@@ -415,8 +415,8 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
           <li><strong>Milline on Teie kliiniku kordusoperatsioonide (regressiooni korrigeerimise) protsent?</strong> (Hea standard on 3–8%. Üle 10% on ohumärk).</li>
           <li><strong>Milline on Teie garantii, kui mu nägemine peaks lähiaastatel uuesti halvenema?</strong> (Kas kordusprotseduur on tasuta ja mis tingimustel?).</li>
           <li><strong>Kes tegeleb minu silmadega siis, kui mul tekib aastate pärast ootamatu tüsistus või mure?</strong></li>
-          <li><strong>Kuidas Teie kliinik hoiustab minu meditsiinilisi andmeid aastakümnete perspektiivis?</strong> ( KSA Silmakeskuses talletatakse kõik andmed digitaalselt vastavalt kehtivate regulatsioonidega tähtajatult )</li>
-          <li><strong>Kas ma kohtun opereeriva kirurgiga ka enne laserprotseduuri, et vajadusel saaksime minu uuringutulemusi koos analüüsida?</strong> ( KSA Silmakeskus pakub soovi korral ka online konsultatsiooni silmakirurgiga ja kirurg protseduuri päeval kontrollib ja mõõdab isiklikult kõik kriitilised andmed üle, vestleb patsiendiga enne protseduuri. )</li>
+          <li><strong>Kuidas teie kliinik hoiustab minu meditsiinilisi andmeid aastakümnete perspektiivis?</strong> KSA Silmakeskuses talletatakse kõik andmed digitaalselt ja tähtajatult, kooskõlas kehtivate regulatsioonidega.</li>
+          <li><strong>Kas ma kohtun silmakirurgiga ka enne laserprotseduuri, et vajaduse korral oma uuringutulemusi koos analüüsida?</strong> KSA Silmakeskus pakub soovi korral ka online-konsultatsiooni silmakirurgiga. Protseduuripäeval kontrollib ja mõõdab kirurg isiklikult kõik kriitilised andmed üle ning vestleb patsiendiga enne protseduuri.</li>
         </ol>
 
         <hr />
@@ -443,7 +443,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
 
         <p>KSA 21 aasta ja üle 55 000 operatsiooni pikkune kogemus on andnud meile ohutusstandardi – täpselt 0 ektaasia juhtumit. See ei ole juhus. See rekord püsib kahel sambal: biomehaaniliselt säästev Flow3 meetod ja meie kompromissitud sõeluuringud.</p>
 
-        <p>Kui sa tuled meie juurde Flow3 silmauuringule ja meie diagnostilised kõrgtehnoloogilised seadmed (Sirius Plus, OCT, Corvis ST jt.) näitavad isegi väikseimat kõrvalekallet sinu sarvkesta paksuses või tugevuses, siis me ütleme sulle "EI". Iga neljas kandidaat saab meilt eitava vastuse, sest me ei riski kunagi patsiendi silmadega lihtsalt operatsiooni tegemise pärast. Kui selgub, et laserkirurgia ei ole sulle ohutu, soovitame sulle ausalt parimaid alternatiive, olgu selleks silmasisesed läätsed (ICL), läätsevahetus (RLE) või lihtsalt oma prillide edasi kandmine.</p>
+        <p>Kui sa tuled KSA-sse Flow3 silmauuringule ja meie kõrgtehnoloogilised diagnostikaseadmed (Sirius Plus, OCT, Corvis ST jt) näitavad isegi väikseimat kõrvalekallet sinu sarvkesta paksuses või tugevuses, siis ütleme sulle „ei“ või paneme ootele. Iga neljas kandidaat saab meilt eitava vastuse, sest me ei riski kunagi patsiendi silmadega lihtsalt operatsiooni tegemise pärast. Kui selgub, et laserkirurgia ei ole sulle ohutu, soovitame sulle ausalt parimaid alternatiive, olgu selleks silmasisesed läätsed (ICL), läätsevahetus (RLE) või lihtsalt oma prillide edasi kandmine.</p>
 
         {/* WARM CLOSING PHOTO */}
         <figure>
@@ -465,7 +465,7 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <p>Ära tee oma silmade osas kiirustavaid otsuseid. Kui oled valmis astuma sammu selgema elu suunas:</p>
 
         <ol>
-          <li>Prindi välja <strong>ülaltoodud 20 küsimust</strong> või lae need oma telefoni alla. Hangi kasvõi enda jaoks kõigile neist vastused.</li>
+          <li>Prindi välja <strong>ülaltoodud 20 küsimust</strong> või lae need oma telefoni alla.</li>
           <li>Alusta lihtsalt: tee kodus <strong>KSA 90-sekundiline tasuta kiirtest (kiirtest.ksa.ee)</strong>, et näha esmast hinnangut oma sobivusele.</li>
           <li>Kui kiirtest on positiivne, broneeri <strong>Flow3 silmauuring</strong>. See poolteist tundi pühendatud diagnostikat ja vestlust spetsialistiga annab sulle selguse, kas Sinu silmad on laseroperatsiooniks sobivad ja valmis.</li>
         </ol>
@@ -621,9 +621,9 @@ function EndOfGuideCTAs() {
           <div className="flex items-baseline gap-4 mb-5">
             <span className="font-serif text-2xl text-[#1a1a1a] leading-none">II.</span>
             <p className="font-serif text-[19px] text-[#1a1a1a] leading-snug flex-1">
-              Olen 18–45 aastane miinusprillikandja ja soovin kasutada
+              Olen 18–45-aastane miinusprillikandja, soovin kasutada
               sooduskoodi <span className="font-semibold">G39</span> ja
-              registreerin end ise veebis Flow3 silmauuringule.
+              broneerin endale online'is Flow3 silmauuringu aja.
             </p>
           </div>
 

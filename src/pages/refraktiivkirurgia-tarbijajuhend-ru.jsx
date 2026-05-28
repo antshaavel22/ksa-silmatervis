@@ -26,10 +26,10 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="ru">
       <Head>
-        <title>Рефракционная хирургия — Потребительское руководство | KSA Silmakeskus</title>
+        <title>Рефракционная хирургия — гид | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="Подробное потребительское руководство о лазерной коррекции зрения. Составлено д-ром Антсом Хаавелем на основе 21 года практики и более 55 000 процедур."
+          content="Подробный гид по лазерной коррекции зрения. Составлен д-ром Антсом Хаавелем на основе 21 года практики и более 55 000 процедур."
         />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend-ru" />
       </Head>
@@ -38,12 +38,12 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
       <section className="max-w-[680px] mx-auto px-6 pt-20 md:pt-28 pb-12 md:pb-16">
         <div className="border-b border-[#e8e4dc] pb-6 mb-12">
           <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
-            Потребительское руководство &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; том&nbsp;I, май 2026
+            Гид &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; том&nbsp;I, май 2026
           </p>
         </div>
 
         <h1
-          aria-label="Рефракционная хирургия — Потребительское руководство"
+          aria-label="Рефракционная хирургия — гид"
           className="font-serif text-[40px] md:text-[56px] font-medium text-[#1a1a1a] leading-[1.04] mb-6"
           style={{ letterSpacing: '-0.018em' }}
         >

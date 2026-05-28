@@ -153,13 +153,13 @@ async function sendMagicLinkEmail(lead, guideUrl) {
 
   const subjects = {
     et: 'Sinu refraktiivkirurgia tarbijajuhend',
-    ru: 'Ваше потребительское руководство по рефракционной хирургии',
+    ru: 'Ваш гид по рефракционной хирургии',
     en: 'Your refractive surgery consumer guide',
   };
 
   const greetings = {
     et: `Tere, ${lead.name}!\n\nAitäh, et tellisid Dr. Ants Haaveli koostatud refraktiivkirurgia tarbijajuhendi. Allpool on link täisversioonile — võta aega, see on ca 25-minutiline lugemine.`,
-    ru: `Здравствуйте, ${lead.name}!\n\nСпасибо, что заказали потребительское руководство по рефракционной хирургии от д-ра Антса Хаавела. Ссылка на полную версию ниже — выделите примерно 25 минут на чтение.`,
+    ru: `Здравствуйте, ${lead.name}!\n\nСпасибо, что заказали гид по рефракционной хирургии от д-ра Антса Хаавела. Ссылка на полную версию ниже — выделите примерно 25 минут на чтение.`,
     en: `Hello ${lead.name},\n\nThank you for requesting Dr. Ants Haavel's refractive surgery consumer guide. The full version is linked below — set aside about 25 minutes for the read.`,
   };
 

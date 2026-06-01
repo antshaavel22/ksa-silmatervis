@@ -25,7 +25,7 @@ export default function RefraktiivkirurgiaJuhendFlow3JarelEn() {
       <section className="max-w-[680px] mx-auto px-6 pt-20 md:pt-28 pb-12 md:pb-16">
         <div className="border-b border-[#e8e4dc] pb-6 mb-12">
           <p className="text-[10.5px] uppercase tracking-[0.32em] text-[#6f7f80] font-semibold">
-            After your Flow3 exam &nbsp;·&nbsp; KSA Silmakeskus
+            Consumer Guide &nbsp;·&nbsp; KSA Silmakeskus &nbsp;·&nbsp; Vol. I, May 2026
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function RefraktiivkirurgiaJuhendFlow3JarelEn() {
         </h1>
 
         <p className="font-serif italic text-[19px] md:text-[22px] text-[#1a1a1a] mb-12 leading-[1.4] max-w-[560px]">
-          Decision support after diagnostics. Read calmly and decide for yourself — whether, when, and which procedure is right for your eyes.
+          What you need to know before choosing a clinic and a method for your eyes.
         </p>
 
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[12.5px] text-[#6f7f80] tracking-wide">
@@ -103,28 +103,16 @@ export default function RefraktiivkirurgiaJuhendFlow3JarelEn() {
 
         <h2 id="introduction">
           <span className="chapter-eyebrow">Introduction</span>
-          <span className="chapter-title">Thank you for completing your Flow3 exam</span>
+          <span className="chapter-title">Why I wrote this guide</span>
         </h2>
 
-        <p>You probably left the exam thinking: "All of this sounds good — but I need to think it through." That is completely normal. The volume of information you receive in a one-hour exam is simply too much to book surgery on the spot. That is exactly why I wrote this guide.</p>
+        <p>In 21 years of practice I have seen thousands of patients who arrive with high expectations and a long list of questions, and who leave the examination saying: "I need to think this through." This is not because we fail to explain. Refractive surgery is genuinely multilayered, and the volume of information a patient receives in a one-hour examination is simply too much.</p>
 
-        <p>The aim of this guide is to help you answer three questions calmly and without pressure:</p>
+        <p>New and unfamiliar terms — Flow, SMILE, Femto-LASIK, corneal biomechanics, lens exchange, ectasia — can leave a person disoriented. How do you make a decision that will change your daily quality of life if you do not fully understand what will happen to your eyes?</p>
 
-        <ul>
-          <li>What your exam results actually mean — which methods suit your cornea and which do not.</li>
-          <li>Why we at KSA Silmakeskus have chosen the surface method (Flow3) and how it differs from LASIK or SMILE.</li>
-          <li>Which honest alternatives exist if laser surgery may not be the right choice for you.</li>
-        </ul>
+        <p>Over time I came to see that Estonia lacks a patient-facing guide to laser vision correction: a document that is technically accurate but written so that a non-medical reader can understand it.</p>
 
-        <p>This is not a sales brochure. If after reading you decide that now is not the right time — or that you prefer a different method — that is a perfectly good outcome. My aim is for your decision about your own eyes to be based on clarity, not on rush.</p>
-
-        <p>At the end of the guide there is a simple way to follow up: if after reading you want to review your exam results with me or our team, leave your details and we will call you back no later than the next working day. This conversation is free and commits you to nothing.</p>
-
-        <p>
-          <strong>Dr. Ants Haavel</strong><br />
-          founder and medical director<br />
-          KSA Silmakeskus
-        </p>
+        <p>Each clinic mostly talks about itself and its own methods. The patient is left to assemble the terms, risks, promises and competing approaches on their own. This guide was written to make that choice calmer and clearer.</p>
 
         {/* NOTE: post-exam variant — no InlineGate, content visible without email opt-in */}
 

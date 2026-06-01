@@ -34,7 +34,7 @@ export default function RefraktiivkirurgiaJuhendFlow3Jarel() {
       {/* TITLE PAGE — editorial, post-exam framing */}
       <section className="max-w-[720px] mx-auto px-6 pt-16 md:pt-24 pb-12 md:pb-16 text-center">
         <p className="text-xs uppercase tracking-[0.25em] text-[#6f7f80] mb-6">
-          Pärast Flow3 uuringut
+          Tarbijajuhend
         </p>
         <h1
           aria-label="Silma laserprotseduuri juhend"
@@ -44,7 +44,7 @@ export default function RefraktiivkirurgiaJuhendFlow3Jarel() {
           juhend
         </h1>
         <p className="font-serif italic text-xl text-[#1a1a1a] mb-8 max-w-lg mx-auto leading-relaxed">
-          Otsuste tugi pärast diagnostikat. Loe rahulikult ja vasta endale — kas, millal ja milline protseduur on Sinu silmadele õige.
+          Mida pead teadma enne, kui valid kliiniku ja meetodi oma silmadele.
         </p>
         <div className="flex items-center justify-center gap-3 text-sm text-[#6f7f80]">
           <span>Dr. Ants Haavel</span>
@@ -74,27 +74,13 @@ export default function RefraktiivkirurgiaJuhendFlow3Jarel() {
 
       <article className="prose-v2 px-6 md:px-0 py-16 md:py-24">
 
-        <h2>Eessõna: Aitäh, et käisid Flow3 uuringul</h2>
+        <h2>Eessõna: Miks ma selle juhendi kirjutasin</h2>
 
-        <p>Tõenäoliselt lahkusid Sa uuringult mõttega: "Olgu, see kõik kõlas hästi — aga ma tahan veel mõelda." See on täiesti normaalne. Ühetunnise uuringu jooksul antav info on lihtsalt liiga palju, et selle põhjal kohe operatsiooni broneerida. Just seetõttu kirjutasingi selle juhendi.</p>
+        <p>Oma 21-aastase praktika jooksul olen näinud tuhandeid patsiente, kes tulevad kliinikusse suurte ootuste ja paljude küsimustega, kuid lahkuvad uuringult sõnadega: "Ma pean seda veel seedima ja mõtlema." See ei juhtu seetõttu, et me ei püüaks asju selgitada, vaid seetõttu, et refraktiivkirurgia on äärmiselt mitmetahuline ning ühetunnise uuringu jooksul antav infotulv on patsiendi jaoks lihtsalt liiga suur.</p>
 
-        <p>Selle juhendi eesmärk on aidata Sul rahulikult, ilma kiirustamiseta vastata kolmele küsimusele:</p>
+        <p>Uued ja keerulised terminid nagu "Flow", "SMILE", "Femto-LASIK", "sarvkesta biomehaanika", "läätsevahetus" ja "ektaasia" võivad esialgu tekitada tõelise peapöörituse. Kuidas teha nii oluline ja elukvaliteeti muutev otsus, kui sa ei mõista täielikult, mis Sinu silmadega tegelikult toimuma hakkab?</p>
 
-        <ul>
-          <li>Mida Sinu uuringutulemused tegelikult tähendavad — millised meetodid sobivad Sinu sarvkestale ja millised mitte.</li>
-          <li>Miks me KSA Silmakeskuses oleme valinud pinnameetodi (Flow3) ja mille poolest see erineb LASIK-ist või SMILE-ist.</li>
-          <li>Millised on aus alternatiivid, kui laserprotseduur ei pruugi olla Sinu jaoks parim valik.</li>
-        </ul>
-
-        <p>See juhend ei ole müügimaterjal. Kui Sa loed selle läbi ja otsustad, et just praegu ei ole õige aeg — või et eelistad mõnda teist meetodit — on see igati hea tulemus. Minu eesmärk on, et Sa teeksid oma silmade osas otsuse, mille taga on selgus, mitte kiirustamine.</p>
-
-        <p>Juhendi lõpus on lihtne tagasiside võimalus: kui pärast lugemist tahad oma uuringutulemusi minu või meeskonnaga üle vaadata, jäta oma andmed ja võtame Sinuga ühendust hiljemalt järgmise tööpäeva jooksul. See vestlus on tasuta ja ei kohusta Sind millekski.</p>
-
-        <p>
-          <strong>Dr. Ants Haavel</strong><br />
-          asutaja ja meditsiinijuht<br />
-          KSA Silmakeskus
-        </p>
+        <p>Olen aastate jooksul mõistnud, et Eestis puudub üks tõeline, patsiendikeskne teejuht silmade laserkirurgia maailma – dokument, mis ei oleks pelgalt turundusmaterjal, vaid tehniliselt täpne, kuid samas lihtsalt ja arusaadavalt kirjutatud. Iga kliinik räägib peamiselt endast ja oma toodetest, jättes tarbija ülesandeks kogu see keeruline pusle ise kokku panna. Just seetõttu otsustasingi selle lünga täita ja puuduoleva ning ülevaatliku juhendi Sinu jaoks ise valmis kirjutada.</p>
 
         {/* NOTE: post-exam variant — no InlineGate, content visible without email opt-in */}
 

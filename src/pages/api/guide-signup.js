@@ -1,28 +1,31 @@
 /**
  * Lead capture endpoint for refraktiivkirurgia-juhend LP (light email-only gate).
  *
- * NOTE on CRM (2026-05-26 architecture decision):
- *   Mai's new CRM intake endpoint (/api/v1/leads/intake/refraktiivkirurgia-juhend)
- *   REQUIRES contact.phone. The LP gate only collects email (Ants' light-gate design)
- *   so we DO NOT create CRM tickets at this stage. Email-only subscribers become
- *   Lilia tickets only if/when they submit the in-guide callback CTA (which has phone).
- *
- *   This keeps the CRM queue full of "raise-your-hand" leads instead of cold opt-ins.
+ * CRM (2026-06-12 update, supersedes earlier 26.05 decision):
+ *   Email-gate leads NOW also flow to Mai's CRM intake as cold leads so Lilia
+ *   can follow up. Best-effort POST — failure does not block the gate UX or
+ *   the magic-link email. Phone is omitted (gate is email-only).
  *
  * Routing (parallel, best-effort):
- *   1. Slack → #kiirtesti-täitmised (visibility for marketing/staff)
- *   2. Mandrill staff email → registreerumised@ksa.ee
- *   3. Mandrill magic-link email → lead's email with guide URL
+ *   1. CRM intake → Mai's system (cold lead, no phone)
+ *   2. Slack → #lp-kontaktid (visibility for marketing/staff)
+ *   3. Resend staff email → registreerumised@ksa.ee
+ *   4. Resend magic-link email → lead's email with guide URL
  *
  * Env vars (gracefully degrades if missing):
- *   SLACK_LP_CHANNEL_WEBHOOK_URL  — Slack incoming webhook (same as kiirtest project)
- *   RESEND_API_KEY                — Resend for outbound email (same as kiirtest)
+ *   KSA_TICKETS_API_KEY           — CRM intake key (same env name as guide-callback)
+ *   CRM_ENDPOINT                  — optional override (defaults to prod)
+ *   SLACK_LP_CHANNEL_WEBHOOK_URL  — Slack incoming webhook
+ *   RESEND_API_KEY                — Resend for outbound email
  *   GUIDE_SECRET                  — HMAC secret for magic-link token generation
  */
 
 import crypto from 'crypto';
 
 const GUIDE_BASE_URL = 'https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend';
+
+const CRM_ENDPOINT =
+  process.env.CRM_ENDPOINT || 'https://crm.ksa.ee/api/v1/leads/intake/refraktiivkirurgia-juhend';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -52,8 +55,8 @@ export default async function handler(req, res) {
   const guideUrl = `${GUIDE_BASE_URL}?t=${token}`;
 
   // Fan out to all destinations in parallel; capture each result.
-  // No CRM call here — see file header note.
-  const [slackResult, emailResult, mandrillResult] = await Promise.allSettled([
+  const [crmResult, slackResult, emailResult, mandrillResult] = await Promise.allSettled([
+    sendToCrm(lead),
     sendToSlack(lead),
     notifyKsaEmail(lead, guideUrl),
     sendMagicLinkEmail(lead, guideUrl),
@@ -63,6 +66,8 @@ export default async function handler(req, res) {
   console.log('[guide-signup]', {
     email: lead.email,
     source: lead.source,
+    crm: crmResult.status,
+    crmReason: crmResult.status === 'rejected' ? crmResult.reason?.message : undefined,
     slack: slackResult.status,
     staffEmail: emailResult.status,
     magicLink: mandrillResult.status,
@@ -70,6 +75,52 @@ export default async function handler(req, res) {
 
   // Return 200 to user regardless — we don't want UX failure if one downstream is briefly down.
   return res.status(200).json({ ok: true });
+}
+
+async function sendToCrm(lead) {
+  const apiKey = process.env.KSA_TICKETS_API_KEY;
+  if (!apiKey) {
+    console.warn('[guide-signup] KSA_TICKETS_API_KEY missing — skipping CRM');
+    return { skipped: true };
+  }
+
+  const [firstName, ...rest] = lead.name.split(/\s+/);
+  const lastName = rest.join(' ') || undefined;
+
+  const payload = {
+    lang: lead.language,
+    contact: {
+      first_name: firstName,
+      last_name: lastName,
+      email: lead.email,
+    },
+    magnet: {
+      version: 'v1',
+      consent_data: true,
+      consent_marketing: false,
+    },
+    utm: {
+      source: 'silmatervis',
+      medium: 'guide-gate',
+      campaign: 'refraktiivkirurgia-juhend',
+    },
+    source_url: 'https://silmatervis.ksa.ee/refraktiivkirurgia-juhend',
+  };
+
+  const res = await fetch(CRM_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-KSA-API-Key': apiKey,
+    },
+    body: JSON.stringify(payload),
+  });
+
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`CRM responded ${res.status} ${body}`);
+  }
+  return { ok: true };
 }
 
 function generateGuideToken(email) {

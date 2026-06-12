@@ -97,7 +97,8 @@ async function sendToCrm(lead) {
     magnet: {
       version: 'v1',
       consent_data: true,
-      consent_marketing: false,
+      consent_marketing: true,
+      cold_lead: true,
     },
     utm: {
       source: 'silmatervis',

@@ -818,7 +818,7 @@ function EndOfGuideCTAsRu() {
 
           <div className="ml-9">
             <a
-              href="https://booking.ksa.ee/?promokood=G39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend&utm_content=ru"
+              href="https://booking.ksa.ee/?promokood=FLOW39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend&utm_content=ru"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 transition"
@@ -826,7 +826,7 @@ function EndOfGuideCTAsRu() {
               Записаться на обследование перед Flow3 →
             </a>
             <p className="text-[11px] uppercase tracking-[0.15em] text-[#6f7f80] mt-3">
-              При записи можно использовать код G39. Стоимость обследования — 39&nbsp;€.
+              При записи можно использовать код FLOW39. Стоимость обследования — 39&nbsp;€.
             </p>
           </div>
         </div>

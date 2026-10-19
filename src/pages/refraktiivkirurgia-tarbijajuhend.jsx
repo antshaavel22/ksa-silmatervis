@@ -622,14 +622,14 @@ function EndOfGuideCTAs() {
             <span className="font-serif text-2xl text-[#1a1a1a] leading-none">II.</span>
             <p className="font-serif text-[19px] text-[#1a1a1a] leading-snug flex-1">
               Olen 18–45-aastane miinusprillikandja, soovin kasutada
-              sooduskoodi <span className="font-semibold">G39</span> ja
+              sooduskoodi <span className="font-semibold">FLOW39</span> ja
               broneerin endale online'is Flow3 silmauuringu aja.
             </p>
           </div>
 
           <div className="ml-9">
             <a
-              href="https://booking.ksa.ee/?promokood=G39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend"
+              href="https://booking.ksa.ee/?promokood=FLOW39&utm_source=silmatervis&utm_medium=guide&utm_campaign=refraktiivkirurgia-juhend"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 transition"
@@ -637,7 +637,7 @@ function EndOfGuideCTAs() {
               Broneeri Flow3 silmauuring →
             </a>
             <p className="text-[11px] uppercase tracking-[0.15em] text-[#6f7f80] mt-3">
-              Sooduskood G39 — Flow3 silmauuring 39&nbsp;€
+              Sooduskood FLOW39 — Flow3 silmauuring 39&nbsp;€
             </p>
           </div>
         </div>

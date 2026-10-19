@@ -94,7 +94,7 @@ export default function GuideLayout({ children, publicationDate = '2026-05-26', 
               ksa.ee
             </Link>
             <Link
-              href={`https://booking.ksa.ee/?promokood=G39&utm_source=silmatervis&utm_medium=guide-footer&utm_content=${lang}`}
+              href={`https://booking.ksa.ee/?service=flow&lang=${lang}&utm_source=silmatervis&utm_medium=guide-footer&utm_content=${lang}`}
               className="text-[#6f7f80] hover:text-[#1a1a1a] no-underline"
             >
               {t.bookingLabel}

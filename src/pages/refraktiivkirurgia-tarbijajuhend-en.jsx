@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import GuideSeo from '@/components/GuideSeo';
 import InlineGate from '@/components/InlineGate';
 
 /**
@@ -17,10 +18,11 @@ export default function RefraktiivkirurgiaTarbijajuhendEn() {
         <title>Refractive Surgery — A Consumer Guide | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="A consumer guide to refractive surgery, written by Dr. Ants Haavel from 21 years of practice and 55,000+ procedures at KSA Silmakeskus."
+          content="A consumer guide to refractive surgery, written by Dr. Ants Haavel from 21 years of practice: methods, safety, recovery and 20 questions to ask a clinic."
         />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend-en" />
       </Head>
+      <GuideSeo variant="full" lang="en" title="Refractive Surgery — A Consumer Guide | KSA Silmakeskus" description="A consumer guide to refractive surgery, written by Dr. Ants Haavel from 21 years of practice: methods, safety, recovery and 20 questions to ask a clinic." />
 
       {/* TITLE PAGE */}
       <section className="max-w-[680px] mx-auto px-6 pt-20 md:pt-28 pb-12 md:pb-16">

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import GuideSeo from '@/components/GuideSeo';
 import InlineGate from '@/components/InlineGate';
 
 /**
@@ -29,10 +30,11 @@ export default function RefraktiivkirurgiaTarbijajuhendRu() {
         <title>Рефракционная хирургия — гид | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="Подробный гид по лазерной коррекции зрения. Составлен д-ром Антсом Хаавелем на основе 21 года практики и более 55 000 процедур."
+          content="Подробный гид по лазерной коррекции зрения. Составлен д-ром Антсом Хаавелем на основе 21 года практики: методы, безопасность, восстановление и 20 вопросов для клиники."
         />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend-ru" />
       </Head>
+      <GuideSeo variant="full" lang="ru" title="Рефракционная хирургия — гид | KSA Silmakeskus" description="Подробный гид по лазерной коррекции зрения. Составлен д-ром Антсом Хаавелем на основе 21 года практики: методы, безопасность, восстановление и 20 вопросов для клиники." />
 
       {/* TITLE PAGE — tightened journal-cover proportions */}
       <section className="max-w-[680px] mx-auto px-6 pt-20 md:pt-28 pb-12 md:pb-16">

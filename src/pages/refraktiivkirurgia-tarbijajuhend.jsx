@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import GuideSeo from '@/components/GuideSeo';
 import InlineGate from '@/components/InlineGate';
 
 export default function RefraktiivkirurgiaTarbijajuhend() {
@@ -11,10 +12,11 @@ export default function RefraktiivkirurgiaTarbijajuhend() {
         <title>Silma laserprotseduuri juhend — Dr. Ants Haavel | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="Põhjalik tarbijajuhend silmade laserkirurgia kohta. Kirjutanud Dr. Ants Haavel 21 aasta praktika ja 55 000+ protseduuri baasil."
+          content="Põhjalik tarbijajuhend silmade laserkirurgia kohta. Kirjutanud dr Ants Haavel 21 aasta praktika põhjal: meetodid, ohutus, taastumine ja 20 küsimust kliinikule."
         />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-tarbijajuhend" />
       </Head>
+      <GuideSeo variant="full" lang="et" title="Silma laserprotseduuri juhend — Dr. Ants Haavel | KSA Silmakeskus" description="Põhjalik tarbijajuhend silmade laserkirurgia kohta. Kirjutanud dr Ants Haavel 21 aasta praktika põhjal: meetodid, ohutus, taastumine ja 20 küsimust kliinikule." />
 
       {/* TITLE PAGE — editorial style, not a marketing hero */}
       <section className="max-w-[720px] mx-auto px-6 pt-16 md:pt-24 pb-12 md:pb-16 text-center">

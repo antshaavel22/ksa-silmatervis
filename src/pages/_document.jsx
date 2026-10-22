@@ -11,9 +11,19 @@ import { GTM_ID, GOOGLE_ADS_ID } from '@/lib/constants';
  * lang prop on a wrapper <div lang="...">, which screen readers and
  * our CSS [lang="ru"] / [lang="en"] cascades respect correctly.
  */
-export default function Document() {
+// Language from the page route, read from the props Next already passes to
+// Document — no getInitialProps (see the note above). Only the consumer-guide
+// pages are mapped; everything else keeps "en" until its language is known.
+function langFor(page = '') {
+  if (!page.startsWith('/refraktiivkirurgia')) return 'en';
+  if (page.endsWith('-ru')) return 'ru';
+  if (page.endsWith('-en')) return 'en';
+  return 'et';
+}
+
+export default function Document(props) {
   return (
-    <Html lang="en">
+    <Html lang={langFor(props.__NEXT_DATA__?.page)}>
       <Head>
         {/* Google Tag Manager */}
         <script

@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import GuideSeo from '@/components/GuideSeo';
+import GuideFaq from '@/components/GuideFaq';
 import { GOOGLE_ADS_CONVERSIONS } from '@/lib/constants';
 
 /**
@@ -24,6 +26,8 @@ import { GOOGLE_ADS_CONVERSIONS } from '@/lib/constants';
  *   7. Single email gate ("Saada juhend mulle e-postile")
  *   8. After submit → Resend magic-link + Slack + auto-redirect to full guide
  */
+const FAQ = [{"q": "Kas laserprotseduur on ohutu?", "a": "KSA Silmakeskuses on tehtud üle 55 000 pinnameetodi protseduuri ja ühtegi sarvkesta ektaasia juhtumit ei ole registreeritud. Kordusprotseduuri vajab umbes 2,9% patsientidest ja selle katab paketi garantii."}, {"q": "Kellele Flow3 sobib?", "a": "Flow3 on lõike- ja puutevaba pinnaprotseduur 18–45-aastastele, kelle lühinägelikkus on kinnitatud. Sobivus selgub põhjalikul silmauuringul; kui Flow3 ei sobi, soovitab arst teise lahenduse."}, {"q": "Kui kaua kestab taastumine?", "a": "Umbes nädala. Esimestel päevadel on silmad tundlikumad, vesitsevad ja nägemine kõigub — see on paranemise loomulik osa."}, {"q": "Kas protseduur on valus?", "a": "Ei. Enne protseduuri tilgutatakse silma tuimestavaid tilku; ravitoas oled umbes 15 minutit ja laser töötab mõne sekundi silma kohta. Esimestel päevadel võib olla ebamugavustunnet, mis möödub kiiresti."}, {"q": "Mis see maksab?", "a": "Flow3 paketid maksavad 2490–5990 € ja sisaldavad garantiid 1–10 aastat. Flow3 uuring maksab 149 €; 18–45-aastastele kinnitatud lühinägelikele kehtib juhendi lugejana sooduskood FLOW39 (uuring 39 €). Uuringu tasu arvestatakse protseduuri hinnast maha, kui protseduur toimub 60 päeva jooksul."}];
+
 export default function RefraktiivkirurgiaJuhendLP() {
   const router = useRouter();
   const [formState, setFormState] = useState({ name: '', email: '', consent: false });
@@ -72,17 +76,18 @@ export default function RefraktiivkirurgiaJuhendLP() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="et" showBackLink={false}>
       <Head>
-        <title>Refraktiivkirurgia tarbijajuhend — tutvustus | KSA Silmakeskus</title>
+        <title>Refraktiivkirurgia juhend: silma laseroperatsioon | KSA</title>
         <meta
           name="description"
-          content="Rahulik ja arusaadav patsiendijuhend inimesele, kes kaalub silma laseroperatsiooni ja tahab enne otsust mõista meetodeid, riske ja taastumist."
+          content="Tasuta juhend silma laseroperatsiooni kohta: meetodid, ohutus, taastumine ja 20 küsimust kliinikule. Kirjutanud dr Ants Haavel, 21 aastat praktikat."
         />
         <meta property="og:title" content="Refraktiivkirurgia tarbijajuhend — Dr. Ants Haavel" />
-        <meta property="og:description" content="Tasuta 25-minutiline juhend. 21 aastat praktikat, 55 000+ protseduuri, 0 registreeritud ektaasiat." />
+        <meta property="og:description" content="Dr Ants Haaveli juhend aitab teha rahuliku ja teadliku otsuse. KSA Silmakeskus: kogemus alates 2005, üle 300 000 silmauuringu, garantii kuni 10 aastat." />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="https://silmatervis.ksa.ee/images/guide/dr-haavel-portrait.jpg" />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-juhend" />
       </Head>
+      <GuideSeo variant="intro" lang="et" title="Refraktiivkirurgia juhend: silma laseroperatsioon | KSA" description="Tasuta juhend silma laseroperatsiooni kohta: meetodid, ohutus, taastumine ja 20 küsimust kliinikule. Kirjutanud dr Ants Haavel, 21 aastat praktikat." faq={FAQ} />
 
       {/* TITLE PAGE — matches guide title page */}
       <section className="max-w-[680px] mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
@@ -111,6 +116,7 @@ export default function RefraktiivkirurgiaJuhendLP() {
           <span className="text-[#bbbbbb]">·</span>
           <span><strong className="text-[#1a1a1a] font-medium">Avaldatud:</strong> mai 2026</span>
         </div>
+        <a href="#telli" className="inline-block mt-6 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 no-underline hover:opacity-60">Telli tasuta juhend e-postile ↓</a>
       </section>
 
       {/* COVER PHOTO — journal-style inline figure */}
@@ -168,6 +174,13 @@ export default function RefraktiivkirurgiaJuhendLP() {
 
         <p>Täisversioon (~25 min lugemist) jaguneb viieks osaks ja sisaldab 20 küsimust, millega hindad iga kliiniku kompetentsi.</p>
 
+        <ul>
+          <li>Selge võrdlus: LASIK, SMILE ja puutevaba Flow3</li>
+          <li>Mida tähendavad sarvkesta biomehaanika, ohutus ja taastumine</li>
+          <li>Kuidas aru saada, kas laseroperatsioon sobib just Sulle</li>
+          <li>20 küsimust, mida igas kliinikus enne otsust küsida</li>
+        </ul>
+
         <nav aria-label="Sisukord" className="guide-toc">
           <span className="callout-label">Sisukord</span>
           <ol style={{ listStyleType: 'upper-roman' }}>
@@ -191,7 +204,7 @@ export default function RefraktiivkirurgiaJuhendLP() {
       </article>
 
       {/* EMAIL GATE — single conversion moment, in callout style */}
-      <section className="px-6 pb-16 md:pb-20">
+      <section id="telli" className="px-6 pb-16 md:pb-20 scroll-mt-6">
         <div className="max-w-[560px] mx-auto">
           <div className="border-t-2 border-[#1a1a1a] pt-10">
             <p className="text-[10.5px] uppercase tracking-[0.25em] text-[#6f7f80] mb-3 font-semibold">
@@ -268,7 +281,7 @@ export default function RefraktiivkirurgiaJuhendLP() {
                     disabled={status === 'submitting' || !formState.consent}
                     className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 disabled:opacity-30 transition"
                   >
-                    {status === 'submitting' ? 'Saadame…' : 'Saada juhend mulle e-postile →'}
+                    {status === 'submitting' ? 'Saadame…' : 'Telli tasuta juhend e-postile →'}
                   </button>
                 </div>
 
@@ -280,6 +293,7 @@ export default function RefraktiivkirurgiaJuhendLP() {
           </div>
         </div>
       </section>
+      <GuideFaq lang="et" faq={FAQ} />
     </GuideLayout>
   );
 }

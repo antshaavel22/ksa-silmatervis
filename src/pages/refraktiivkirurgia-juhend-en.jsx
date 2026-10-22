@@ -3,7 +3,11 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import GuideSeo from '@/components/GuideSeo';
+import GuideFaq from '@/components/GuideFaq';
 import { GOOGLE_ADS_CONVERSIONS } from '@/lib/constants';
+
+const FAQ = [{"q": "Is laser eye surgery safe?", "a": "KSA Vision Clinic has performed over 55,000 surface procedures with no registered case of corneal ectasia. About 2.9% of patients need a repeat procedure, and the package guarantee covers it."}, {"q": "Who is Flow3 for?", "a": "Flow3 is a cut-free, touch-free surface procedure for people aged 18–45 with confirmed myopia. Whether it suits you is decided at a thorough eye examination; if it doesn't, the doctor recommends another option."}, {"q": "How long is recovery?", "a": "About a week. In the first days the eyes are more sensitive, they water and vision fluctuates — a normal part of healing."}, {"q": "Does it hurt?", "a": "No. Numbing drops are used beforehand; you spend about 15 minutes in the treatment room and the laser works for a few seconds per eye. Some discomfort in the first days passes quickly."}, {"q": "How much does it cost?", "a": "Flow3 packages cost €2,490–5,990 and include a guarantee of 1 to 10 years. The Flow3 eye exam costs €149; for people aged 18–45 with confirmed myopia, the guide reader code FLOW39 makes it €39. The exam fee is deducted from the procedure price if the procedure takes place within 60 days."}];
 
 export default function RefraktiivkirurgiaJuhendLpEn() {
   const router = useRouter();
@@ -53,13 +57,18 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="en" showBackLink={false}>
       <Head>
-        <title>Refractive surgery — a consumer guide | KSA Silmakeskus</title>
+        <title>Refractive surgery guide: laser eye surgery | KSA</title>
         <meta
           name="description"
-          content="A calm, understandable guide for people considering laser eye surgery who want to understand the methods, risks and recovery before making a decision."
+          content="A free guide to laser eye surgery: methods, safety, recovery and 20 questions to ask any clinic. Written by Dr. Ants Haavel, 21 years of practice."
         />
+        <meta property="og:title" content="Refractive surgery guide: laser eye surgery | KSA" />
+        <meta property="og:description" content="Dr. Ants Haavel's guide helps you make a calm, informed decision. KSA Vision Clinic: experience since 2005, over 300,000 eye examinations, guarantee of up to 10 years." />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://silmatervis.ksa.ee/images/guide/dr-haavel-portrait.jpg" />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-juhend-en" />
       </Head>
+      <GuideSeo variant="intro" lang="en" title="Refractive surgery guide: laser eye surgery | KSA" description="A free guide to laser eye surgery: methods, safety, recovery and 20 questions to ask any clinic. Written by Dr. Ants Haavel, 21 years of practice." faq={FAQ} />
 
       {/* TITLE PAGE */}
       <section className="max-w-[680px] mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
@@ -88,6 +97,7 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
           <span className="text-[#bbbbbb]">·</span>
           <span><strong className="text-[#1a1a1a] font-medium">Published:</strong> May 2026</span>
         </div>
+        <a href="#telli" className="inline-block mt-6 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 no-underline hover:opacity-60">Get the free guide by email ↓</a>
       </section>
 
       {/* COVER PHOTO */}
@@ -141,6 +151,13 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
 
         <p>The full version (~25 minutes of reading) is in five parts and contains 20 questions you can use to evaluate the competence of any clinic.</p>
 
+        <ul>
+          <li>A clear comparison: LASIK, SMILE and touch-free Flow3</li>
+          <li>What corneal biomechanics, safety and recovery mean for you</li>
+          <li>How to tell whether laser eye surgery suits you</li>
+          <li>20 questions to ask any clinic before you decide</li>
+        </ul>
+
         <nav aria-label="Contents" className="guide-toc">
           <span className="callout-label">Contents</span>
           <ol style={{ listStyleType: 'upper-roman' }}>
@@ -163,7 +180,7 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
 
       </article>
 
-      <section className="px-6 pb-16 md:pb-20">
+      <section id="telli" className="px-6 pb-16 md:pb-20 scroll-mt-6">
         <div className="max-w-[560px] mx-auto">
           <div className="border-t-2 border-[#1a1a1a] pt-10">
             <p className="text-[10.5px] uppercase tracking-[0.25em] text-[#6f7f80] mb-3 font-semibold">
@@ -240,7 +257,7 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
                     disabled={status === 'submitting' || !formState.consent}
                     className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 disabled:opacity-30 transition"
                   >
-                    {status === 'submitting' ? 'Sending…' : 'Send me the guide →'}
+                    {status === 'submitting' ? 'Sending…' : 'Get the free guide by email →'}
                   </button>
                 </div>
 
@@ -252,6 +269,7 @@ export default function RefraktiivkirurgiaJuhendLpEn() {
           </div>
         </div>
       </section>
+      <GuideFaq lang="en" faq={FAQ} />
     </GuideLayout>
   );
 }

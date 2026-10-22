@@ -3,7 +3,11 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
 import GuideLayout from '@/components/GuideLayout';
+import GuideSeo from '@/components/GuideSeo';
+import GuideFaq from '@/components/GuideFaq';
 import { GOOGLE_ADS_CONVERSIONS } from '@/lib/constants';
+
+const FAQ = [{"q": "Безопасна ли лазерная коррекция?", "a": "В KSA Silmakeskus проведено более 55 000 поверхностных процедур, и не зарегистрировано ни одного случая эктазии роговицы. Повторная процедура нужна примерно 2,9% пациентов, ее покрывает гарантия пакета."}, {"q": "Кому подходит Flow3?", "a": "Flow3 — бесконтактная поверхностная процедура без разрезов для людей 18–45 лет с подтвержденной близорукостью. Подходит ли она вам, выясняется на подробном обследовании; если нет, врач предложит другое решение."}, {"q": "Сколько длится восстановление?", "a": "Около недели. В первые дни глаза чувствительнее, слезятся, и зрение меняется — это естественная часть заживления."}, {"q": "Больно ли это?", "a": "Нет. Перед процедурой закапывают обезболивающие капли; в процедурном кабинете вы проводите около 15 минут, а лазер работает несколько секунд на глаз. В первые дни возможен дискомфорт, который быстро проходит."}, {"q": "Сколько это стоит?", "a": "Пакеты Flow3 стоят 2490–5990 € и включают гарантию от 1 до 10 лет. Обследование Flow3 стоит 149 €; для людей 18–45 лет с подтвержденной близорукостью действует промокод читателя руководства FLOW39 (обследование 39 €). Стоимость обследования вычитается из цены процедуры, если она проходит в течение 60 дней."}];
 
 export default function RefraktiivkirurgiaJuhendLpRu() {
   const router = useRouter();
@@ -53,13 +57,18 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
   return (
     <GuideLayout publicationDate="2026-05-26" lang="ru" showBackLink={false}>
       <Head>
-        <title>Рефракционная хирургия — гид | KSA Silmakeskus</title>
+        <title>Гид по лазерной коррекции зрения | KSA Silmakeskus</title>
         <meta
           name="description"
-          content="Спокойное и понятное руководство для тех, кто думает о лазерной коррекции зрения и хочет заранее разобраться в методах, рисках и восстановлении."
+          content="Бесплатное руководство о лазерной коррекции зрения: методы, безопасность, восстановление и 20 вопросов для клиники. Автор — д-р Антс Хаавель."
         />
+        <meta property="og:title" content="Гид по лазерной коррекции зрения | KSA Silmakeskus" />
+        <meta property="og:description" content="Руководство д-ра Антса Хаавеля помогает спокойно принять взвешенное решение. KSA Silmakeskus: опыт с 2005 года, более 300 000 обследований, гарантия до 10 лет." />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://silmatervis.ksa.ee/images/guide/dr-haavel-portrait.jpg" />
         <link rel="canonical" href="https://silmatervis.ksa.ee/refraktiivkirurgia-juhend-ru" />
       </Head>
+      <GuideSeo variant="intro" lang="ru" title="Гид по лазерной коррекции зрения | KSA Silmakeskus" description="Бесплатное руководство о лазерной коррекции зрения: методы, безопасность, восстановление и 20 вопросов для клиники. Автор — д-р Антс Хаавель." faq={FAQ} />
 
       {/* TITLE PAGE */}
       <section className="max-w-[680px] mx-auto px-6 pt-16 md:pt-24 pb-10 md:pb-14">
@@ -88,6 +97,7 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
           <span className="text-[#bbbbbb]">·</span>
           <span><strong className="text-[#1a1a1a] font-medium">Опубликовано:</strong> май 2026</span>
         </div>
+        <a href="#telli" className="inline-block mt-6 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 no-underline hover:opacity-60">Получить бесплатное руководство ↓</a>
       </section>
 
       {/* COVER PHOTO */}
@@ -141,6 +151,13 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
 
         <p>Полная версия (~25 минут чтения) состоит из пяти частей и содержит 20 вопросов, которые помогают оценить компетенцию любой клиники.</p>
 
+        <ul>
+          <li>Понятное сравнение: LASIK, SMILE и бесконтактный Flow3</li>
+          <li>Что важно знать о биомеханике роговицы, безопасности и восстановлении</li>
+          <li>Как понять, подходит ли лазерная коррекция именно вам</li>
+          <li>20 вопросов, которые стоит задать в любой клинике до решения</li>
+        </ul>
+
         <nav aria-label="Содержание" className="guide-toc">
           <span className="callout-label">Содержание</span>
           <ol style={{ listStyleType: 'upper-roman' }}>
@@ -163,7 +180,7 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
 
       </article>
 
-      <section className="px-6 pb-16 md:pb-20">
+      <section id="telli" className="px-6 pb-16 md:pb-20 scroll-mt-6">
         <div className="max-w-[560px] mx-auto">
           <div className="border-t-2 border-[#1a1a1a] pt-10">
             <p className="text-[10.5px] uppercase tracking-[0.25em] text-[#6f7f80] mb-3 font-semibold">
@@ -240,7 +257,7 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
                     disabled={status === 'submitting' || !formState.consent}
                     className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#1a1a1a] border-b border-[#1a1a1a] pb-1 hover:opacity-60 disabled:opacity-30 transition"
                   >
-                    {status === 'submitting' ? 'Отправляем…' : 'Получить руководство на e-mail →'}
+                    {status === 'submitting' ? 'Отправляем…' : 'Получить бесплатное руководство →'}
                   </button>
                 </div>
 
@@ -252,6 +269,7 @@ export default function RefraktiivkirurgiaJuhendLpRu() {
           </div>
         </div>
       </section>
+      <GuideFaq lang="ru" faq={FAQ} />
     </GuideLayout>
   );
 }
